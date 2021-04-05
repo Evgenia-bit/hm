@@ -111,7 +111,7 @@ button:focus, input:focus, select:focus, video:focus {
 .h-top {
   padding-top: 50px;
   padding-bottom: 15px;
-  background: url("../img/first-screen/14181069_1604043357394background-image.png") no-repeat center top;
+  background: url("../img/first-screen/14181069_1604043357394background-image.jpg") no-repeat center top;
   background-size: cover;
 }
 
@@ -223,7 +223,7 @@ button:focus, input:focus, select:focus, video:focus {
 }
 
 .main-form__inputs select, .main-form__inputs input[name="state"] {
-  background: url("../img/inputs-icons/flag.png") no-repeat 10px 10px;
+  background: url("../img/inputs-icons/flag.jpg") no-repeat 10px 10px;
 }
 
 .main-form__inputs select {
@@ -263,27 +263,27 @@ button:focus, input:focus, select:focus, video:focus {
 }
 
 .main-form__inputs input[name="first-name"], .main-form__inputs input[name="last-name"] {
-  background: url("../img/inputs-icons/user.png") no-repeat 10px 10px;
+  background: url("../img/inputs-icons/user.jpg") no-repeat 10px 10px;
 }
 
 .main-form__inputs input[name="email"] {
-  background: url("../img/inputs-icons/letter.png") no-repeat 10px 10px;
+  background: url("../img/inputs-icons/letter.jpg") no-repeat 10px 10px;
 }
 
 .main-form__inputs input[name="address"] {
-  background: url("../img/inputs-icons/home.png") no-repeat 10px 10px;
+  background: url("../img/inputs-icons/home.jpg") no-repeat 10px 10px;
 }
 
 .main-form__inputs input[name="city"] {
-  background: url("../img/inputs-icons/geo.png") no-repeat 10px 10px;
+  background: url("../img/inputs-icons/geo.jpg") no-repeat 10px 10px;
 }
 
 .main-form__inputs input[name="postal-code"] {
-  background: url("../img/inputs-icons/doc.png") no-repeat 10px 10px;
+  background: url("../img/inputs-icons/doc.jpg") no-repeat 10px 10px;
 }
 
 .main-form__inputs input[name="phone-number"] {
-  background: url("../img/inputs-icons/phone.png") no-repeat 10px 10px;
+  background: url("../img/inputs-icons/phone.jpg") no-repeat 10px 10px;
 }
 
 .main-form .verified {
@@ -517,9 +517,9 @@ button:focus, input:focus, select:focus, video:focus {
 .q-and-a .container {
   display: -ms-grid;
   display: grid;
-  gap: 20px;
-  -ms-grid-columns: 6fr 1fr;
-      grid-template-columns: 6fr 1fr;
+  gap: 10px;
+  -ms-grid-columns: 10fr 1fr;
+      grid-template-columns: 10fr 1fr;
 }
 
 .q-and-a__content {
@@ -542,7 +542,7 @@ button:focus, input:focus, select:focus, video:focus {
 /*section What to expect*/
 .what-to-expect {
   margin-top: 25px;
-  background: url("../img/bg/bg2.png") no-repeat center center;
+  background: url("../img/bg/bg2.jpg") no-repeat center center;
   background-size: 100% 100%;
   height: 50vw;
 }
@@ -574,7 +574,7 @@ button:focus, input:focus, select:focus, video:focus {
   padding: 70px 0;
   color: #28598e;
   font-family: 'Arimo', sans-serif;
-  background: url("../img/bg/bg3.png") no-repeat center center;
+  background: url("../img/bg/bg3.jpg") no-repeat center center;
   background-size: cover;
 }
 
@@ -744,9 +744,9 @@ button:focus, input:focus, select:focus, video:focus {
 .about-benefits__background {
   position: absolute;
   z-index: -1;
-  bottom: -72px;
+  bottom: -84px;
   right: 10%;
-  width: 800px;
+  width: 900px;
 }
 
 .about-benefits__image {
@@ -754,6 +754,8 @@ button:focus, input:focus, select:focus, video:focus {
 }
 
 .about-benefits__title {
+  margin: 0;
+  width: 600px;
   color: #0064f9;
   font-size: 2.66rem;
   line-height: 1.2em;
@@ -761,6 +763,7 @@ button:focus, input:focus, select:focus, video:focus {
 }
 
 .about-benefits__subtitle {
+  margin: 0;
   display: block;
   font-size: 1.4rem;
   line-height: 1.2em;
@@ -770,22 +773,23 @@ button:focus, input:focus, select:focus, video:focus {
 }
 
 .about-benefits__text {
+  margin: 0;
   font-size: 0.8rem;
   font-family: Arial, serif;
   color: #333;
 }
 
 .about-benefits__list {
-  margin-top: 30px;
+  margin-top: 20px;
   margin-left: 30px;
-  list-style-image: url("../img/list-marker/marker.png");
+  list-style-image: url("../img/list-marker/marker.jpg");
 }
 
 .about-benefits__list li {
   font-size: 0.65rem;
   font-family: 'Arimo', sans-serif;
   font-weight: 700;
-  padding: 5px 0;
+  padding: 0 0 10px 15px;
 }
 
 .about-benefits .main-btn-wrap {
@@ -839,13 +843,40 @@ button:focus, input:focus, select:focus, video:focus {
   max-width: 550px;
 }
 
+/*packages*/
+.packages .container {
+  width: 945px;
+}
+
+.packages .container .packages__header {
+  background-color: #2ebd00;
+  margin-top: 45px;
+  height: 85px;
+  color: #fff;
+  text-align: center;
+}
+
+.packages .container .packages__header h1 {
+  font-size: 1.6rem;
+  padding: 10px 0 0;
+  margin: 0;
+  font-weight: 600;
+}
+
+.packages .container .packages__header span {
+  margin-top: -5px;
+  font-weight: 300;
+  display: block;
+  font-size: 0.8rem;
+}
+
 @media (min-width: 1600px) {
   .h-top {
     height: 100vh;
   }
 }
 
-@media (max-width: 1450px) {
+@media (max-width: 1600px) {
   .about-benefits__background {
     right: 0;
   }
@@ -927,7 +958,7 @@ button:focus, input:focus, select:focus, video:focus {
   }
   .what-to-expect__list {
     margin-left: 30px;
-    list-style-image: url("../img/list-marker/marker2.png");
+    list-style-image: url("../img/list-marker/marker2.jpg");
   }
   .what-to-expect__list li {
     font-size: 22px;
@@ -971,7 +1002,7 @@ button:focus, input:focus, select:focus, video:focus {
     display: none;
   }
   .h-top {
-    background: url("../img/first-screen/first-screen-mob.png") no-repeat center center;
+    background: url("../img/first-screen/first-screen-mob.jpg") no-repeat center center;
     background-size: cover;
     padding: 0;
   }
@@ -1103,6 +1134,7 @@ button:focus, input:focus, select:focus, video:focus {
     width: 100%;
   }
   .about-benefits__title {
+    width: 100%;
     text-align: center;
     font-size: 1.8rem;
   }
