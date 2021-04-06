@@ -1,4 +1,4 @@
-//timer
+
 let deadLine = '2021-04-08';
 
 
