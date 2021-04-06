@@ -11,8 +11,8 @@ function getTimeRemaining(endtime) {
     return {
         'total' : t,
         'days' : days,
-        'hours' : hours,
-        'minutes' : minutes,
+        'hours' : hours+12,
+        'minutes' : minutes+17,
         'seconds' : seconds
     };
 }
