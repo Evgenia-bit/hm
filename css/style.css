@@ -1227,7 +1227,7 @@ button:focus, input:focus, select:focus, video:focus {
   }
 }
 
-@media (max-width: 1020px) {
+@media (max-width: 1024px) {
   .main-btn-wrap {
     display: none;
   }

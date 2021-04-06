@@ -8,6 +8,83 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
     <title>Hair Rescue Rx V7</title>
+    <style>
+        /*header (top)*/
+        .header-mob {
+        display: none;
+        }
+
+        .h-top {
+        padding-top: 50px;
+        padding-bottom: 15px;
+        background: url("../img/first-screen/14181069_1604043357394background-image.jpg") no-repeat center top;
+        background-size: cover;
+        }
+
+        .h-top .first-screen-image {
+        margin-top: -5px;
+        margin-right: -5px;
+        width: 630px;
+        }
+
+        .h-top .first-screen-mob {
+        display: none;
+        }
+        @media (min-width: 1600px) {
+            .h-top {
+                height: 100vh;
+            }
+        }
+        @media (max-width: 1020px) {
+
+            .h-top {
+                background: url("../img/first-screen/first-screen-mob.jpg") no-repeat center center;
+                background-size: cover;
+                padding: 0;
+            }
+            .h-top .first-screen-mob {
+                margin: 0 auto;
+                width: 100%;
+                display: block;
+            }
+        }
+        @media (max-width: 767px) {
+            .header-mob {
+                display: block;
+            }
+            .header-mob_top {
+                background: #2e62b8;
+                color: #fff;
+                font-family: arial;
+                font-size: 0.77rem;
+                text-align: center;
+                padding: 7px;
+            }
+            .header-mob_bottom p {
+                text-align: center;
+                margin-top: 10px;
+                font-family: oswald;
+                font-size: 1.10rem;
+                font-weight: bold;
+            }
+            .header-mob_bottom img {
+                width: 363px;
+                margin: 0 auto;
+                display: block;
+                margin-top: -20px;
+                margin-bottom: 40px;
+            }
+            .h-top .container {
+                width: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            .h-top .first-screen-mob {
+                width: 100vw;
+            }
+        }
+
+    </style>
 </head>
 
 <body>
@@ -347,7 +424,7 @@
         <div class="container">
             <div class="row ">
                 <div class="col-lg-12 text-center proof__title">
-                    <img src="img/the-proof/The_Proof.jpg" alt="">
+                    <img src="img/the-proof/10874161_1592843133655The_Proof.jpg" alt="">
                 </div>
                 <div class="col-lg-12 text-center proof__subtitle">
                     <h3>DOES HAIR RESCUE RX WORK? SEE FOR YOURSELF...</h3>
@@ -358,7 +435,7 @@
                 </div>
                 <div class="col-lg-12 text-center proof__video">
 
-                    <video src="video/the-proff.m4v" controls width="945px" style="background-image: url('video/prew/1.jpg');"></video>
+                    <video src="video/the-proff.m4v" controls width="945px" poster="video/prew/1.jpg"></video>
                 </div>
             </div>
         </div>
@@ -419,7 +496,7 @@
                     <span class="physicians-choice__subtitle orange-subtitle">#1 NATURAL HAIR REGAIN FORMULA</span>
                 </div>
                 <div class="col-lg-6 text-right">
-                    <video src="video/physicians-choice1.m4v" style="background-image: url('video/prew/2.jpg');" controls width="505px"></video><br>
+                    <video src="video/physicians-choice1.m4v" poster="video/prew/2.jpg" controls width="505px"></video><br>
                     <span class=" dr-name">
                         Dr. M. Mehra, MD
                     </span>
@@ -428,7 +505,7 @@
                     </span>
                 </div>
                 <div class="col-lg-6">
-                    <video src="video/physicians-choice2.mp4" style="background-image: url('video/prew/3.jpg');" controls width="505px"></video><br>
+                    <video src="video/physicians-choice2.mp4" poster="video/prew/3.jpg" controls width="505px"></video><br>
                     <span class="dr-name">
                         Dr. A. Carmack, MD
                     </span>
@@ -450,7 +527,7 @@
                     <span class="pharmacist-recommended​__text">
                         Watch T. Burman, Registered Pharmacist, NY, USA Explains the Science Behind Hair Rescue Rx
                     </span>
-                    <video src="video/Pharmacists.mp4" style="background-image: url('video/prew/4.jpg');" controls width="80%"></video>
+                    <video src="video/Pharmacists.mp4"  poster="video/prew/4.jpg" controls width="80%"></video>
                     <div class="main-btn-wrap">
                         <button class="main-btn"><a href="#header">PUSH MY ORDER</a></button>
                     </div>
@@ -635,7 +712,7 @@
 
                 <div class="col-xl-6 col-lg-12 text-center">
                     <div class="video-wrap">
-                        <video src="video/Alex-UPDATED.m4v" style="background-image: url('video/prew/4.jpg');" controls width="505px"></video>
+                        <video src="video/Alex-UPDATED.m4v"  poster="video/prew/5.jpg" controls width="505px"></video>
                         <span class="name">
                             Alex L., Age 36
                         </span>
@@ -644,7 +721,7 @@
                 </div>
                 <div class="col-xl-6 col-lg-12  text-center">
                     <div class="video-wrap">
-                        <video src="video/Steve-UPDETED.m4v" style="background-image: url('video/prew/5.jpg');" controls width="505px"></video>
+                        <video src="video/Steve-UPDETED.m4v" poster="video/prew/6.jpg" controls width="505px"></video>
                         <span class="name">
                             Steve M., Age 57
                         </span>
@@ -653,7 +730,7 @@
                 </div>
                 <div class="col-xl-6 col-lg-12  text-center">
                     <div class="video-wrap">
-                        <video src="video/Matthew-UPDETED.m4v" style="background-image: url('video/prew/6.jpg');" controls width="505px"></video>
+                        <video src="video/Matthew-UPDETED.m4v"  poster="video/prew/7.jpg"controls width="505px"></video>
                         <span class="name">
                             Matthew K., Age 31
                         </span>
@@ -662,7 +739,7 @@
                 </div>
                 <div class="col-xl-6 col-lg-12  text-center">
                     <div class="video-wrap">
-                        <video src="video/Gabriel.m4v" style="background-image: url('video/prew/7.jpg');" controls width="505px"></video>
+                        <video src="video/Gabriel.m4v"  poster="video/prew/8.jpg" controls width="505px"></video>
                         <span class="name">
                             Gabriel R., Age 28
                         </span>
