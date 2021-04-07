@@ -567,10 +567,6 @@ button:focus, input:focus, select:focus, video:focus {
   font-family: arial;
 }
 
-.q-and-a img {
-  height: 178px;
-}
-
 /*section What to expect*/
 .what-to-expect {
   margin-top: 25px;
@@ -853,7 +849,7 @@ button:focus, input:focus, select:focus, video:focus {
 .footer {
   position: relative;
   z-index: -2;
-  padding: 40px 0px;
+  padding: 80px 0px 40px;
   background-color: #424362;
   color: #fff;
   font-size: 14px;
@@ -861,6 +857,7 @@ button:focus, input:focus, select:focus, video:focus {
 
 .footer img {
   width: 135px;
+  margin-bottom: 20px;
 }
 
 .footer .copyright {
@@ -1475,10 +1472,10 @@ button:focus, input:focus, select:focus, video:focus {
     display: block;
     width: 100%;
     padding: 10px;
-    margin-bottom: 80px;
   }
   .about-benefits__image img {
     width: 100%;
+    margin-bottom: -32px;
   }
   .about-benefits__title {
     color: #0987ff;
