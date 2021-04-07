@@ -52,10 +52,10 @@ $brightBlue: #0064f9
         height: 60px
 /*red button for form*/
 .for-form
-    width: 210px
-    height: 65px
+    width: 270px
+    height: 80px
     font-weight: 500
-    font-size: 20px   
+    font-size: 24px   
     font-family: "Roboto",sans-serif 
 /*animation red button*/
     
@@ -92,7 +92,6 @@ $brightBlue: #0064f9
                 margin-bottom: 40px
 .h-top
     padding-top: 50px
-    padding-bottom: 15px
     background: url('../img/first-screen/14181069_1604043357394background-image.jpg') no-repeat center top
     background-size: cover
     .first-screen-image 
@@ -127,18 +126,20 @@ $brightBlue: #0064f9
     border-radius: 20px 20px 0 0
     &__header
         text-align: center
-        font-size: 25px
-        height: 93px
+        font-size: 1.4rem
+        line-height: 1.2
+        padding: 7px 15px 
+
         width: 100%
-        padding: 12px 40px 25px
         margin-bottom: 7px
         border-radius: 20px 20px 0 0
         background: #3671B8
         font-family: 'Oswald', sans-serif
-        font-weight: 700
+        font-weight: 600
         font-stretch: extra-expanded
         color: #fff
     &__inputs
+        position: relative
         background: #fff
         display: grid
         justify-content: center
@@ -150,10 +151,9 @@ $brightBlue: #0064f9
             border: 1px solid rgba(0,0,0,0.2)
             border-radius: 6px
             &::placeholder 
-                font-family: "open sans"
                 color: rgba(0,0,0,0.4)
                 font-size: 14px
-                font-weight: 600
+                font-weight: 400
             
         select, input[name="state"] 
             background: url('../img/inputs-icons/flag.jpg') no-repeat 10px 10px
@@ -168,19 +168,19 @@ $brightBlue: #0064f9
             font-size: 28px
             font-family: 'Oswald', sans-serif
             position: absolute
-            right: 0
-            top: 90px
+            right: 35px
+            top: -10px
         .red-star
             color: rgb(255, 26, 13)
             position: absolute
             font-size: 15px
             font-weight: 700
             &:nth-of-type(2)
-                top: 150px
-                right: -2%
+                top: 50px
+                right: 35px
             &:nth-of-type(3)
-                top: 247px
-                right: -2%
+                top: 147px
+                right: 35px
                 
         input[name="first-name"], input[name="last-name"]
             background: url('../img/inputs-icons/user.jpg') no-repeat 10px 10px
@@ -522,7 +522,7 @@ $brightBlue: #0064f9
     min-height: 700px 
     margin-bottom: -72px
     z-index: 12
-    margin-top: 90px 
+    margin-top: 80px 
     background-position: right
     background-size: contain 
     &__image
@@ -530,13 +530,12 @@ $brightBlue: #0064f9
         
     &__content
         padding: 0 15px 0 0
-        margin-top: 20px
+        margin-top: 40px
     &__title
         margin: 0 0 10px
         color: $brightBlue
         font-size: 2.66rem
         line-height: 1.2em
-        font-family: "open sans"
     &__subtitle
         margin: 0
         display: block
@@ -563,6 +562,7 @@ $brightBlue: #0064f9
             padding: 0 0 10px 15px
     .main-btn-wrap
         justify-content: start 
+        margin-top: -10px
         button
             font-weight: 700
 /*footer*/
@@ -782,11 +782,11 @@ $brightBlue: #0064f9
         width: 282px 
         input, select
             width: 232px
-        .red-star
-            &:nth-of-type(2)
-                right: 0
-            &:nth-of-type(3)
-                right: -0
+            margin-left: auto
+            margin-right: auto
+        .for-form
+            width: 210px
+        
     .first-screen-image 
        margin-left:   -100px
     .about-product
@@ -884,9 +884,10 @@ $brightBlue: #0064f9
             display: none
         
         .first-screen-mob
+            display: block
             margin: 0 auto
             width: 100%
-            display: block
+            
     .proof
         br
             display: none

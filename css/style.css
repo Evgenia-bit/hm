@@ -69,10 +69,10 @@ button:focus, input:focus, select:focus, video:focus {
 
 /*red button for form*/
 .for-form {
-  width: 210px;
-  height: 65px;
+  width: 270px;
+  height: 80px;
   font-weight: 500;
-  font-size: 20px;
+  font-size: 24px;
   font-family: "Roboto",sans-serif;
 }
 
@@ -138,7 +138,6 @@ button:focus, input:focus, select:focus, video:focus {
 
 .h-top {
   padding-top: 50px;
-  padding-bottom: 15px;
   background: url("../img/first-screen/14181069_1604043357394background-image.jpg") no-repeat center top;
   background-size: cover;
 }
@@ -191,20 +190,21 @@ button:focus, input:focus, select:focus, video:focus {
 
 .main-form__header {
   text-align: center;
-  font-size: 25px;
-  height: 93px;
+  font-size: 1.4rem;
+  line-height: 1.2;
+  padding: 7px 15px;
   width: 100%;
-  padding: 12px 40px 25px;
   margin-bottom: 7px;
   border-radius: 20px 20px 0 0;
   background: #3671B8;
   font-family: 'Oswald', sans-serif;
-  font-weight: 700;
+  font-weight: 600;
   font-stretch: extra-expanded;
   color: #fff;
 }
 
 .main-form__inputs {
+  position: relative;
   background: #fff;
   display: -ms-grid;
   display: grid;
@@ -223,31 +223,27 @@ button:focus, input:focus, select:focus, video:focus {
 }
 
 .main-form__inputs input::-webkit-input-placeholder, .main-form__inputs select::-webkit-input-placeholder {
-  font-family: "open sans";
   color: rgba(0, 0, 0, 0.4);
   font-size: 14px;
-  font-weight: 600;
+  font-weight: 400;
 }
 
 .main-form__inputs input:-ms-input-placeholder, .main-form__inputs select:-ms-input-placeholder {
-  font-family: "open sans";
   color: rgba(0, 0, 0, 0.4);
   font-size: 14px;
-  font-weight: 600;
+  font-weight: 400;
 }
 
 .main-form__inputs input::-ms-input-placeholder, .main-form__inputs select::-ms-input-placeholder {
-  font-family: "open sans";
   color: rgba(0, 0, 0, 0.4);
   font-size: 14px;
-  font-weight: 600;
+  font-weight: 400;
 }
 
 .main-form__inputs input::placeholder, .main-form__inputs select::placeholder {
-  font-family: "open sans";
   color: rgba(0, 0, 0, 0.4);
   font-size: 14px;
-  font-weight: 600;
+  font-weight: 400;
 }
 
 .main-form__inputs select, .main-form__inputs input[name="state"] {
@@ -269,8 +265,8 @@ button:focus, input:focus, select:focus, video:focus {
   font-size: 28px;
   font-family: 'Oswald', sans-serif;
   position: absolute;
-  right: 0;
-  top: 90px;
+  right: 35px;
+  top: -10px;
 }
 
 .main-form__inputs .red-star {
@@ -281,13 +277,13 @@ button:focus, input:focus, select:focus, video:focus {
 }
 
 .main-form__inputs .red-star:nth-of-type(2) {
-  top: 150px;
-  right: -2%;
+  top: 50px;
+  right: 35px;
 }
 
 .main-form__inputs .red-star:nth-of-type(3) {
-  top: 247px;
-  right: -2%;
+  top: 147px;
+  right: 35px;
 }
 
 .main-form__inputs input[name="first-name"], .main-form__inputs input[name="last-name"] {
@@ -779,7 +775,7 @@ button:focus, input:focus, select:focus, video:focus {
   min-height: 700px;
   margin-bottom: -72px;
   z-index: 12;
-  margin-top: 90px;
+  margin-top: 80px;
   background-position: right;
   background-size: contain;
 }
@@ -790,7 +786,7 @@ button:focus, input:focus, select:focus, video:focus {
 
 .about-benefits__content {
   padding: 0 15px 0 0;
-  margin-top: 20px;
+  margin-top: 40px;
 }
 
 .about-benefits__title {
@@ -798,7 +794,6 @@ button:focus, input:focus, select:focus, video:focus {
   color: #0064f9;
   font-size: 2.66rem;
   line-height: 1.2em;
-  font-family: "open sans";
 }
 
 .about-benefits__subtitle {
@@ -839,6 +834,7 @@ button:focus, input:focus, select:focus, video:focus {
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: start;
+  margin-top: -10px;
 }
 
 .about-benefits .main-btn-wrap button {
@@ -1186,12 +1182,11 @@ button:focus, input:focus, select:focus, video:focus {
   }
   .main-form input, .main-form select {
     width: 232px;
+    margin-left: auto;
+    margin-right: auto;
   }
-  .main-form .red-star:nth-of-type(2) {
-    right: 0;
-  }
-  .main-form .red-star:nth-of-type(3) {
-    right: -0;
+  .main-form .for-form {
+    width: 210px;
   }
   .first-screen-image {
     margin-left: -100px;
@@ -1309,9 +1304,9 @@ button:focus, input:focus, select:focus, video:focus {
     display: none;
   }
   .h-top .first-screen-mob {
+    display: block;
     margin: 0 auto;
     width: 100%;
-    display: block;
   }
   .proof br {
     display: none;
