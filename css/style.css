@@ -778,7 +778,7 @@ button:focus, input:focus, select:focus, video:focus {
   background-repeat: no-repeat;
   min-height: 700px;
   margin-bottom: -72px;
-  z-index: 99999999;
+  z-index: 12;
   margin-top: 90px;
   background-position: right;
   background-size: contain;
@@ -1474,8 +1474,8 @@ button:focus, input:focus, select:focus, video:focus {
     padding: 10px;
   }
   .about-benefits__image img {
+    margin-bottom: 80px;
     width: 100%;
-    margin-bottom: -32px;
   }
   .about-benefits__title {
     color: #0987ff;
