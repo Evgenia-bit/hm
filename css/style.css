@@ -9,7 +9,6 @@
   padding: 0;
   margin: 0;
   font-family: "Roboto",sans-serif;
-  line-height: 1.4em;
 }
 
 button:focus, input:focus, select:focus, video:focus {
@@ -21,12 +20,10 @@ button:focus, input:focus, select:focus, video:focus {
 .main-btn {
   background: #ff1a0d;
   color: #fff;
-  font-weight: 400;
+  font-weight: 700;
   border: none;
-  width: 240px;
-  height: 48px;
-  font-family: 'Oswald', sans-serif;
-  font-size: 20px;
+  width: 280px;
+  height: 60px;
   border-radius: 2px;
   -webkit-animation: animated-btn 1s infinite;
           animation: animated-btn 1s infinite;
@@ -46,6 +43,8 @@ button:focus, input:focus, select:focus, video:focus {
 }
 
 .main-btn a {
+  font-size: 22px;
+  font-family: "Oswald", sans-serif !important;
   text-decoration: none;
   color: #fff;
 }
@@ -64,7 +63,6 @@ button:focus, input:focus, select:focus, video:focus {
 
 .fixed-btn .main-btn {
   font-weight: 700;
-  font-size: 20px;
   width: 280px;
   height: 60px;
 }
@@ -111,6 +109,31 @@ button:focus, input:focus, select:focus, video:focus {
 /*header (top)*/
 .header-mob {
   display: none;
+}
+
+.header-mob_top {
+  background: #2e62b8;
+  color: #fff;
+  font-family: arial;
+  font-size: 0.77rem;
+  text-align: center;
+  padding: 7px;
+}
+
+.header-mob_bottom p {
+  text-align: center;
+  margin-top: 10px;
+  font-family: oswald;
+  font-size: 1.10rem;
+  font-weight: bold;
+}
+
+.header-mob_bottom img {
+  width: 363px;
+  margin: 0 auto;
+  display: block;
+  margin-top: 20px;
+  margin-bottom: 40px;
 }
 
 .h-top {
@@ -495,6 +518,10 @@ button:focus, input:focus, select:focus, video:focus {
   color: #0e437e;
 }
 
+.how-it-works .advanteges__item img {
+  width: 60px;
+}
+
 .how-it-works .advanteges__descr {
   font-family: 'Arimo', sans-serif;
   font-size: 0.68rem;
@@ -523,8 +550,8 @@ button:focus, input:focus, select:focus, video:focus {
   display: -ms-grid;
   display: grid;
   gap: 10px;
-  -ms-grid-columns: 10fr 1fr;
-      grid-template-columns: 10fr 1fr;
+  -ms-grid-columns: 8fr 1fr;
+      grid-template-columns: 8fr 1fr;
 }
 
 .q-and-a__content {
@@ -715,7 +742,7 @@ button:focus, input:focus, select:focus, video:focus {
 }
 
 .about-usage .container:nth-of-type(2) {
-  border-bottom: 2px solid #0064f9;
+  border-bottom: 2px solid #316ed4;
   padding-bottom: 30px;
 }
 
@@ -733,23 +760,32 @@ button:focus, input:focus, select:focus, video:focus {
 }
 
 .about-usage__text {
+  margin-top: 30px;
   color: #50a5f6;
   font-size: 1rem;
-  line-height: 1.4rem;
+  line-height: 1.4em;
   font-family: 'Arimo', sans-serif;
   font-weight: 700;
+}
+
+.about-usage__text br {
+  display: none;
+}
+
+.about-usage span:nth-of-type(3) {
+  margin-right: 80px;
 }
 
 /*section with information about the benefits - the final section*/
 .about-benefits {
   background: url("../img/bg/bg4.png");
   background-repeat: no-repeat;
-  min-height: 700px !important;
+  min-height: 700px;
   margin-bottom: -72px;
   z-index: 99999999;
-  margin-top: 7px !important;
+  margin-top: 90px;
   background-position: right;
-  background-size: contain !important;
+  background-size: contain;
 }
 
 .about-benefits__image {
@@ -758,11 +794,11 @@ button:focus, input:focus, select:focus, video:focus {
 
 .about-benefits__content {
   padding: 0 15px 0 0;
-  margin: 0;
+  margin-top: 20px;
 }
 
 .about-benefits__title {
-  margin: 0;
+  margin: 0 0 10px;
   color: #0064f9;
   font-size: 2.66rem;
   line-height: 1.2em;
@@ -784,6 +820,10 @@ button:focus, input:focus, select:focus, video:focus {
   font-size: 0.8rem;
   font-family: Arial, serif;
   color: #333;
+}
+
+.about-benefits__text br:nth-of-type(2) {
+  display: none;
 }
 
 .about-benefits__list {
@@ -1107,6 +1147,12 @@ button:focus, input:focus, select:focus, video:focus {
   font-size: 0.6rem;
 }
 
+@media (min-width: 1801px) and (max-width: 1980px) {
+  .about-benefits {
+    background-position: 80%;
+  }
+}
+
 @media (min-width: 1601px) and (max-width: 1800px) {
   .about-benefits {
     background-position: 85%;
@@ -1137,7 +1183,7 @@ button:focus, input:focus, select:focus, video:focus {
   }
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 1199px) {
   .main-form {
     width: 282px;
   }
@@ -1230,6 +1276,16 @@ button:focus, input:focus, select:focus, video:focus {
     width: 200px;
     margin: 0 auto;
   }
+  .about-usage span br:nth-of-type(2) {
+    display: block;
+  }
+  .about-usage span:nth-of-type(3) {
+    margin-right: 0;
+  }
+  .about-benefits__content {
+    width: 485px;
+    padding-right: 40px;
+  }
   .packages .container {
     width: 778px;
   }
@@ -1260,6 +1316,9 @@ button:focus, input:focus, select:focus, video:focus {
     width: 100%;
     display: block;
   }
+  .proof br {
+    display: none;
+  }
   .proof__text {
     text-align: left !important;
   }
@@ -1276,9 +1335,16 @@ button:focus, input:focus, select:focus, video:focus {
   .about-product .magzine-men_fin {
     margin-left: 0;
   }
-  .q-and-a img {
+  .about-product .container {
+    display: -ms-grid;
+    display: grid;
+    gap: 10px;
+    -ms-grid-columns: 5fr 1fr !important;
+        grid-template-columns: 5fr 1fr !important;
+  }
+  .about-product img {
     height: auto;
-    width: 80%;
+    width: 100%;
   }
   .how-it-works {
     background: none;
@@ -1352,6 +1418,7 @@ button:focus, input:focus, select:focus, video:focus {
   }
   .about-usage .container:nth-of-type(2) {
     padding-top: 20px;
+    padding-bottom: 0;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1365,30 +1432,72 @@ button:focus, input:focus, select:focus, video:focus {
             flex-direction: column;
     gap: 30px;
   }
-  .about-benefits {
-    position: static;
+  .about-usage img:nth-of-type(1) {
+    width: 90px;
   }
-  .about-benefits__background {
+  .about-usage img:nth-of-type(2), .about-usage img:nth-of-type(4) {
+    width: 51px;
+  }
+  .about-usage img:nth-of-type(3) {
+    width: 152px;
+  }
+  .about-usage img:nth-of-type(5) {
+    width: 161px;
+  }
+  .about-usage .text-row {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin: auto;
+    height: 650px;
+    -webkit-box-pack: justify !important;
+        -ms-flex-pack: justify !important;
+            justify-content: space-between !important;
+  }
+  .about-usage span {
+    text-align: center;
+    margin: 0;
+  }
+  .about-usage br:nth-of-type(2) {
     display: none;
+  }
+  .about-usage br:nth-of-type(1) {
+    display: none;
+  }
+  .about-benefits {
+    background: none;
+  }
+  .about-benefits__content {
+    width: auto;
+    padding-right: 0;
   }
   .about-benefits__image {
     display: block;
     width: 100%;
     padding: 10px;
+    margin-bottom: 80px;
   }
   .about-benefits__image img {
     width: 100%;
   }
   .about-benefits__title {
+    color: #0987ff;
     width: 100%;
     text-align: center;
     font-size: 1.8rem;
   }
   .about-benefits__subtitle {
+    line-height: 1.4em;
     text-align: center;
   }
   .about-benefits__text {
     font-size: 0.95rem;
+  }
+  .about-benefits__text br:nth-of-type(1) {
+    display: none;
+  }
+  .about-benefits__text br:nth-of-type(2) {
+    display: block;
   }
   .about-benefits__list li {
     font-size: 0.80rem;
@@ -1431,7 +1540,7 @@ button:focus, input:focus, select:focus, video:focus {
     font-size: 2.6rem;
   }
   .about-product__content {
-    width: 100%;
+    width: 120% !important;
   }
   .about-product p {
     font-size: 0.95rem;
@@ -1525,28 +1634,6 @@ button:focus, input:focus, select:focus, video:focus {
   .header-mob {
     display: block;
   }
-  .header-mob_top {
-    background: #2e62b8;
-    color: #fff;
-    font-family: arial;
-    font-size: 0.77rem;
-    text-align: center;
-    padding: 7px;
-  }
-  .header-mob_bottom p {
-    text-align: center;
-    margin-top: 10px;
-    font-family: oswald;
-    font-size: 1.10rem;
-    font-weight: bold;
-  }
-  .header-mob_bottom img {
-    width: 363px;
-    margin: 0 auto;
-    display: block;
-    margin-top: -20px;
-    margin-bottom: 40px;
-  }
   .orange-subtitle {
     font-size: 1.55rem;
   }
@@ -1568,7 +1655,7 @@ button:focus, input:focus, select:focus, video:focus {
     font-size: 1.4rem;
   }
   .proof video {
-    width: 90%;
+    width: 100%;
   }
   .about-product {
     width: 95%;
@@ -1633,10 +1720,10 @@ button:focus, input:focus, select:focus, video:focus {
   }
   .real-stories .video-wrap {
     margin: 0 auto 25px;
-    width: 95%;
+    width: 100%;
   }
   .real-stories .video-wrap video {
-    width: 90%;
+    width: 100%;
   }
   .real-stories .video-wrap span {
     font-size: 1.1rem;
@@ -1645,9 +1732,29 @@ button:focus, input:focus, select:focus, video:focus {
     -webkit-box-pack: start;
         -ms-flex-pack: start;
             justify-content: start;
+    gap: 50px;
   }
   .about-usage__text {
     font-size: 1.20rem;
+  }
+  .about-usage img:nth-of-type(1) {
+    width: 69px;
+  }
+  .about-usage img:nth-of-type(3) {
+    width: 118px;
+  }
+  .about-usage img:nth-of-type(5) {
+    width: 136px;
+  }
+  .about-usage .text-row {
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: start;
+    margin: 0;
+    height: 560px;
+    -webkit-box-pack: justify !important;
+        -ms-flex-pack: justify !important;
+            justify-content: space-between !important;
   }
   .feedback__content-wrap {
     width: 90%;
@@ -1657,6 +1764,9 @@ button:focus, input:focus, select:focus, video:focus {
   }
   .feedback__content_text {
     font-size: 0.92rem;
+  }
+  .about-benefits__title {
+    color: #0987ff;
   }
   .about-benefits__subtitle {
     text-align: center;
@@ -1724,7 +1834,7 @@ button:focus, input:focus, select:focus, video:focus {
     font-size: 1.25rem;
   }
   .header-mob_bottom img {
-    width: 80%;
+    width: 80% !important;
     margin-top: -10px;
     margin-left: auto;
     margin-right: auto;
@@ -1775,6 +1885,9 @@ button:focus, input:focus, select:focus, video:focus {
   .q-and-a__content {
     font-size: 1.6rem;
   }
+  .about-efficiency br {
+    display: none;
+  }
   .about-efficiency__descr {
     font-size: 1.3rem;
   }
@@ -1798,10 +1911,14 @@ button:focus, input:focus, select:focus, video:focus {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
-    gap: 15%;
+    gap: 0;
   }
   .about-usage__text {
     font-size: 1.30rem;
+  }
+  .about-usage .text-row span {
+    max-width: 150px;
+    text-align: left !important;
   }
   .feedback__content_image span {
     font-size: 1.10rem;

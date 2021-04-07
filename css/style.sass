@@ -7,7 +7,6 @@
     padding: 0
     margin: 0
     font-family: "Roboto",sans-serif
-    line-height: 1.4em
     
 button:focus, input:focus, select:focus, video:focus
     outline: none
@@ -19,12 +18,12 @@ $brightBlue: #0064f9
 .main-btn
     background: rgb(255, 26, 13)
     color: #fff
-    font-weight: 400
+    font-weight: 700
     border: none
-    width: 240px
-    height: 48px
-    font-family: 'Oswald', sans-serif
-    font-size: 20px
+    width: 280px
+    height: 60px
+    
+    
     border-radius: 2px
     animation: animated-btn 1s infinite
     &-wrap
@@ -33,6 +32,8 @@ $brightBlue: #0064f9
         justify-content: center
         align-items: center
     a
+        font-size: 22px
+        font-family: "Oswald", sans-serif !important
         text-decoration: none
         color: #fff
 /*fixed button*/
@@ -47,7 +48,6 @@ $brightBlue: #0064f9
     width: 100%
     .main-btn
         font-weight: 700 
-        font-size: 20px
         width: 280px 
         height: 60px
 /*red button for form*/
@@ -70,6 +70,26 @@ $brightBlue: #0064f9
 /*header (top)*/   
 .header-mob   
     display: none
+    &_top
+            background:     rgb(46, 98, 184)
+            color: #fff
+            font-family: arial
+            font-size: 0.77rem
+            text-align: center
+            padding: 7px
+    &_bottom
+            p
+                text-align: center
+                margin-top: 10px
+                font-family: oswald
+                font-size: 1.10rem
+                font-weight: bold
+            img
+                width: 363px
+                margin: 0 auto
+                display: block
+                margin-top: 20px
+                margin-bottom: 40px
 .h-top
     padding-top: 50px
     padding-bottom: 15px
@@ -313,7 +333,8 @@ $brightBlue: #0064f9
             width: 500px
             gap: 25px 
             color: #0e437e
-            
+            img
+                width: 60px
         &__descr
             font-family: 'Arimo', sans-serif
             font-size: 0.68rem
@@ -333,7 +354,7 @@ $brightBlue: #0064f9
     .container
         display: grid
         gap: 10px
-        grid-template-columns: 10fr 1fr 
+        grid-template-columns: 8fr 1fr 
 
     &__content
         color: #376496
@@ -472,7 +493,7 @@ $brightBlue: #0064f9
         border-top: 2px solid $orange
         padding-top: 30px 
     .container:nth-of-type(2)
-        border-bottom: 2px solid $brightBlue
+        border-bottom: 2px solid #316ed4
         padding-bottom: 30px 
     &__title
         color: #333
@@ -484,29 +505,34 @@ $brightBlue: #0064f9
             font-family: 'Open Sans Condensed', sans-serif
             color: $brightBlue
     &__text
+        margin-top: 30px
         color: #50a5f6
         font-size: 1rem
-        line-height: 1.4rem
+        line-height: 1.4em
         font-family: 'Arimo', sans-serif
         font-weight: 700
+        br
+            display: none
+    span:nth-of-type(3)
+        margin-right: 80px
 
 /*section with information about the benefits - the final section*/
 .about-benefits
     background: url('../img/bg/bg4.png')
     background-repeat: no-repeat
-    min-height: 700px !important
+    min-height: 700px 
     margin-bottom: -72px
     z-index: 99999999
-    margin-top: 7px !important
+    margin-top: 90px 
     background-position: right
-    background-size: contain !important
+    background-size: contain 
     &__image
         display: none
     &__content
         padding: 0 15px 0 0
-        margin: 0
+        margin-top: 20px
     &__title
-        margin: 0
+        margin: 0 0 10px
         color: $brightBlue
         font-size: 2.66rem
         line-height: 1.2em
@@ -524,6 +550,8 @@ $brightBlue: #0064f9
         font-size: 0.8rem
         font-family: Arial, serif
         color: #333
+        br:nth-of-type(2)
+                display: none
     &__list
         margin-top: 20px
         margin-left: 30px
@@ -722,6 +750,9 @@ $brightBlue: #0064f9
         .footer__text
             font-size: 0.6rem
 
+@media (min-width: 1801px) and (max-width: 1980px)
+    .about-benefits 
+        background-position: 80% 
 
 @media  (min-width: 1601px) and (max-width: 1800px)
     .about-benefits
@@ -745,7 +776,7 @@ $brightBlue: #0064f9
 
     
 
-@media ( max-width: 1200px  )
+@media ( max-width: 1199px  )
     .main-form
         width: 282px 
         input, select
@@ -822,9 +853,19 @@ $brightBlue: #0064f9
                 
                 width: 200px
                 margin: 0 auto
+    .about-usage
+        span
+            br:nth-of-type(2)
+               display: block
+        span:nth-of-type(3)
+            margin-right: 0  
+    .about-benefits__content
+        width: 485px
+        padding-right: 40px
     .packages
         .container
             width: 778px
+            
 
 
 @media ( max-width: 1024px  )
@@ -846,6 +887,8 @@ $brightBlue: #0064f9
             width: 100%
             display: block
     .proof
+        br
+            display: none
         &__text
             text-align: left !important
         video
@@ -858,10 +901,14 @@ $brightBlue: #0064f9
             width: 441px
         .magzine-men_fin
             margin-left: 0
-    .q-and-a
+    
+        .container
+                display: grid
+                gap: 10px
+                grid-template-columns: 5fr 1fr !important
         img
             height: auto
-            width: 80%
+            width: 100%
     .how-it-works
         background: none
         &__content
@@ -925,30 +972,61 @@ $brightBlue: #0064f9
     .about-usage
         .container:nth-of-type(2)
             padding-top: 20px
+            padding-bottom: 0
             display: flex
             justify-content: space-around
             
             .col-lg-12
                 flex-direction: column
                 gap: 30px
-    .about-benefits
-        position: static
-        &__background
+        img:nth-of-type(1)
+            width: 90px
+        img:nth-of-type(2), img:nth-of-type(4)
+            width: 51px
+        img:nth-of-type(3)
+            width: 152px
+        img:nth-of-type(5)
+            width: 161px
+        .text-row
+            align-items: center
+            margin: auto
+            height: 650px
+            justify-content: space-between !important
+        span
+            text-align: center
+            margin: 0
+        br:nth-of-type(2)
             display: none
+        br:nth-of-type(1)
+            display: none
+    .about-benefits
+        background: none
+        &__content
+            
+            width: auto
+            padding-right: 0
+            
         &__image
             display: block
             width: 100%
             padding: 10px
+            margin-bottom: 80px
             img
                 width: 100%
         &__title
+            color: rgb(9, 135, 255)
             width: 100%
             text-align: center
             font-size: 1.8rem
         &__subtitle
+            line-height: 1.4em
             text-align: center
         &__text
             font-size: 0.95rem
+            br:nth-of-type(1)
+                display: none
+            br:nth-of-type(2)
+                display: block
         &__list
             li
                 font-size: 0.80rem
@@ -981,7 +1059,7 @@ $brightBlue: #0064f9
         &__title
             font-size: 2.6rem
         &__content
-          width: 100% 
+          width: 120% !important
         p
             font-size: 0.95rem
         .magzine-men_fin
@@ -1061,26 +1139,7 @@ $brightBlue: #0064f9
 @media (max-width: 767px)
     .header-mob   
         display: block
-        &_top
-            background:     rgb(46, 98, 184)
-            color: #fff
-            font-family: arial
-            font-size: 0.77rem
-            text-align: center
-            padding: 7px
-        &_bottom
-            p
-                text-align: center
-                margin-top: 10px
-                font-family: oswald
-                font-size: 1.10rem
-                font-weight: bold
-            img
-                width: 363px
-                margin: 0 auto
-                display: block
-                margin-top: -20px
-                margin-bottom: 40px
+        
     .orange-subtitle
         font-size: 1.55rem
     .h-top
@@ -1098,7 +1157,7 @@ $brightBlue: #0064f9
         &__text
             font-size: 1.4rem    
         video
-            width: 90%
+            width: 100%
     .about-product
         width: 95%
         p
@@ -1106,6 +1165,7 @@ $brightBlue: #0064f9
     .physicians-choice
         &__subtitle
             font-size: 1.55rem
+        
         video
             width: 100%
         .dr, .dr-name
@@ -1152,17 +1212,30 @@ $brightBlue: #0064f9
     .real-stories
         .video-wrap
             margin: 0 auto 25px
-            width: 95%
+            width: 100%
             video
-                width: 90%
+                width: 100%
             span
                 font-size: 1.1rem
     .about-usage
         .container:nth-of-type(2)
             justify-content: start
+            gap: 50px
             
         &__text
             font-size: 1.20rem
+   
+        img:nth-of-type(1)
+            width: 69px
+        img:nth-of-type(3)
+            width: 118px
+        img:nth-of-type(5)
+            width: 136px
+        .text-row
+            align-items: start
+            margin: 0
+            height: 560px
+            justify-content: space-between !important
     .feedback
         &__content
             &-wrap
@@ -1173,6 +1246,8 @@ $brightBlue: #0064f9
             &_text
                 font-size: 0.92rem
     .about-benefits
+        &__title
+            color: rgb(9, 135, 255)
         &__subtitle
             text-align: center
         &__text
@@ -1226,9 +1301,8 @@ $brightBlue: #0064f9
         &_bottom
             p
                 font-size: 1.25rem
-
             img
-                width: 80%
+                width: 80% !important
                 margin-top: -10px
                 margin-left: auto 
                 margin-right: auto 
@@ -1271,8 +1345,11 @@ $brightBlue: #0064f9
                     font-size: 1.25rem
                     font-family: 'Roboto', sans-serif
     .q-and-a__content
+
         font-size: 1.6rem
     .about-efficiency
+        br
+            display: none
         &__descr
             font-size: 1.3rem
         &__content
@@ -1293,10 +1370,14 @@ $brightBlue: #0064f9
     .about-usage
         .container:nth-of-type(2)
             justify-content: space-between
-            gap: 15%
+            gap: 0
         &__text
             
             font-size: 1.30rem
+        .text-row 
+            span
+                max-width: 150px
+                text-align: left !important
     .feedback
         &__content
             &_image
