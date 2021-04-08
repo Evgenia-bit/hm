@@ -11,6 +11,11 @@
   font-family: "Roboto",sans-serif;
 }
 
+body {
+  width: 100vw;
+  overflow-x: hidden;
+}
+
 button:focus, input:focus, select:focus, video:focus {
   outline: none;
 }
@@ -510,7 +515,7 @@ button:focus, input:focus, select:focus, video:focus {
           align-items: center;
   margin-bottom: 35px;
   width: 500px;
-  gap: 25px;
+  gap: 25px !important;
   color: #0e437e;
 }
 
@@ -1775,6 +1780,9 @@ button:focus, input:focus, select:focus, video:focus {
   .feedback__content_text {
     font-size: 0.92rem;
   }
+  .about-benefits__content {
+    width: 100% !important;
+  }
   .about-benefits__title {
     color: #0987ff;
   }
@@ -1987,6 +1995,15 @@ button:focus, input:focus, select:focus, video:focus {
 }
 
 @media (max-width: 345px) {
+  .feedback__content_image {
+    width: 100%;
+  }
+  .feedback__content_image .human {
+    width: 100%;
+  }
+  .fixed-btn {
+    width: 100%;
+  }
   .timer {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
