@@ -510,9 +510,6 @@ button:focus, input:focus, select:focus, video:focus {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   margin-bottom: 35px;
   width: 500px;
   gap: 25px !important;
@@ -520,7 +517,8 @@ button:focus, input:focus, select:focus, video:focus {
 }
 
 .how-it-works .advanteges__item img {
-  width: 60px;
+  width: 60px !important;
+  height: 60px !important;
 }
 
 .how-it-works .advanteges__descr {
