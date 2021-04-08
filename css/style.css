@@ -175,10 +175,6 @@ button:focus, input:focus, select:focus, video:focus {
   margin-top: 30px;
 }
 
-.h-bottom .image-row-top img {
-  width: 100%;
-}
-
 .h-bottom .image-row-bottom img {
   margin-top: 20px;
   width: 81%;
