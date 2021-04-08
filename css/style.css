@@ -775,7 +775,7 @@ button:focus, input:focus, select:focus, video:focus {
   min-height: 700px;
   margin-bottom: -72px;
   z-index: 12;
-  margin-top: 80px;
+  margin-top: 60px;
   background-position: right;
   background-size: contain;
 }
@@ -845,7 +845,7 @@ button:focus, input:focus, select:focus, video:focus {
 .footer {
   position: relative;
   z-index: -2;
-  padding: 80px 0px 40px;
+  padding: 40px 0px 40px;
   background-color: #424362;
   color: #fff;
   font-size: 14px;
@@ -853,7 +853,7 @@ button:focus, input:focus, select:focus, video:focus {
 
 .footer img {
   width: 135px;
-  margin-bottom: 20px;
+  margin-bottom: 5px;
 }
 
 .footer .copyright {
@@ -1152,15 +1152,27 @@ button:focus, input:focus, select:focus, video:focus {
   }
 }
 
-@media (min-width: 1600px) {
-  .h-top {
-    height: 100vh;
+@media (min-width: 1430px) and (max-width: 1600px) {
+  .about-benefits {
+    background-position: 95%;
   }
 }
 
-@media (max-width: 1600px) {
-  .about-benefits__background {
-    right: 0;
+@media (min-width: 1308px) and (max-width: 1430px) {
+  .about-benefits {
+    background-position: 100%;
+  }
+}
+
+@media (max-width: 1307px) {
+  .about-benefits {
+    background-position: 110%;
+  }
+}
+
+@media (min-width: 1600px) {
+  .h-top {
+    height: 100vh;
   }
 }
 
@@ -1173,6 +1185,12 @@ button:focus, input:focus, select:focus, video:focus {
 @media (max-width: 1280px) {
   html {
     font-size: calc(0.8rem + 1.2 * ((100vw - 20rem) / 80));
+  }
+  .about-benefits__content {
+    width: 585px !important;
+  }
+  .about-benefits__title {
+    width: 500px;
   }
 }
 

@@ -522,7 +522,7 @@ $brightBlue: #0064f9
     min-height: 700px 
     margin-bottom: -72px
     z-index: 12
-    margin-top: 80px 
+    margin-top: 60px 
     background-position: right
     background-size: contain 
     &__image
@@ -569,13 +569,13 @@ $brightBlue: #0064f9
 .footer
     position: relative
     z-index: -2
-    padding: 80px 0px 40px
+    padding: 40px 0px 40px
     background-color: rgb(66, 67, 98)
     color: #fff
     font-size: 14px
     img
         width: 135px
-        margin-bottom: 20px
+        margin-bottom: 5px
     .copyright
         font-size: 12.8px
         font-weight: 300
@@ -755,25 +755,38 @@ $brightBlue: #0064f9
     .about-benefits 
         background-position: 80% 
 
-@media  (min-width: 1601px) and (max-width: 1800px)
+@media (min-width: 1601px) and (max-width: 1800px)
     .about-benefits
         background-position: 85% 
+@media (min-width: 1430px) and (max-width: 1600px)
+    .about-benefits
+        background-position: 95% 
+    
+@media (min-width: 1308px) and (max-width: 1430px)
+    .about-benefits
+        background-position: 100% 
 
-
+@media (max-width: 1307px)
+    .about-benefits
+        background-position: 110% 
 @media (min-width: 1600px)          
     .h-top
        height: 100vh
-@media ( max-width: 1600px )
-    .about-benefits__background
-        right: 0
+
+
         
 
 @media (min-width: 1281px)
     html 
         font-size: 1.6rem
+    
 @media (max-width: 1280px)
     html 
         font-size: calc(0.8rem + 1.2 * ((100vw - 20rem) / 80))
+    .about-benefits__content
+        width: 585px !important
+    .about-benefits__title
+        width: 500px 
 
     
 
