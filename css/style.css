@@ -22,6 +22,10 @@ button:focus, input:focus, select:focus, video:focus {
 
 /*main-color*/
 /*red button*/
+.wrapper {
+  margin: 0 auto;
+}
+
 .main-btn {
   background: #ff1a0d;
   color: #fff;
@@ -144,7 +148,7 @@ button:focus, input:focus, select:focus, video:focus {
 .h-top {
   padding-top: 50px;
   background: url("../img/first-screen/14181069_1604043357394background-image.jpg") no-repeat center top;
-  background-size: cover;
+  background: cover;
 }
 
 .h-top .first-screen-image {
@@ -567,7 +571,6 @@ button:focus, input:focus, select:focus, video:focus {
   margin-top: 25px;
   background: url("../img/bg/bg2.jpg") no-repeat center center;
   background-size: 100% 100%;
-  height: 50vw;
 }
 
 .what-to-expect .container {
@@ -1166,12 +1169,6 @@ button:focus, input:focus, select:focus, video:focus {
 @media (max-width: 1307px) {
   .about-benefits {
     background-position: 110%;
-  }
-}
-
-@media (min-width: 1600px) {
-  .h-top {
-    height: 100vh;
   }
 }
 
