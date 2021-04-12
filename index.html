@@ -121,7 +121,7 @@
             <div class="h-top">
                 <img class="first-screen-mob" src="img/first-screen/first-screen-mob.jpg" alt="hair-man" width="100%">
                 <div class="container">
-                    
+
                     <div class="row">
                         <div class="col-lg-2"></div>
                         <div class="col-lg-7 text-right">
@@ -1005,6 +1005,9 @@
         } else {
             document.querySelector('.what-to-expect').style.height = document.querySelector('.wrapper').offsetWidth / 2 + 'px';
         }
+        window.addEventListener('orientationchange', () => {
+            document.querySelector('.wrapper').style.width = '100vw'
+        });
         window.addEventListener('resize', () => {
             if (mediaQuery.matches) {
                 document.querySelector('.wrapper').style.width = screenWidth + 'px';
@@ -1022,7 +1025,8 @@
                 document.querySelector('.h-top').style.height = 'auto';
             }
         })
-        window.addEventListener('orientationchange', () => document.querySelector('.wrapper').style.width = '100%');
+
+
 
 
 
