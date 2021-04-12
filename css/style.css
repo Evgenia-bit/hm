@@ -135,14 +135,13 @@ button:focus, input:focus, select:focus, video:focus {
   font-family: oswald;
   font-size: 1.10rem;
   font-weight: bold;
+  margin-bottom: 20px;
 }
 
 .header-mob_bottom img {
   width: 363px;
-  margin: 0 auto;
+  margin: 40px auto 40px;
   display: block;
-  margin-top: 20px;
-  margin-bottom: 40px;
 }
 
 .h-top {

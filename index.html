@@ -906,9 +906,6 @@
             </div>
         </section>
         <section class="about-benefits">
-            <!--<div class="about-benefits__background">
-            <img src="img/bg/bg4.png" alt="" width="100%">
-        </div>-->
             <div class="container">
                 <div class="row">
                     <div class="col-xl-7 col-lg-12">
@@ -987,27 +984,46 @@
     <script>
 
         const screenWidth = window.screen.width;
-        console.log(screenWidth)
-        document.querySelector('.wrapper').style.width = screenWidth + 'px';
-        const mediaQuery = window.matchMedia('(min-width: 1600px)')
-        if (window.innerWidth <= document.querySelector('.wrapper').offsetWidth) {
-            document.querySelector('.wrapper').style.width = '100vw'
-        } else {
-            document.querySelector('.wrapper').style.width = screenWidth + 'px';
-        }
+        const screenHeight = window.screen.height;
+        const mediaQuery = window.matchMedia('(min-width: ' + screenWidth + 'px)')
+        const mediaQuery2 = window.matchMedia('(max-width: 1199px)')
         if (mediaQuery.matches) {
-            document.querySelector('.h-top').style.height = window.innerHeight + 'px';
+            document.querySelector('.wrapper').style.width = screenWidth + 'px';
+
+        } else {
+            document.querySelector('.wrapper').style.width = 'auto'
+
+        }
+        if (window.matchMedia('(min-width: 1600px)').matches) {
+            document.querySelector('.h-top').style.height = screenHeight + 'px';
+        } else {
+            document.querySelector('.h-top').style.height = 'auto';
+        }
+        if (mediaQuery2.matches) {
+            document.querySelector('.what-to-expect').style.height = 'auto';
+        } else {
+            document.querySelector('.what-to-expect').style.height = document.querySelector('.wrapper').offsetWidth / 2 + 'px';
         }
         window.addEventListener('resize', () => {
-            if (window.innerWidth < document.querySelector('.wrapper').offsetWidth) {
-                document.querySelector('.wrapper').style.width = '100vw'
-            } else {
+            if (mediaQuery.matches) {
                 document.querySelector('.wrapper').style.width = screenWidth + 'px';
+            } else {
+                document.querySelector('.wrapper').style.width = 'auto';
+            }
+            if (mediaQuery2.matches) {
+                document.querySelector('.what-to-expect').style.height = 'auto';
+            } else {
+                document.querySelector('.what-to-expect').style.height = document.querySelector('.wrapper').offsetWidth / 2 + 'px';
+            }
+            if (window.matchMedia('(min-width: 1600px)').matches) {
+                document.querySelector('.h-top').style.height = screenHeight + 'px';
+            } else {
+                document.querySelector('.h-top').style.height = 'auto';
             }
         })
 
 
-        document.querySelector('.what-to-expect').style.height = document.querySelector('.wrapper').offsetWidth / 2 + 'px';
+
 
     </script>
 
