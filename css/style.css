@@ -599,8 +599,7 @@ button:focus, input:focus, select:focus, video:focus {
   padding: 70px 0;
   color: #28598e;
   font-family: 'Arimo', sans-serif;
-  background: url("../img/bg/bg3.jpg") no-repeat center center;
-  background-size: cover;
+  background: url("../img/bg/bg3.jpg") no-repeat center right;
 }
 
 .about-efficiency__title {
