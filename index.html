@@ -1006,7 +1006,7 @@
             document.querySelector('.what-to-expect').style.height = document.querySelector('.wrapper').offsetWidth / 2 + 'px';
         }
         window.addEventListener('orientationchange', () => {
-            document.querySelector('.container').style.width = '100vw'
+            setTimeout("document.querySelector('.wrapper').style.width = '100vw'", 100);
         });
         window.addEventListener('resize', () => {
             if (mediaQuery.matches) {
