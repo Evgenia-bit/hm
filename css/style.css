@@ -568,7 +568,9 @@ button:focus, input:focus, select:focus, video:focus {
 /*section What to expect*/
 .what-to-expect {
   margin-top: 25px;
-  background: url("../img/bg/bg2.jpg") no-repeat center center;
+  background-image: url("../img/bg/bg2.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
   background-size: 100% 100%;
 }
 
@@ -687,6 +689,17 @@ button:focus, input:focus, select:focus, video:focus {
   padding: 40px 0 60px;
 }
 
+.feedback-wrap {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  grid-gap: 25px;
+}
+
 .feedback__title, .feedback__subtitle {
   font-family: 'Oswald', sans-serif;
   font-weight: 800;
@@ -702,7 +715,7 @@ button:focus, input:focus, select:focus, video:focus {
   display: -ms-flexbox;
   display: flex;
   gap: 30px;
-  width: 555px;
+  width: auto;
   height: 310px;
   background: #eee;
   padding: 25px;
@@ -1218,19 +1231,6 @@ button:focus, input:focus, select:focus, video:focus {
   .real-stories .video-wrap video {
     width: 670px;
   }
-  .feedback__content-wrap {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    width: 720px;
-    height: auto;
-    margin: 0 auto 25px;
-  }
-  .feedback__content_image {
-    width: 200px;
-    margin: 0 auto;
-  }
   .about-usage span br:nth-of-type(2) {
     display: block;
   }
@@ -1249,7 +1249,7 @@ button:focus, input:focus, select:focus, video:focus {
 @media (max-width: 1023px) {
   .what-to-expect {
     background-image: none;
-    background: #6dcff6;
+    background-color: #6dcff6;
     height: auto;
     padding: 40px 0;
   }
@@ -1298,6 +1298,19 @@ button:focus, input:focus, select:focus, video:focus {
     color: #353535;
     padding: 10px;
   }
+  .feedback__content-wrap {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 720px;
+    height: auto;
+    margin: 0 auto;
+  }
+  .feedback__content_image {
+    width: 200px;
+    margin: 0 auto;
+  }
 }
 
 @media (max-width: 1024px) {
@@ -1342,7 +1355,7 @@ button:focus, input:focus, select:focus, video:focus {
     width: 441px;
   }
   .about-product .magzine-men_fin {
-    margin-left: 0;
+    margin-left: 150px;
   }
   .about-product .container {
     display: -ms-grid;
@@ -1353,10 +1366,10 @@ button:focus, input:focus, select:focus, video:focus {
   }
   .about-product img {
     height: auto;
-    width: 100%;
+    width: 100% !important;
   }
   .what-to-expect {
-    background-image: url("../img/bg/TABLET 3 guys banner PNG.png") no-repeat center center;
+    background-image: url("../img/bg/TABLET 3 guys banner PNG.png");
     margin-bottom: -30px;
   }
   .how-it-works {
@@ -1394,6 +1407,17 @@ button:focus, input:focus, select:focus, video:focus {
   }
   .what-to-expect img {
     width: 100%;
+  }
+  .feedback-wrap {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    gap: 0;
+  }
+  .feedback-wrap .feedback__content-wrap {
+    max-width: 500px;
   }
   .about-usage .container:nth-of-type(2) {
     padding-top: 20px;
@@ -1525,6 +1549,7 @@ button:focus, input:focus, select:focus, video:focus {
     font-size: 0.95rem;
   }
   .about-product .magzine-men_fin {
+    margin: 0 auto;
     width: 100%;
   }
   .about-product .main-btn-wrap {
