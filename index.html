@@ -639,23 +639,22 @@
 
                     </li>
                     <li>
-                        Increase Volume
+                        Reduce Hair Loss
+                        
 
                     </li>
                     <li>
-                        Reduce Hair Loss
+                        Increase Volume
                         ​</li>
                     <li>
                         Grow Their Hair Faster
 
                     </li>
-                    <li>
-                        Make Hair Look Healthier
-                    </li>
                 </ul>
-                <p><b>Bottom Line: It Works and it's Great for your Hair!</b></p>
+                <p><b><span>Bottom Line:</span> It Works<br> and it's Great for your Hair!</b></p>
 
             </div>
+            
         </section>
         <section class="hair-rescue">
             <div class="container">
@@ -1001,12 +1000,12 @@
         const screenHeight = window.screen.height;
         const mediaQuery = window.matchMedia('(min-width: ' + screenWidth + 'px)')
         const mediaQuery2 = window.matchMedia('(max-width: 1023px)')
+        const mediaQuery3 = window.matchMedia('(max-width: 1024px)')
         if (mediaQuery.matches) {
             document.querySelector('.wrapper').style.width = screenWidth + 'px';
 
         } else {
             document.querySelector('.wrapper').style.width = '100vw'
-
         }
         if (window.matchMedia('(min-width: 1600px)').matches) {
             document.querySelector('.h-top').style.height = screenHeight + 'px';
@@ -1018,10 +1017,16 @@
         } else {
             document.querySelector('.what-to-expect').style.height = document.querySelector('.wrapper').offsetWidth / 2 + 'px';
         }
+        if (mediaQuery3.matches) {
+            document.querySelector('.what-to-expect').style.height = '750px';
+        } 
         window.addEventListener('orientationchange', () => {
             setTimeout("document.querySelector('.wrapper').style.width = '100vw'", 800);
         });
         window.addEventListener('resize', () => {
+            if (mediaQuery3.matches) {
+            document.querySelector('.what-to-expect').style.height = '750px';
+        } 
             if (mediaQuery.matches) {
                 document.querySelector('.wrapper').style.width = screenWidth + 'px';
             } else {

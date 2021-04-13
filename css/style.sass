@@ -395,7 +395,9 @@ $brightBlue: #0064f9
     padding: 70px 0
     color: #28598e
     font-family: 'Arimo', sans-serif
-    background: url('../img/bg/bg3.jpg') no-repeat center center
+    background-image: url('../img/bg/bg3.jpg') 
+    background-repeat: no-repeat
+    background-position: center center
     background-size: cover
     &__title
    
@@ -839,7 +841,9 @@ $brightBlue: #0064f9
             width: 778px
             
 @media ( max-width: 1023px )
-     .what-to-expect
+    .hair-rescue
+        display: none
+    .what-to-expect
         background-image: none !important
         background-color: rgb(109, 207, 246)
         height: auto
@@ -881,7 +885,7 @@ $brightBlue: #0064f9
                     font-weight: 400  
                     color: #353535
                     padding: 10px
-     .feedback
+    .feedback
         &__content
             &-wrap
                 flex-direction: column
@@ -895,8 +899,7 @@ $brightBlue: #0064f9
     
 
 @media ( max-width: 1024px  )
-    .main-btn-wrap
-            display: none
+    
     .fixed-btn
         display: flex
     .main-form
@@ -919,7 +922,7 @@ $brightBlue: #0064f9
         &__text
             text-align: left !important
         video
-            width: 720px
+            width: 720px 
     .about-product
         width: 940px
         margin: 0 auto
@@ -936,9 +939,52 @@ $brightBlue: #0064f9
         img
             height: auto
             width: 100% !important
+    .hair-rescue
+        margin-top: -100px
     .what-to-expect
-        background-image: url('../img/bg/TABLET 3 guys banner PNG.png') 
+        background-image: url('../img/bg/Tablet 1024 X 740 ..png')
+        background-size: cover
         margin-bottom: -30px
+        position: relative
+
+        &__subtitle
+            display: none
+        &__list
+            width: fit-content
+            margin: 10px auto
+            li
+                font-family: 'Arimo', sans-serif
+                font-weight: 600
+                font-size: 22px
+                color: #0e437e 
+                list-style-image: url('../img/list-marker/check mark white no bkr.png')
+        .container
+            display: block
+            width: 420px
+            position: absolute
+            right: 0
+            top: 170px
+            p
+                
+                font-size: 21.5px
+                font-family: 'Arimo', sans-serif
+                color: #0e437e 
+                width: 400px
+                display: block
+                span
+                    font-weight: 700
+                    font-style: normal
+                b
+                    display: block
+                    margin-left: 60px
+                    font-size: 26px
+                    font-weight: normal
+                    font-style: italic
+
+            h2
+                display: none
+            img
+                display: none
     .how-it-works
         background: none
         &__content
@@ -965,8 +1011,7 @@ $brightBlue: #0064f9
                 span
                     font-family: 'Arimo', sans-serif
                     font-size: 20px
-    .hair-rescue
-        display: none
+    
     .what-to-expect
         img
             width: 100%

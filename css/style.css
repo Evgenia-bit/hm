@@ -601,7 +601,9 @@ button:focus, input:focus, select:focus, video:focus {
   padding: 70px 0;
   color: #28598e;
   font-family: 'Arimo', sans-serif;
-  background: url("../img/bg/bg3.jpg") no-repeat center center;
+  background-image: url("../img/bg/bg3.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
   background-size: cover;
 }
 
@@ -1247,6 +1249,9 @@ button:focus, input:focus, select:focus, video:focus {
 }
 
 @media (max-width: 1023px) {
+  .hair-rescue {
+    display: none;
+  }
   .what-to-expect {
     background-image: none !important;
     background-color: #6dcff6;
@@ -1314,9 +1319,6 @@ button:focus, input:focus, select:focus, video:focus {
 }
 
 @media (max-width: 1024px) {
-  .main-btn-wrap {
-    display: none;
-  }
   .fixed-btn {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1368,9 +1370,61 @@ button:focus, input:focus, select:focus, video:focus {
     height: auto;
     width: 100% !important;
   }
+  .hair-rescue {
+    margin-top: -100px;
+  }
   .what-to-expect {
-    background-image: url("../img/bg/TABLET 3 guys banner PNG.png");
+    background-image: url("../img/bg/Tablet 1024 X 740 ..png");
+    background-size: cover;
     margin-bottom: -30px;
+    position: relative;
+  }
+  .what-to-expect__subtitle {
+    display: none;
+  }
+  .what-to-expect__list {
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    margin: 10px auto;
+  }
+  .what-to-expect__list li {
+    font-family: 'Arimo', sans-serif;
+    font-weight: 600;
+    font-size: 22px;
+    color: #0e437e;
+    list-style-image: url("../img/list-marker/check mark white no bkr.png");
+  }
+  .what-to-expect .container {
+    display: block;
+    width: 420px;
+    position: absolute;
+    right: 0;
+    top: 170px;
+  }
+  .what-to-expect .container p {
+    font-size: 21.5px;
+    font-family: 'Arimo', sans-serif;
+    color: #0e437e;
+    width: 400px;
+    display: block;
+  }
+  .what-to-expect .container p span {
+    font-weight: 700;
+    font-style: normal;
+  }
+  .what-to-expect .container p b {
+    display: block;
+    margin-left: 60px;
+    font-size: 26px;
+    font-weight: normal;
+    font-style: italic;
+  }
+  .what-to-expect .container h2 {
+    display: none;
+  }
+  .what-to-expect .container img {
+    display: none;
   }
   .how-it-works {
     background: none;
@@ -1401,9 +1455,6 @@ button:focus, input:focus, select:focus, video:focus {
   .how-it-works .advanteges__item span {
     font-family: 'Arimo', sans-serif;
     font-size: 20px;
-  }
-  .hair-rescue {
-    display: none;
   }
   .what-to-expect img {
     width: 100%;
