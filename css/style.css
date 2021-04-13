@@ -1248,7 +1248,7 @@ button:focus, input:focus, select:focus, video:focus {
 
 @media (max-width: 1023px) {
   .what-to-expect {
-    background-image: none;
+    background-image: none !important;
     background-color: #6dcff6;
     height: auto;
     padding: 40px 0;
