@@ -393,8 +393,8 @@ $brightBlue: #0064f9
     padding: 70px 0
     color: #28598e
     font-family: 'Arimo', sans-serif
-    background: url('../img/bg/bg3.jpg') no-repeat center right
-  
+    background: url('../img/bg/bg3.jpg') no-repeat center center
+    background-size: cover
     &__title
    
         font-size: 2rem
@@ -809,7 +809,40 @@ $brightBlue: #0064f9
         .magzine-men_fin
             width: 498px
             margin-left: 50px
-    .what-to-expect
+   
+    .real-stories
+        .video-wrap
+            width: 720px
+            margin: 0 auto 25px
+            video
+                width: 670px
+    .feedback
+        &__content
+            &-wrap
+                flex-direction: column
+                width: 720px
+                height: auto
+                margin: 0 auto 25px
+            &_image
+                
+                width: 200px
+                margin: 0 auto
+    .about-usage
+        span
+            br:nth-of-type(2)
+               display: block
+        span:nth-of-type(3)
+            margin-right: 0  
+    .about-benefits__content
+        width: 485px
+        padding-right: 40px
+    .packages
+        .container
+            width: 778px
+            
+@media ( max-width: 1023px )
+     .what-to-expect
+        background-image: none
         background: rgb(109, 207, 246)
         height: auto
         padding: 40px 0
@@ -848,39 +881,10 @@ $brightBlue: #0064f9
                     font-size: 22px
                     font-family: 'Arimo', sans-serif
                     font-weight: 400  
-                    color: #353535   
+                    color: #353535
                     padding: 10px
-    .real-stories
-        .video-wrap
-            width: 720px
-            margin: 0 auto 25px
-            video
-                width: 670px
-    .feedback
-        &__content
-            &-wrap
-                flex-direction: column
-                width: 720px
-                height: auto
-                margin: 0 auto 25px
-            &_image
-                
-                width: 200px
-                margin: 0 auto
-    .about-usage
-        span
-            br:nth-of-type(2)
-               display: block
-        span:nth-of-type(3)
-            margin-right: 0  
-    .about-benefits__content
-        width: 485px
-        padding-right: 40px
-    .packages
-        .container
-            width: 778px
-            
 
+    
 
 @media ( max-width: 1024px  )
     .main-btn-wrap
@@ -924,6 +928,9 @@ $brightBlue: #0064f9
         img
             height: auto
             width: 100%
+    .what-to-expect
+        background-image: url('../img/bg/TABLET 3 guys banner PNG.png') no-repeat center center
+        margin-bottom: -30px
     .how-it-works
         background: none
         &__content
@@ -955,34 +962,7 @@ $brightBlue: #0064f9
     .what-to-expect
         img
             width: 100%
-    .about-efficiency
-        padding: 50px 0
-        background-image: none
-        background-color:   rgb(220, 243, 255)
-        &__title
-            text-align: center
-            font-weight: 300
-            margin-bottom: 10px
-            display: block
-            font-size: 2.33rem
-            color: rgb(9, 135, 255)
-            font-family: 'Oswald', sans-serif
-            .blue-text
-                font-family: 'Oswald', sans-serif
-        &__image
-            display: block
-            width: 100%
-            margin: 15px auto
-        &__descr
-                color: rgb(51, 51, 51)
-                font-family: arial
-        &__content
-            li
-                line-height: 1.5
-                span
-                    font-weight: bold
-                    font-family: arial
-                    color: rgb(9, 135, 255)
+    
                   
     .about-usage
         .container:nth-of-type(2)
@@ -1104,6 +1084,34 @@ $brightBlue: #0064f9
                 font-size: 0.77rem
     .q-and-a__content
         font-size: 1.5rem
+    .about-efficiency
+        padding: 50px 0
+        background-image: none
+        background-color:   rgb(220, 243, 255)
+        &__title
+            text-align: center
+            font-weight: 300
+            margin-bottom: 10px
+            display: block
+            font-size: 2.33rem
+            color: rgb(9, 135, 255)
+            font-family: 'Oswald', sans-serif
+            .blue-text
+                font-family: 'Oswald', sans-serif
+        &__image
+            display: block
+            width: 100%
+            margin: 15px auto
+        &__descr
+                color: rgb(51, 51, 51)
+                font-family: arial
+        &__content
+            li
+                line-height: 1.5
+                span
+                    font-weight: bold
+                    font-family: arial
+                    color: rgb(9, 135, 255)
     .about-efficiency
         &__descr
             font-size: 1.1rem
