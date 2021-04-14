@@ -2033,33 +2033,33 @@ button:focus, input:focus, select:focus, video:focus {
   }
 }
 
-@media only screen and (device-width: 320px) and (orientation: landscape) {
+@media (max-width: 1600px) and (orientation: landscape) {
   body {
-    width: auto !important;
+    width: 100vw !important;
   }
   .wrapper {
-    width: auto  !important;
+    width: 100vw  !important;
   }
   .container {
-    width: auto  !important;
+    width: 100vw  !important;
   }
   section {
-    width: auto  !important;
+    width: 100vw  !important;
   }
 }
 
-@media (orientation: portrait) {
+@media (max-width: 1600px) and (orientation: portrait) {
   body {
-    width: auto  !important;
+    width: 100vw  !important;
   }
   .wrapper {
-    width: auto  !important;
+    width: 100vw  !important;
   }
   .container {
-    width: auto !important;
+    width: 100vw !important;
   }
   section {
-    width: auto  !important;
+    width: 100vw !important;
   }
 }
 /*# sourceMappingURL=style.css.map */
