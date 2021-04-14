@@ -601,7 +601,9 @@ button:focus, input:focus, select:focus, video:focus {
   padding: 70px 0;
   color: #28598e;
   font-family: 'Arimo', sans-serif;
-  background: url("../img/bg/bg3.jpg") no-repeat center center;
+  background-image: url("../img/bg/bg3.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
   background-size: cover;
 }
 
@@ -708,6 +710,10 @@ button:focus, input:focus, select:focus, video:focus {
 .feedback__subtitle {
   display: block;
   margin-bottom: 30px;
+}
+
+.feedback__subtitle br {
+  display: none;
 }
 
 .feedback__content-wrap {
@@ -1246,77 +1252,7 @@ button:focus, input:focus, select:focus, video:focus {
   }
 }
 
-@media (max-width: 1023px) {
-  .what-to-expect {
-    background-image: none !important;
-    background-color: #6dcff6;
-    height: auto;
-    padding: 40px 0;
-  }
-  .what-to-expect .container {
-    display: block;
-  }
-  .what-to-expect__title {
-    color: #fff;
-    font-family: 'Oswald', sans-serif;
-    font-size: 2.33rem;
-    line-height: 1.4em;
-    font-weight: 600;
-    text-align: center;
-  }
-  .what-to-expect__subtitle {
-    display: block;
-    text-align: center;
-    font-size: 1.6rem;
-    font-family: 'Arimo', sans-serif;
-    color: #0e437e;
-    font-style: italic;
-  }
-  .what-to-expect img {
-    display: block;
-    width: 750px;
-    margin: 30px auto;
-  }
-  .what-to-expect p {
-    font-size: 21.5px;
-    font-family: 'Arimo', sans-serif;
-    color: #0e437e;
-  }
-  .what-to-expect p b {
-    font-family: 'Roboto', sans-serif;
-    color: #4B6A71;
-    font-size: 25px;
-  }
-  .what-to-expect__list {
-    margin-left: 30px;
-    list-style-image: url("../img/list-marker/marker2.jpg");
-  }
-  .what-to-expect__list li {
-    font-size: 22px;
-    font-family: 'Arimo', sans-serif;
-    font-weight: 400;
-    color: #353535;
-    padding: 10px;
-  }
-  .feedback__content-wrap {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    width: 720px;
-    height: auto;
-    margin: 0 auto;
-  }
-  .feedback__content_image {
-    width: 200px;
-    margin: 0 auto;
-  }
-}
-
 @media (max-width: 1024px) {
-  .main-btn-wrap {
-    display: none;
-  }
   .fixed-btn {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1368,9 +1304,61 @@ button:focus, input:focus, select:focus, video:focus {
     height: auto;
     width: 100% !important;
   }
+  .hair-rescue {
+    margin-top: -100px;
+  }
   .what-to-expect {
-    background-image: url("../img/bg/TABLET 3 guys banner PNG.png");
+    background-image: url("../img/bg/Tablet 1024 X 740 ..png");
+    background-size: cover;
     margin-bottom: -30px;
+    position: relative;
+  }
+  .what-to-expect__subtitle {
+    display: none;
+  }
+  .what-to-expect__list {
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    margin: 10px auto;
+  }
+  .what-to-expect__list li {
+    font-family: 'Arimo', sans-serif;
+    font-weight: 600;
+    font-size: 22px;
+    color: #0e437e;
+    list-style-image: url("../img/list-marker/check mark white no bkr.png");
+  }
+  .what-to-expect .container {
+    display: block;
+    width: 420px;
+    position: absolute;
+    right: 0;
+    top: 170px;
+  }
+  .what-to-expect .container p {
+    font-size: 21.5px;
+    font-family: 'Arimo', sans-serif;
+    color: #0e437e;
+    width: 400px;
+    display: block;
+  }
+  .what-to-expect .container p span {
+    font-weight: 700;
+    font-style: normal;
+  }
+  .what-to-expect .container p b {
+    display: block;
+    margin-left: 60px;
+    font-size: 26px;
+    font-weight: normal;
+    font-style: italic;
+  }
+  .what-to-expect .container h2 {
+    display: none;
+  }
+  .what-to-expect .container img {
+    display: none;
   }
   .how-it-works {
     background: none;
@@ -1402,9 +1390,6 @@ button:focus, input:focus, select:focus, video:focus {
     font-family: 'Arimo', sans-serif;
     font-size: 20px;
   }
-  .hair-rescue {
-    display: none;
-  }
   .what-to-expect img {
     width: 100%;
   }
@@ -1417,7 +1402,10 @@ button:focus, input:focus, select:focus, video:focus {
     gap: 0;
   }
   .feedback-wrap .feedback__content-wrap {
-    max-width: 500px;
+    max-width: 720px;
+  }
+  .feedback__subtitle br {
+    display: block !important;
   }
   .about-usage .container:nth-of-type(2) {
     padding-top: 20px;
@@ -1513,6 +1501,89 @@ button:focus, input:focus, select:focus, video:focus {
   }
   .guarantee-wrap img {
     width: 60px;
+  }
+}
+
+@media (max-width: 1023px) {
+  .hair-rescue {
+    display: none;
+  }
+  .what-to-expect {
+    background-image: none !important;
+    background-color: #6dcff6;
+    height: auto !important;
+    padding: 40px 0;
+    position: static;
+  }
+  .what-to-expect .container {
+    display: block;
+    position: static !important;
+    width: 100% !important;
+  }
+  .what-to-expect .container h2 {
+    display: block !important;
+  }
+  .what-to-expect .container img {
+    display: block !important;
+    width: 100%;
+    margin: 0 auto;
+  }
+  .what-to-expect__title {
+    color: #fff;
+    font-family: 'Oswald', sans-serif;
+    font-size: 2.33rem;
+    line-height: 1.4em;
+    font-weight: 600;
+    text-align: center;
+    display: block;
+  }
+  .what-to-expect__subtitle {
+    display: block !important;
+    text-align: center;
+    font-size: 1.6rem;
+    font-family: 'Arimo', sans-serif;
+    color: #0e437e;
+    font-style: italic;
+  }
+  .what-to-expect p {
+    width: 100% !important;
+    font-size: 0.8rem;
+    font-family: 'Arimo', sans-serif;
+    color: #0e437e;
+    margin: 0;
+  }
+  .what-to-expect p b {
+    font-family: 'Roboto', sans-serif;
+    color: #4B6A71;
+    font-size: 1rem;
+    margin-left: 0 !important;
+  }
+  .what-to-expect p b br {
+    display: none;
+  }
+  .what-to-expect__list {
+    margin-left: 50px !important;
+  }
+  .what-to-expect__list li {
+    list-style-image: url("../img/list-marker/marker2.jpg") !important;
+    font-size: 20px;
+    font-family: 'Arimo', sans-serif;
+    font-weight: 500;
+    color: #353535;
+    padding: 10px;
+  }
+  .feedback__content-wrap {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 720px;
+    height: auto;
+    margin: 0 auto;
+  }
+  .feedback__content_image {
+    width: 200px;
+    margin: 0 auto;
   }
 }
 
@@ -2033,33 +2104,15 @@ button:focus, input:focus, select:focus, video:focus {
   }
 }
 
-@media (max-width: 1600px) and (orientation: landscape) {
-  body {
-    width: 100vw !important;
-  }
+@media (max-width: 1023px) and (orientation: landscape) {
   .wrapper {
-    width: 100vw  !important;
-  }
-  .container {
-    width: 100vw  !important;
-  }
-  section {
     width: 100vw  !important;
   }
 }
 
-@media (max-width: 1600px) and (orientation: portrait) {
-  body {
-    width: 100vw  !important;
-  }
+@media (max-width: 1023px) and (orientation: portrait) {
   .wrapper {
     width: 100vw  !important;
-  }
-  .container {
-    width: 100vw !important;
-  }
-  section {
-    width: 100vw !important;
   }
 }
 /*# sourceMappingURL=style.css.map */
