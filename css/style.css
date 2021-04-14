@@ -790,7 +790,7 @@ button:focus, input:focus, select:focus, video:focus {
 
 /*section with information about the benefits - the final section*/
 .about-benefits {
-  background: url("../img/bg/bg4.png");
+  background-image: url("../img/bg/bg4.png");
   background-repeat: no-repeat;
   min-height: 700px;
   margin-bottom: -72px;
@@ -798,6 +798,10 @@ button:focus, input:focus, select:focus, video:focus {
   margin-top: 60px;
   background-position: right;
   background-size: contain;
+}
+
+.about-benefits .tablet {
+  display: none;
 }
 
 .about-benefits__image {
@@ -1456,42 +1460,27 @@ button:focus, input:focus, select:focus, video:focus {
     display: none;
   }
   .about-benefits {
-    background: none;
-  }
-  .about-benefits__content {
-    width: auto;
-    padding-right: 0;
-  }
-  .about-benefits__image {
-    display: block;
-    width: 100%;
-    padding: 10px;
-  }
-  .about-benefits__image img {
-    margin-bottom: 80px;
-    width: 100%;
+    background-image: url("../img/bg/TABLET hair man bottom 1024 x 830-16-NO BKR (1).png");
+    background-position: 50%;
   }
   .about-benefits__title {
-    color: #0987ff;
-    width: 100%;
-    text-align: center;
-    font-size: 1.8rem;
-  }
-  .about-benefits__subtitle {
-    line-height: 1.4em;
-    text-align: center;
-  }
-  .about-benefits__text {
-    font-size: 0.95rem;
-  }
-  .about-benefits__text br:nth-of-type(1) {
     display: none;
   }
-  .about-benefits__text br:nth-of-type(2) {
-    display: block;
+  .about-benefits h2 {
+    display: none;
   }
-  .about-benefits__list li {
-    font-size: 0.80rem;
+  .about-benefits__subtitle {
+    display: none;
+  }
+  .about-benefits__text {
+    display: none;
+  }
+  .about-benefits__list {
+    display: none;
+  }
+  .about-benefits .main-btn-wrap {
+    margin-top: 550px;
+    margin-left: 100px;
   }
   .guarantee {
     margin-left: 80px;
@@ -1584,6 +1573,53 @@ button:focus, input:focus, select:focus, video:focus {
   .feedback__content_image {
     width: 200px;
     margin: 0 auto;
+  }
+  .about-benefits {
+    background: none;
+  }
+  .about-benefits__content {
+    width: auto;
+    padding-right: 0;
+  }
+  .about-benefits__image {
+    display: block;
+    width: 100%;
+    padding: 10px;
+  }
+  .about-benefits__image img {
+    margin-bottom: 80px;
+    width: 100%;
+  }
+  .about-benefits__title {
+    display: block;
+    color: #0987ff;
+    width: 100%;
+    text-align: center;
+    font-size: 1.8rem;
+  }
+  .about-benefits__subtitle {
+    display: block;
+    line-height: 1.4em;
+    text-align: center;
+  }
+  .about-benefits__text {
+    display: block;
+    font-size: 0.95rem;
+  }
+  .about-benefits__text br:nth-of-type(1) {
+    display: none;
+  }
+  .about-benefits__text br:nth-of-type(2) {
+    display: block;
+  }
+  .about-benefits__list {
+    display: block;
+  }
+  .about-benefits__list li {
+    font-size: 0.80rem;
+  }
+  .about-benefits .main-btn-wrap {
+    margin: 0;
   }
 }
 

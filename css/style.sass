@@ -529,7 +529,7 @@ $brightBlue: #0064f9
 
 /*section with information about the benefits - the final section*/
 .about-benefits
-    background: url('../img/bg/bg4.png')
+    background-image: url('../img/bg/bg4.png')
     background-repeat: no-repeat
     min-height: 700px 
     margin-bottom: -72px
@@ -537,6 +537,8 @@ $brightBlue: #0064f9
     margin-top: 60px 
     background-position: right
     background-size: contain 
+    .tablet
+            display: none
     &__image
         display: none
         
@@ -1002,36 +1004,21 @@ $brightBlue: #0064f9
         br:nth-of-type(1)
             display: none
     .about-benefits
-        background: none
-        &__content
-            
-            width: auto
-            padding-right: 0
-            
-        &__image
-            display: block
-            width: 100%
-            padding: 10px
-            img
-                margin-bottom: 80px
-                width: 100%
+        background-image: url('../img/bg/TABLET hair man bottom 1024 x 830-16-NO BKR (1).png')
+        background-position: 50% 
         &__title
-            color: rgb(9, 135, 255)
-            width: 100%
-            text-align: center
-            font-size: 1.8rem
+            display: none
+        h2
+            display: none
         &__subtitle
-            line-height: 1.4em
-            text-align: center
+            display: none
         &__text
-            font-size: 0.95rem
-            br:nth-of-type(1)
-                display: none
-            br:nth-of-type(2)
-                display: block
+            display: none
         &__list
-            li
-                font-size: 0.80rem
+            display: none
+        .main-btn-wrap
+            margin-top: 550px
+            margin-left: 100px
     .guarantee
         margin-left: 80px
         &-wrap
@@ -1108,8 +1095,43 @@ $brightBlue: #0064f9
                 
                 width: 200px
                 margin: 0 auto
-    
-
+    .about-benefits
+        background: none
+        &__content
+            
+            width: auto
+            padding-right: 0
+            
+        &__image
+            display: block
+            width: 100%
+            padding: 10px
+            img
+                margin-bottom: 80px
+                width: 100%
+        &__title
+            display: block
+            color: rgb(9, 135, 255)
+            width: 100%
+            text-align: center
+            font-size: 1.8rem
+        &__subtitle
+            display: block
+            line-height: 1.4em
+            text-align: center
+        &__text
+            display: block
+            font-size: 0.95rem
+            br:nth-of-type(1)
+                display: none
+            br:nth-of-type(2)
+                display: block
+        &__list
+            display: block
+            li
+                font-size: 0.80rem
+        .main-btn-wrap
+            margin: 0
 @media (max-width: 991px)
     .orange-subtitle
         font-size: 1.5rem
