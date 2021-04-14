@@ -1248,76 +1248,6 @@ button:focus, input:focus, select:focus, video:focus {
   }
 }
 
-@media (max-width: 1023px) {
-  .hair-rescue {
-    display: none;
-  }
-  .what-to-expect {
-    background-image: none !important;
-    background-color: #6dcff6;
-    height: auto;
-    padding: 40px 0;
-  }
-  .what-to-expect .container {
-    display: block;
-  }
-  .what-to-expect__title {
-    color: #fff;
-    font-family: 'Oswald', sans-serif;
-    font-size: 2.33rem;
-    line-height: 1.4em;
-    font-weight: 600;
-    text-align: center;
-  }
-  .what-to-expect__subtitle {
-    display: block;
-    text-align: center;
-    font-size: 1.6rem;
-    font-family: 'Arimo', sans-serif;
-    color: #0e437e;
-    font-style: italic;
-  }
-  .what-to-expect img {
-    display: block;
-    width: 750px;
-    margin: 30px auto;
-  }
-  .what-to-expect p {
-    font-size: 21.5px;
-    font-family: 'Arimo', sans-serif;
-    color: #0e437e;
-  }
-  .what-to-expect p b {
-    font-family: 'Roboto', sans-serif;
-    color: #4B6A71;
-    font-size: 25px;
-  }
-  .what-to-expect__list {
-    margin-left: 30px;
-    list-style-image: url("../img/list-marker/marker2.jpg");
-  }
-  .what-to-expect__list li {
-    font-size: 22px;
-    font-family: 'Arimo', sans-serif;
-    font-weight: 400;
-    color: #353535;
-    padding: 10px;
-  }
-  .feedback__content-wrap {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    width: 720px;
-    height: auto;
-    margin: 0 auto;
-  }
-  .feedback__content_image {
-    width: 200px;
-    margin: 0 auto;
-  }
-}
-
 @media (max-width: 1024px) {
   .fixed-btn {
     display: -webkit-box;
@@ -1564,6 +1494,89 @@ button:focus, input:focus, select:focus, video:focus {
   }
   .guarantee-wrap img {
     width: 60px;
+  }
+}
+
+@media (max-width: 1023px) {
+  .hair-rescue {
+    display: none;
+  }
+  .what-to-expect {
+    background-image: none !important;
+    background-color: #6dcff6;
+    height: auto !important;
+    padding: 40px 0;
+    position: static;
+  }
+  .what-to-expect .container {
+    display: block;
+    position: static !important;
+    width: 100% !important;
+  }
+  .what-to-expect .container h2 {
+    display: block !important;
+  }
+  .what-to-expect .container img {
+    display: block !important;
+    width: 100%;
+    margin: 0 auto;
+  }
+  .what-to-expect__title {
+    color: #fff;
+    font-family: 'Oswald', sans-serif;
+    font-size: 2.33rem;
+    line-height: 1.4em;
+    font-weight: 600;
+    text-align: center;
+    display: block;
+  }
+  .what-to-expect__subtitle {
+    display: block !important;
+    text-align: center;
+    font-size: 1.6rem;
+    font-family: 'Arimo', sans-serif;
+    color: #0e437e;
+    font-style: italic;
+  }
+  .what-to-expect p {
+    width: 100% !important;
+    font-size: 0.8rem;
+    font-family: 'Arimo', sans-serif;
+    color: #0e437e;
+    margin: 0;
+  }
+  .what-to-expect p b {
+    font-family: 'Roboto', sans-serif;
+    color: #4B6A71;
+    font-size: 1rem;
+    margin-left: 0 !important;
+  }
+  .what-to-expect p b br {
+    display: none;
+  }
+  .what-to-expect__list {
+    margin-left: 50px !important;
+  }
+  .what-to-expect__list li {
+    list-style-image: url("../img/list-marker/marker2.jpg") !important;
+    font-size: 20px;
+    font-family: 'Arimo', sans-serif;
+    font-weight: 500;
+    color: #353535;
+    padding: 10px;
+  }
+  .feedback__content-wrap {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 720px;
+    height: auto;
+    margin: 0 auto;
+  }
+  .feedback__content_image {
+    width: 200px;
+    margin: 0 auto;
   }
 }
 

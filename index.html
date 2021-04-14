@@ -640,7 +640,7 @@
                     </li>
                     <li>
                         Reduce Hair Loss
-                        
+
 
                     </li>
                     <li>
@@ -654,7 +654,7 @@
                 <p><b><span>Bottom Line:</span> It Works<br> and it's Great for your Hair!</b></p>
 
             </div>
-            
+
         </section>
         <section class="hair-rescue">
             <div class="container">
@@ -1013,20 +1013,18 @@
             document.querySelector('.h-top').style.height = 'auto';
         }
         if (mediaQuery2.matches) {
-            document.querySelector('.what-to-expect').style.height = 'auto';
+            document.querySelector('.what-to-expect').style.height = 'auto !important';
         } else {
             document.querySelector('.what-to-expect').style.height = document.querySelector('.wrapper').offsetWidth / 2 + 'px';
         }
         if (mediaQuery3.matches) {
             document.querySelector('.what-to-expect').style.height = '750px';
-        } 
+        }
         window.addEventListener('orientationchange', () => {
             setTimeout("document.querySelector('.wrapper').style.width = '100vw'", 800);
         });
         window.addEventListener('resize', () => {
-            if (mediaQuery3.matches) {
-            document.querySelector('.what-to-expect').style.height = '750px';
-        } 
+            
             if (mediaQuery.matches) {
                 document.querySelector('.wrapper').style.width = screenWidth + 'px';
             } else {
@@ -1036,6 +1034,9 @@
                 document.querySelector('.what-to-expect').style.height = 'auto';
             } else {
                 document.querySelector('.what-to-expect').style.height = document.querySelector('.wrapper').offsetWidth / 2 + 'px';
+            }
+            if (mediaQuery3.matches) {
+                document.querySelector('.what-to-expect').style.height = '750px';
             }
             if (window.matchMedia('(min-width: 1600px)').matches) {
                 document.querySelector('.h-top').style.height = screenHeight + 'px';
