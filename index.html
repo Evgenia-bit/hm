@@ -1002,11 +1002,12 @@
         const mediaQuery = window.matchMedia('(min-width: ' + screenWidth + 'px)')
         const mediaQuery2 = window.matchMedia('(max-width: 1023px)')
         //document.querySelector('.wrapper').style.maxWidth = screenWidth + 'px';
+        document.querySelector('.wrapper').style.width = '100vw !important'
         if (mediaQuery.matches) {
                 document.querySelector('.wrapper').style.width = screenWidth + 'px';
 
             } else {
-                document.querySelector('.wrapper').style.width = '100vw !important'
+                document.querySelector('.wrapper').style.width = '100vw'
 
          }
         if (window.matchMedia('(min-width: 1600px)').matches) {
@@ -1020,7 +1021,7 @@
             document.querySelector('.what-to-expect').style.height = document.querySelector('.wrapper').offsetWidth / 2 + 'px';
         }
         window.addEventListener('orientationchange', () => {
-            setTimeout("document.querySelector('.wrapper').style.width = '100vw'", 600);
+            setTimeout("document.querySelector('.wrapper').style.width = '100vw'", 800);
         });
         window.addEventListener('resize', () => {
             
