@@ -1001,13 +1001,14 @@
         const screenHeight = window.screen.height;
         const mediaQuery = window.matchMedia('(min-width: ' + screenWidth + 'px)')
         const mediaQuery2 = window.matchMedia('(max-width: 1023px)')
+        //document.querySelector('.wrapper').style.maxWidth = screenWidth + 'px';
         if (mediaQuery.matches) {
-            document.querySelector('.wrapper').style.width = screenWidth + 'px';
+                document.querySelector('.wrapper').style.width = screenWidth + 'px';
 
-        } else {
-            document.querySelector('.wrapper').style.width = '100vw'
+            } else {
+                document.querySelector('.wrapper').style.width = '100vw'
 
-        }
+         }
         if (window.matchMedia('(min-width: 1600px)').matches) {
             document.querySelector('.h-top').style.height = screenHeight + 'px';
         } else {
@@ -1022,11 +1023,13 @@
             setTimeout("document.querySelector('.wrapper').style.width = '100vw'", 600);
         });
         window.addEventListener('resize', () => {
+            
             if (mediaQuery.matches) {
                 document.querySelector('.wrapper').style.width = screenWidth + 'px';
             } else {
                 document.querySelector('.wrapper').style.width = '100vw';
             }
+            
             if (mediaQuery2.matches) {
                 document.querySelector('.what-to-expect').style.height = 'auto';
             } else {

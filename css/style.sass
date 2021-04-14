@@ -395,9 +395,7 @@ $brightBlue: #0064f9
     padding: 70px 0
     color: #28598e
     font-family: 'Arimo', sans-serif
-    background-image: url('../img/bg/bg3.jpg') 
-    background-repeat: no-repeat
-    background-position: center center
+    background: url('../img/bg/bg3.jpg') no-repeat center center
     background-size: cover
     &__title
    
@@ -840,10 +838,65 @@ $brightBlue: #0064f9
         .container
             width: 778px
             
-
+@media ( max-width: 1023px )
+     .what-to-expect
+        background-image: none !important
+        background-color: rgb(109, 207, 246)
+        height: auto
+        padding: 40px 0
+        .container
+            display: block
+        &__title    
+            color: #fff    
+            font-family: 'Oswald', sans-serif
+            font-size: 2.33rem
+            line-height: 1.4em
+            font-weight: 600
+            text-align: center
+        &__subtitle
+            display: block
+            text-align: center
+            font-size: 1.6rem
+            font-family: 'Arimo', sans-serif
+            color: #0e437e
+            font-style: italic
+        img
+            display: block
+            width: 750px
+            margin: 30px auto
+        p
+            font-size: 21.5px
+            font-family: 'Arimo', sans-serif
+            color: #0e437e
+            b
+                font-family: 'Roboto', sans-serif
+                color: #4B6A71
+                font-size: 25px
+        &__list
+            margin-left: 30px
+            list-style-image: url('../img/list-marker/marker2.jpg')
+            li
+                    font-size: 22px
+                    font-family: 'Arimo', sans-serif
+                    font-weight: 400  
+                    color: #353535
+                    padding: 10px
+     .feedback
+        &__content
+            &-wrap
+                flex-direction: column
+                width: 720px
+                height: auto
+                margin: 0 auto 
+            &_image
+                
+                width: 200px
+                margin: 0 auto
+    
 
 @media ( max-width: 1024px  )
-    
+    .main-btn-wrap
+            display: none
     .fixed-btn
         display: flex
     .main-form
@@ -866,7 +919,7 @@ $brightBlue: #0064f9
         &__text
             text-align: left !important
         video
-            width: 720px 
+            width: 720px
     .about-product
         width: 940px
         margin: 0 auto
@@ -883,52 +936,9 @@ $brightBlue: #0064f9
         img
             height: auto
             width: 100% !important
-    .hair-rescue
-        margin-top: -100px
     .what-to-expect
-        background-image: url('../img/bg/Tablet 1024 X 740 ..png')
-        background-size: cover
+        background-image: url('../img/bg/TABLET 3 guys banner PNG.png') 
         margin-bottom: -30px
-        position: relative
-
-        &__subtitle
-            display: none
-        &__list
-            width: fit-content
-            margin: 10px auto
-            li
-                font-family: 'Arimo', sans-serif
-                font-weight: 600
-                font-size: 22px
-                color: #0e437e 
-                list-style-image: url('../img/list-marker/check mark white no bkr.png')
-        .container
-            display: block
-            width: 420px
-            position: absolute
-            right: 0
-            top: 170px
-            p
-                
-                font-size: 21.5px
-                font-family: 'Arimo', sans-serif
-                color: #0e437e 
-                width: 400px
-                display: block
-                span
-                    font-weight: 700
-                    font-style: normal
-                b
-                    display: block
-                    margin-left: 60px
-                    font-size: 26px
-                    font-weight: normal
-                    font-style: italic
-
-            h2
-                display: none
-            img
-                display: none
     .how-it-works
         background: none
         &__content
@@ -955,7 +965,8 @@ $brightBlue: #0064f9
                 span
                     font-family: 'Arimo', sans-serif
                     font-size: 20px
-    
+    .hair-rescue
+        display: none
     .what-to-expect
         img
             width: 100%
@@ -1033,77 +1044,7 @@ $brightBlue: #0064f9
             display: block !important
             img
                 width: 60px
-@media ( max-width: 1023px )
 
-    .hair-rescue
-        display: none
-    .what-to-expect
-        background-image: none !important
-        background-color: rgb(109, 207, 246)
-        height: auto !important
-        padding: 40px 0
-        position: static
-        .container
-            display: block
-            position: static !important
-            width: 100% !important
-            h2
-                display: block !important
-            img
-                display: block !important
-                width: 100%
-                margin: 0 auto
-        &__title    
-            color: #fff    
-            font-family: 'Oswald', sans-serif
-            font-size: 2.33rem
-            line-height: 1.4em
-            font-weight: 600
-            text-align: center
-            display: block
-        &__subtitle
-            display: block !important
-            text-align: center
-            font-size: 1.6rem
-            font-family: 'Arimo', sans-serif
-            color: #0e437e
-            font-style: italic
- 
-        p
-            width: 100% !important
-            font-size: 0.8rem
-            font-family: 'Arimo', sans-serif
-            color: #0e437e
-            margin: 0
-            b
-                font-family: 'Roboto', sans-serif
-                color: #4B6A71
-                font-size: 1rem
-                margin-left: 0 !important
-                br
-                    display: none
-        &__list
-            margin-left: 50px !important
-            
-            li
-                list-style-image: url('../img/list-marker/marker2.jpg') !important
-                font-size: 20px
-                font-family: 'Arimo', sans-serif
-                font-weight: 500  
-                color: #353535
-                padding: 10px
-    .feedback
-        &__content
-            &-wrap
-                flex-direction: column
-                width: 720px
-                height: auto
-                margin: 0 auto 
-            &_image
-                
-                width: 200px
-                margin: 0 auto
-    
 
 @media (max-width: 991px)
     .orange-subtitle
@@ -1532,3 +1473,21 @@ $brightBlue: #0064f9
         width: 100%
     .timer
         flex-wrap: wrap
+@media only screen and (device-width: 320px) and (orientation: landscape) 
+    body
+        width: auto !important
+    .wrapper
+        width: auto  !important
+    .container
+        width: auto  !important
+    section
+        width: auto  !important
+@media (orientation: portrait)    
+    body
+        width: auto  !important
+    .wrapper
+        width: auto  !important
+    .container
+        width: auto !important
+    section
+        width: auto  !important
