@@ -85,6 +85,10 @@ button:focus, input:focus, select:focus, video:focus {
   font-family: "Roboto",sans-serif;
 }
 
+.for-tablet {
+  display: none;
+}
+
 /*animation red button*/
 @-webkit-keyframes animated-btn {
   0% {
@@ -353,7 +357,7 @@ button:focus, input:focus, select:focus, video:focus {
 
 /*section About Product*/
 .about-product {
-  background: #6dcff6;
+  background-color: #6dcff6;
   padding-top: 50px;
   padding-bottom: 50px;
   color: #06407D;
@@ -1257,6 +1261,9 @@ button:focus, input:focus, select:focus, video:focus {
 }
 
 @media (max-width: 1024px) {
+  .for-tablet {
+    display: block;
+  }
   .fixed-btn {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1288,25 +1295,17 @@ button:focus, input:focus, select:focus, video:focus {
     width: 720px;
   }
   .about-product {
-    width: 940px;
-    margin: 0 auto;
+    background-image: url("../img/bg/TABLET magazin part 1024 x 740 PNG no red button.png");
+    height: 800px;
+    position: relative;
   }
-  .about-product__content {
-    width: 441px;
-  }
-  .about-product .magzine-men_fin {
-    margin-left: 150px;
+  .about-product .for-tablet {
+    position: absolute;
+    left: 57%;
+    bottom: 70px;
   }
   .about-product .container {
-    display: -ms-grid;
-    display: grid;
-    gap: 10px;
-    -ms-grid-columns: 5fr 1fr !important;
-        grid-template-columns: 5fr 1fr !important;
-  }
-  .about-product img {
-    height: auto;
-    width: 100% !important;
+    display: none;
   }
   .hair-rescue {
     margin-top: -100px;
@@ -1344,7 +1343,7 @@ button:focus, input:focus, select:focus, video:focus {
     font-size: 21.5px;
     font-family: 'Arimo', sans-serif;
     color: #0e437e;
-    width: 400px;
+    width: 370px;
     display: block;
   }
   .what-to-expect .container p span {
@@ -1371,12 +1370,12 @@ button:focus, input:focus, select:focus, video:focus {
     width: 720px;
     margin: 0 auto;
   }
-  .how-it-works_bg-mob {
-    display: block;
-    width: 720px;
-    margin-bottom: 15px;
+  .how-it-works .for-tablet {
+    width: 100%;
+    margin-bottom: 40px;
   }
   .how-it-works__title {
+    display: none;
     text-align: center;
     line-height: 1.2em;
     font-size: 2rem;
@@ -1394,6 +1393,49 @@ button:focus, input:focus, select:focus, video:focus {
     font-family: 'Arimo', sans-serif;
     font-size: 20px;
   }
+  .about-efficiency {
+    padding: 50px 0;
+    background-image: none;
+    background-color: #dcf3ff;
+  }
+  .about-efficiency__title {
+    text-align: center;
+    font-weight: 300;
+    margin-bottom: 10px;
+    display: block;
+    font-size: 2.33rem;
+    color: #0987ff;
+    font-family: 'Oswald', sans-serif;
+  }
+  .about-efficiency__title .blue-text {
+    font-family: 'Oswald', sans-serif;
+  }
+  .about-efficiency__image {
+    display: block;
+    width: 100%;
+    margin: 15px auto;
+  }
+  .about-efficiency__descr {
+    color: #333333;
+    font-family: arial;
+  }
+  .about-efficiency__content li {
+    line-height: 1.5;
+  }
+  .about-efficiency__content li span {
+    font-weight: bold;
+    font-family: arial;
+    color: #0987ff;
+  }
+  .about-efficiency__descr {
+    font-size: 1.1rem;
+  }
+  .about-efficiency__content li {
+    font-size: 0.83rem;
+  }
+  .about-efficiency__content li span {
+    font-size: 1.30rem;
+  }
   .what-to-expect img {
     width: 100%;
   }
@@ -1408,55 +1450,13 @@ button:focus, input:focus, select:focus, video:focus {
   .feedback-wrap .feedback__content-wrap {
     max-width: 720px;
   }
+  .feedback-wrap .feedback__content_text {
+    font-size: 21px;
+  }
   .feedback__subtitle br {
     display: block !important;
   }
-  .about-usage .container:nth-of-type(2) {
-    padding-top: 20px;
-    padding-bottom: 0;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
-  }
-  .about-usage .container:nth-of-type(2) .col-lg-12 {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    gap: 30px;
-  }
-  .about-usage img:nth-of-type(1) {
-    width: 90px;
-  }
-  .about-usage img:nth-of-type(2), .about-usage img:nth-of-type(4) {
-    width: 51px;
-  }
-  .about-usage img:nth-of-type(3) {
-    width: 152px;
-  }
-  .about-usage img:nth-of-type(5) {
-    width: 161px;
-  }
-  .about-usage .text-row {
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    margin: auto;
-    height: 650px;
-    -webkit-box-pack: justify !important;
-        -ms-flex-pack: justify !important;
-            justify-content: space-between !important;
-  }
-  .about-usage span {
-    text-align: center;
-    margin: 0;
-  }
-  .about-usage br:nth-of-type(2) {
-    display: none;
-  }
-  .about-usage br:nth-of-type(1) {
+  .about-usage .container {
     display: none;
   }
   .about-benefits {
@@ -1494,6 +1494,40 @@ button:focus, input:focus, select:focus, video:focus {
 }
 
 @media (max-width: 1023px) {
+  .for-tablet {
+    display: none;
+  }
+  .about-product {
+    height: auto;
+    background-image: none;
+    width: 940px;
+    margin: 0 auto;
+  }
+  .about-product__content {
+    width: 441px;
+  }
+  .about-product .magzine-men_fin {
+    margin-left: 150px;
+  }
+  .about-product .container {
+    display: -ms-grid;
+    display: grid;
+    gap: 10px;
+    -ms-grid-columns: 5fr 1fr !important;
+        grid-template-columns: 5fr 1fr !important;
+  }
+  .about-product .container img {
+    height: auto;
+    width: 100% !important;
+  }
+  .how-it-works_bg-mob {
+    display: block;
+    width: 720px;
+    margin-bottom: 15px;
+  }
+  .how-it-works__title {
+    display: block;
+  }
   .hair-rescue {
     display: none;
   }
@@ -1574,6 +1608,57 @@ button:focus, input:focus, select:focus, video:focus {
     width: 200px;
     margin: 0 auto;
   }
+  .feedback__content_text {
+    font-size: 0.65rem;
+  }
+  .about-usage .container:nth-of-type(2) {
+    padding-top: 20px;
+    padding-bottom: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  .about-usage .container:nth-of-type(2) .col-lg-12 {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 30px;
+  }
+  .about-usage img:nth-of-type(1) {
+    width: 90px;
+  }
+  .about-usage img:nth-of-type(2), .about-usage img:nth-of-type(4) {
+    width: 51px;
+  }
+  .about-usage img:nth-of-type(3) {
+    width: 152px;
+  }
+  .about-usage img:nth-of-type(5) {
+    width: 161px;
+  }
+  .about-usage .text-row {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin: auto;
+    height: 650px;
+    -webkit-box-pack: justify !important;
+        -ms-flex-pack: justify !important;
+            justify-content: space-between !important;
+  }
+  .about-usage span {
+    text-align: center;
+    margin: 0;
+  }
+  .about-usage br:nth-of-type(2) {
+    display: none;
+  }
+  .about-usage br:nth-of-type(1) {
+    display: none;
+  }
   .about-benefits {
     background: none;
   }
@@ -1619,7 +1704,7 @@ button:focus, input:focus, select:focus, video:focus {
     font-size: 0.80rem;
   }
   .about-benefits .main-btn-wrap {
-    margin: 0;
+    display: none;
   }
 }
 
@@ -1688,49 +1773,6 @@ button:focus, input:focus, select:focus, video:focus {
   }
   .q-and-a__content {
     font-size: 1.5rem;
-  }
-  .about-efficiency {
-    padding: 50px 0;
-    background-image: none;
-    background-color: #dcf3ff;
-  }
-  .about-efficiency__title {
-    text-align: center;
-    font-weight: 300;
-    margin-bottom: 10px;
-    display: block;
-    font-size: 2.33rem;
-    color: #0987ff;
-    font-family: 'Oswald', sans-serif;
-  }
-  .about-efficiency__title .blue-text {
-    font-family: 'Oswald', sans-serif;
-  }
-  .about-efficiency__image {
-    display: block;
-    width: 100%;
-    margin: 15px auto;
-  }
-  .about-efficiency__descr {
-    color: #333333;
-    font-family: arial;
-  }
-  .about-efficiency__content li {
-    line-height: 1.5;
-  }
-  .about-efficiency__content li span {
-    font-weight: bold;
-    font-family: arial;
-    color: #0987ff;
-  }
-  .about-efficiency__descr {
-    font-size: 1.1rem;
-  }
-  .about-efficiency__content li {
-    font-size: 0.83rem;
-  }
-  .about-efficiency__content li span {
-    font-size: 1.30rem;
   }
   .pharmacist-recommended​__text {
     display: block;
