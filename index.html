@@ -22,7 +22,9 @@
         .h-top {
             padding-top: 50px;
             padding-bottom: 15px;
-            background: url("img/first-screen/14181069_1604043357394background-image.jpg") no-repeat center top;
+            background-image: url("img/first-screen/14181069_1604043357394background-image.jpg");
+            background-repeat: no-repeat;
+            background-position: center top;
             background-size: cover;
         }
 
@@ -41,12 +43,25 @@
                 height: 100vh;
             }
         }
+        @media(max-width: 1024px) {
+            .h-top {
+                background-image: url("img/bg/Hair Man Tablet PNG without form final.png");
+                background-position: 100% 100%;
+                height: 790px !important;
+            }
+            .first-screen-image {
+                display: none;
+            }
+            
+           
+        }
 
-        @media (max-width: 1024px) {
+        @media (max-width: 1023px) {
 
             .h-top {
-                background: url("img/first-screen/first-screen-mob.jpg") no-repeat center center;
-                background-size: cover;
+                background-image: url("img/first-screen/first-screen-mob.jpg");
+                background-position: center center;
+                height: auto !important;
                 padding: 0;
             }
 
@@ -120,6 +135,7 @@
             </div>
             <div class="h-top">
                 <img class="first-screen-mob" src="img/first-screen/first-screen-mob.jpg" alt="hair-man" width="100%">
+
                 <div class="container">
 
                     <div class="row">
@@ -131,7 +147,15 @@
                         <div class="col-lg-3 text-left">
                             <div class="main-form">
                                 <div class="main-form__header">
-                                    REQUEST YOUR RISK FREE BOTTLE
+                                    <span class="no-form-tablet">
+                                        REQUEST YOUR RISK FREE BOTTLE
+                                    </span>
+                                    <span class="for-tablet">
+                                        TELL US WHERE TO SEND
+                                        <div class="yellow">
+                                            YOUR FREE BOTTLE
+                                        </div>
+                                    </span>
                                 </div>
                                 <form action="packeges.html" class="main-form__inputs">
                                     <select class="form__country" name="country" tabindex="-98">

@@ -63,6 +63,8 @@ $brightBlue: #0064f9
     font-family: "Roboto",sans-serif 
 .for-tablet
     display: none
+.no-form-tablet
+    display: block
 /*animation red button*/
     
 @keyframes animated-btn
@@ -97,8 +99,9 @@ $brightBlue: #0064f9
                 display: block
 .h-top
     padding-top: 50px
-    background: url('../img/first-screen/14181069_1604043357394background-image.jpg') no-repeat center top
-    background: cover
+    background-image: url("img/first-screen/14181069_1604043357394background-image.jpg")
+    background-repeat: no-repeat
+    background-position: center top
     .first-screen-image 
         margin-top: -5px
         margin-right: -5px
@@ -851,21 +854,44 @@ $brightBlue: #0064f9
 @media ( max-width: 1024px  )
     .for-tablet
         display: block
+    .no-form-tablet
+        display: none
     .fixed-btn
         display: flex
+    
+       
     .main-form
-        display: none
-    .h-top
-        background: url('../img/first-screen/first-screen-mob.jpg') no-repeat center center
-        background-size: cover
-        padding: 0
-        .row
+        width: 282px  
+        margin: 50px 0 0 -75px
+        border-right: 4px solid #c2fdff
+        border-bottom: 3px solid #c2fdff
+        border-left: 2px solid #c2fdff
+        .for-tablet
+            font-size: 22px
+            font-weight: 400
+            padding-top: 25px
+            font-family: 'Oswald', sans-serif
+            .yellow
+                font-family: 'Oswald', sans-serif
+                color: #fff716
+                font-size: 38px
+                font-weight: 400
+        &__header
+            padding: 7px 5px 
+            border-radius: 0 0
+            background: #357bd1
+        input, select
+            width: 232px
+            margin-left: auto
+            margin-right: auto
+        .for-form
+            width: 210px
+    .h-top 
+        background-image: url("img/bg/Hair Man Tablet PNG without form final.png")
+        background-position: 100% 100%
+        height: 790px !important
+        .first-screen-image 
             display: none
-        
-        .first-screen-mob
-            display: block
-            margin: 0 auto
-            width: 100%
             
     .proof
         br
@@ -1052,6 +1078,23 @@ $brightBlue: #0064f9
 @media ( max-width: 1023px )
     .for-tablet
         display: none
+    .no-form-tablet
+        display: block
+    .main-form
+        display: none
+    .h-top
+        background-image: url("img/first-screen/first-screen-mob.jpg")
+        background-position: center center
+        padding: 0
+        height: auto !important
+        .row
+            display: none
+        
+        .first-screen-mob
+            display: block
+            margin: 0 auto
+            width: 100%
+            
     .about-product
         height: auto
         background-image: none 
