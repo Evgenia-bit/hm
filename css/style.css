@@ -1280,26 +1280,6 @@ button:focus, input:focus, select:focus, video:focus {
   .main-form {
     width: 282px;
     margin: 50px 0 0 -75px;
-    border-right: 4px solid #c2fdff;
-    border-bottom: 3px solid #c2fdff;
-    border-left: 2px solid #c2fdff;
-  }
-  .main-form .for-tablet {
-    font-size: 22px;
-    font-weight: 400;
-    padding-top: 25px;
-    font-family: 'Oswald', sans-serif;
-  }
-  .main-form .for-tablet .yellow {
-    font-family: 'Oswald', sans-serif;
-    color: #fff716;
-    font-size: 38px;
-    font-weight: 400;
-  }
-  .main-form__header {
-    padding: 7px 5px;
-    border-radius: 0 0;
-    background: #357bd1;
   }
   .main-form input, .main-form select {
     width: 232px;
