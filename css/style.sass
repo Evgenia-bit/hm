@@ -856,8 +856,7 @@ $brightBlue: #0064f9
         display: block
     .no-form-tablet
         display: none
-    .fixed-btn
-        display: flex
+    
     
        
     .main-form
@@ -896,6 +895,7 @@ $brightBlue: #0064f9
             bottom: 70px
         .container
                 display: none
+        
     .hair-rescue
         margin-top: -100px
     .what-to-expect
@@ -943,6 +943,7 @@ $brightBlue: #0064f9
                 display: none
             img
                 display: none
+    
     .q-and-a
         background-image: url('../img/bg/question mark.png')
         padding: 50px 0
@@ -1000,7 +1001,9 @@ $brightBlue: #0064f9
         &__descr
                 color: rgb(51, 51, 51)
                 font-family: arial
+                margin-left: 65px 
         &__content
+            margin-left: 65px 
             li
                 line-height: 1.5
                 span
@@ -1039,6 +1042,7 @@ $brightBlue: #0064f9
         background-size: cover
         background-position: 120% 
         margin-bottom: -80px
+
         &__title
             display: none
         h2
@@ -1050,7 +1054,8 @@ $brightBlue: #0064f9
         &__list
             display: none
         .main-btn-wrap
-            margin-top: 580px
+            margin-top: 620px
+            margin-bottom: 40px
             margin-left: 100px
     .guarantee
         margin-left: 80px
@@ -1059,6 +1064,8 @@ $brightBlue: #0064f9
             img
                 width: 60px
 @media ( max-width: 1023px )
+    .fixed-btn
+        display: flex
     .for-tablet
         display: none
     .no-form-tablet
@@ -1095,6 +1102,11 @@ $brightBlue: #0064f9
             img
                 height: auto
                 width: 100% !important
+        .main-btn-wrap
+            display: none
+    .pharmacist-recommended​
+        .main-btn-wrap
+            display: none
     .q-and-a
         padding: 30px 0
         background-color:  rgb(242, 249, 255)
@@ -1122,12 +1134,16 @@ $brightBlue: #0064f9
         &__title
             display: block
     .about-efficiency
+        &__descr
+            margin-left: 0
+        &__content
+            margin-left: 0
         &__image
             display: block
             width: 100%
             margin: 15px auto
         &__title
-            display: block
+            display: block !important
     .hair-rescue
         display: none
     .what-to-expect
