@@ -79,6 +79,7 @@ $brightBlue: #0064f9
 /*header (top)*/   
 .header-mob   
     display: none
+    margin-bottom: -20px
     &_top
             background:     rgb(46, 98, 184)
             color: #fff
@@ -95,8 +96,8 @@ $brightBlue: #0064f9
                 font-weight: bold
                 margin-bottom: 20px
             img
-                width: 363px
-                margin: 40px auto 40px
+                width: 70%
+                margin: 40px auto 0
                 display: block
 .h-top
     padding-top: 50px
@@ -220,13 +221,17 @@ $brightBlue: #0064f9
         font-size: 1.4rem
         font-weight: 700 
         font-family: 'Oswald', sans-serif
+        br
+            display: none
     &__text
+        
         margin-top: 15px
         margin-bottom: 30px
         color: #353535
         font-size: 1.2rem
         font-weight: 300
         font-family: 'Oswald', sans-serif
+       
 /*section About Product*/  
 .about-product
     background-color: #6dcff6
@@ -315,6 +320,7 @@ $brightBlue: #0064f9
     padding: 40px 0 10px
     &_bg-mob
         display: none
+    
     &__content
         width: 580px
     &__title
@@ -449,6 +455,8 @@ $brightBlue: #0064f9
     &__title, &__subtitle
         font-family: 'Oswald', sans-serif
         font-weight: 800
+        br
+            display: none
     &__subtitle
         display: block
         margin-bottom: 20px
@@ -966,9 +974,9 @@ $brightBlue: #0064f9
         &__content
             width: 720px
             margin: 0 auto
-        .for-tablet
+        &__bg-mob
             width: 100%
-            margin-bottom: 40px
+            margin: 0 auto 40px
         &__title
             display: none
             text-align: center
@@ -1138,9 +1146,7 @@ $brightBlue: #0064f9
         &_bg-mob
             display: block
             width: 720px
-            margin-bottom: 15px
-        &__title
-            display: block
+            margin: 0 auto 15px
     .about-efficiency
         &__descr
             margin-left: 0
@@ -1264,10 +1270,10 @@ $brightBlue: #0064f9
             width: 100%
             padding: 10px
             img
-                margin-bottom: 80px
+                padding-bottom: 80px
                 width: 100%
         &__title
-            display: block
+            display: block !important
             color: rgb(9, 135, 255)
             width: 100%
             text-align: center
@@ -1400,11 +1406,16 @@ $brightBlue: #0064f9
         &__subtitle
             font-size: 1.55rem
         &__text
-            font-size: 1.4rem    
+            font-size: 1.4rem   
+            br.for-tablet 
+                display: none !important 
         video
             width: 100%
     .about-product
         width: 95%
+        &__title
+            br
+                display: none
         p
             font-size: 1.1rem
     .physicians-choice
@@ -1442,6 +1453,9 @@ $brightBlue: #0064f9
         .advanteges
             &__item
                 width: 100%
+                img
+                    width: 30px !important
+                    height: 30px !important
             &__descr
                 font-size: 0.98rem
                 span
@@ -1550,7 +1564,7 @@ $brightBlue: #0064f9
             p
                 font-size: 1.25rem
             img
-                width: 80% !important
+                width: 50% !important
                 margin-top: -10px
                 margin-left: auto 
                 margin-right: auto 
@@ -1561,9 +1575,12 @@ $brightBlue: #0064f9
             font-size: 1.25rem
     /*section What to expect*/
     .proof
-        &__subtitle
+        &__subtitle h3
             font-size: 1.60rem
+            br 
+                display: block 
         &__text
+           
             font-size: 1.50rem
     .physicians-choice
         &__subtitle
@@ -1589,6 +1606,7 @@ $brightBlue: #0064f9
                 font-family: 'Arimo', sans-serif
                 font-size: 1.30rem
         &__list
+            margin: 0 auto !important
             li
                     font-size: 1.25rem
                     font-family: 'Roboto', sans-serif
@@ -1614,6 +1632,10 @@ $brightBlue: #0064f9
             &__item
                 span
                     font-size: 16.5px
+    .real-stories
+        &__subtitle
+            br
+                display: block
     /*section with information on how to use*/
     .about-usage
         .container:nth-of-type(2)

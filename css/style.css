@@ -127,6 +127,7 @@ button:focus, input:focus, select:focus, video:focus {
 /*header (top)*/
 .header-mob {
   display: none;
+  margin-bottom: -20px;
 }
 
 .header-mob_top {
@@ -148,8 +149,8 @@ button:focus, input:focus, select:focus, video:focus {
 }
 
 .header-mob_bottom img {
-  width: 363px;
-  margin: 40px auto 40px;
+  width: 70%;
+  margin: 40px auto 0;
   display: block;
 }
 
@@ -350,6 +351,10 @@ button:focus, input:focus, select:focus, video:focus {
   font-size: 1.4rem;
   font-weight: 700;
   font-family: 'Oswald', sans-serif;
+}
+
+.proof__subtitle h3 br {
+  display: none;
 }
 
 .proof__text {
@@ -676,6 +681,10 @@ button:focus, input:focus, select:focus, video:focus {
 .real-stories__title, .real-stories__subtitle {
   font-family: 'Oswald', sans-serif;
   font-weight: 800;
+}
+
+.real-stories__title br, .real-stories__subtitle br {
+  display: none;
 }
 
 .real-stories__subtitle {
@@ -1401,9 +1410,9 @@ button:focus, input:focus, select:focus, video:focus {
     width: 720px;
     margin: 0 auto;
   }
-  .how-it-works .for-tablet {
+  .how-it-works__bg-mob {
     width: 100%;
-    margin-bottom: 40px;
+    margin: 0 auto 40px;
   }
   .how-it-works__title {
     display: none;
@@ -1618,10 +1627,7 @@ button:focus, input:focus, select:focus, video:focus {
   .how-it-works_bg-mob {
     display: block;
     width: 720px;
-    margin-bottom: 15px;
-  }
-  .how-it-works__title {
-    display: block;
+    margin: 0 auto 15px;
   }
   .about-efficiency__descr {
     margin-left: 0;
@@ -1781,11 +1787,11 @@ button:focus, input:focus, select:focus, video:focus {
     padding: 10px;
   }
   .about-benefits__image img {
-    margin-bottom: 80px;
+    padding-bottom: 80px;
     width: 100%;
   }
   .about-benefits__title {
-    display: block;
+    display: block !important;
     color: #0987ff;
     width: 100%;
     text-align: center;
@@ -1950,11 +1956,17 @@ button:focus, input:focus, select:focus, video:focus {
   .proof__text {
     font-size: 1.4rem;
   }
+  .proof__text br.for-tablet {
+    display: none !important;
+  }
   .proof video {
     width: 100%;
   }
   .about-product {
     width: 95%;
+  }
+  .about-product__title br {
+    display: none;
   }
   .about-product p {
     font-size: 1.1rem;
@@ -1998,6 +2010,10 @@ button:focus, input:focus, select:focus, video:focus {
   }
   .how-it-works .advanteges__item {
     width: 100%;
+  }
+  .how-it-works .advanteges__item img {
+    width: 30px !important;
+    height: 30px !important;
   }
   .how-it-works .advanteges__descr {
     font-size: 0.98rem;
@@ -2133,7 +2149,7 @@ button:focus, input:focus, select:focus, video:focus {
     font-size: 1.25rem;
   }
   .header-mob_bottom img {
-    width: 80% !important;
+    width: 50% !important;
     margin-top: -10px;
     margin-left: auto;
     margin-right: auto;
@@ -2145,8 +2161,11 @@ button:focus, input:focus, select:focus, video:focus {
     font-size: 1.25rem;
   }
   /*section What to expect*/
-  .proof__subtitle {
+  .proof__subtitle h3 {
     font-size: 1.60rem;
+  }
+  .proof__subtitle h3 br {
+    display: block;
   }
   .proof__text {
     font-size: 1.50rem;
@@ -2177,6 +2196,9 @@ button:focus, input:focus, select:focus, video:focus {
     font-family: 'Arimo', sans-serif;
     font-size: 1.30rem;
   }
+  .what-to-expect__list {
+    margin: 0 auto !important;
+  }
   .what-to-expect__list li {
     font-size: 1.25rem;
     font-family: 'Roboto', sans-serif;
@@ -2204,6 +2226,9 @@ button:focus, input:focus, select:focus, video:focus {
   }
   .how-it-works .advanteges__item span {
     font-size: 16.5px;
+  }
+  .real-stories__subtitle br {
+    display: block;
   }
   /*section with information on how to use*/
   .about-usage .container:nth-of-type(2) {
