@@ -793,7 +793,7 @@ video {
 
 /*feedback section*/
 .feedback {
-  padding: 40px 0 60px;
+  padding: 20px 0 30px;
 }
 
 .feedback-wrap {
@@ -908,7 +908,7 @@ video {
   min-height: 700px;
   margin-bottom: -72px;
   z-index: 12 !important;
-  margin-top: 60px;
+  margin-top: 10px;
   background-position: right;
   background-size: contain;
 }
@@ -1025,7 +1025,7 @@ video {
 .footer .copyright {
   font-size: 12.8px;
   font-weight: 300;
-  margin-bottom: 30px;
+  margin-bottom: 50px;
 }
 
 .footer p {
@@ -1421,9 +1421,6 @@ video {
   }
   .proof__text {
     text-align: center;
-  }
-  .proof__text br:nth-of-type(2) {
-    display: block !important;
   }
   .proof video {
     width: 720px;
@@ -2439,6 +2436,12 @@ video {
   }
   .mobile-optin p {
     font-size: 1.30rem;
+  }
+}
+
+@media (max-width: 400px) {
+  .proof__text br {
+    display: none !important;
   }
 }
 

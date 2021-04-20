@@ -534,7 +534,7 @@ video
 
 /*feedback section*/
 .feedback
-    padding: 40px 0 60px
+    padding: 20px 0 30px
     &-wrap
         
         display: grid
@@ -616,7 +616,7 @@ video
     min-height: 700px 
     margin-bottom: -72px
     z-index: 12 !important
-    margin-top: 60px 
+    margin-top: 10px 
     background-position: right
     background-size: contain 
     .tablet
@@ -694,7 +694,7 @@ video
     .copyright
         font-size: 12.8px
         font-weight: 300
-        margin-bottom: 30px
+        margin-bottom: 50px
     
        
     p 
@@ -977,8 +977,7 @@ video
         &__text
             text-align: center
 
-            br:nth-of-type(2)
-                display: block !important
+           
         video
             width: 720px 
     .about-product
@@ -1801,7 +1800,11 @@ video
                 padding: 12px 12px 
         p
             font-size: 1.30rem
-
+@media  ( max-width: 400px )
+    .proof__text
+        br
+            display: none !important
+    
 @media  ( max-width: 345px )
     .feedback__content_image
             width: 100%
