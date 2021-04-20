@@ -94,6 +94,77 @@ button:focus, input:focus, select:focus, video:focus {
   display: block;
 }
 
+video {
+  position: relative;
+}
+
+.video-play {
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -150%);
+          transform: translate(-50%, -150%);
+  background-color: rgba(43, 51, 63, 0.7);
+  width: 86px;
+  height: 41px;
+  position: absolute;
+  border: .06666em solid #fff;
+  border-radius: .3em;
+  -webkit-transition: all .4s;
+  transition: all .4s;
+}
+
+.video-play:hover {
+  background-color: #696e76b3;
+}
+
+.video-play::before {
+  content: '';
+  position: absolute;
+  left: 35px;
+  bottom: 8px;
+  border: 10px solid transparent;
+  border-left: 14px solid #fff;
+}
+
+.modal-wrap {
+  display: none;
+  background: rgba(0, 0, 0, 0.4);
+  cursor: pointer;
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 99;
+}
+
+.modal-wrap .close {
+  position: absolute;
+  top: 15%;
+  right: 5%;
+}
+
+.modal-wrap .modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  display: block;
+  background-color: #fff;
+  -webkit-box-shadow: 10px 10px 60px #555;
+          box-shadow: 10px 10px 60px #555;
+  max-width: 900px;
+  height: 600px;
+  width: 80%;
+  border-radius: 8px;
+  padding: 20px;
+  overflow-y: scroll;
+}
+
+.modal-wrap.open {
+  display: block;
+}
+
 /*animation red button*/
 @-webkit-keyframes animated-btn {
   0% {
@@ -478,9 +549,22 @@ button:focus, input:focus, select:focus, video:focus {
   font-weight: 300;
 }
 
-.pharmacist-recommended​ video {
+.pharmacist-recommended​__video-wrap {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  position: relative;
   margin-top: 30px;
   margin-bottom: 10px;
+}
+
+.pharmacist-recommended​__video-wrap .video-play {
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
 }
 
 /*section  How It Works?*/
@@ -813,13 +897,17 @@ button:focus, input:focus, select:focus, video:focus {
   margin-right: 80px;
 }
 
+.about-usage .bg-mob {
+  display: none;
+}
+
 /*section with information about the benefits - the final section*/
 .about-benefits {
   background-image: url("../img/bg/bg4.png");
   background-repeat: no-repeat;
   min-height: 700px;
   margin-bottom: -72px;
-  z-index: 12;
+  z-index: 12 !important;
   margin-top: 60px;
   background-position: right;
   background-size: contain;
@@ -890,10 +978,39 @@ button:focus, input:focus, select:focus, video:focus {
   font-weight: 700;
 }
 
+.link-block {
+  position: relative;
+}
+
+.footer-link-wrap {
+  z-index: 13;
+  position: absolute;
+  bottom: -150px;
+  left: 15px;
+  list-style: none;
+}
+
+.footer-link-wrap li {
+  display: inline-block;
+  font-size: 13px;
+  color: #fff;
+  font-weight: 500;
+}
+
+.footer-link-wrap li a {
+  font-size: 13px;
+  color: #fff;
+}
+
+.footer-link-wrap span {
+  font-size: 14px;
+  color: #393a57;
+}
+
 /*footer*/
 .footer {
-  position: relative;
   z-index: -2;
+  position: relative;
   padding: 40px 0px 40px;
   background-color: #424362;
   color: #fff;
@@ -908,24 +1025,7 @@ button:focus, input:focus, select:focus, video:focus {
 .footer .copyright {
   font-size: 12.8px;
   font-weight: 300;
-}
-
-.footer ul {
-  list-style: none;
-}
-
-.footer ul li {
-  display: inline-block;
-}
-
-.footer ul li a {
-  font-size: 13px;
-  color: #fff;
-  font-weight: 500;
-}
-
-.footer ul span {
-  color: #393a57;
+  margin-bottom: 30px;
 }
 
 .footer p {
@@ -1363,16 +1463,13 @@ button:focus, input:focus, select:focus, video:focus {
   .what-to-expect__list li {
     min-width: 200px;
     position: relative;
+  }
+  .what-to-expect__list li span {
     font-family: 'Arimo', sans-serif;
     font-weight: 600;
     font-size: 22px;
     color: #0e437e;
     list-style-image: url("../img/list-marker/check mark white no bkr.png");
-  }
-  .what-to-expect__list li span {
-    position: absolute;
-    display: block;
-    top: 12px;
   }
   .what-to-expect .container {
     display: block;
@@ -1819,7 +1916,7 @@ button:focus, input:focus, select:focus, video:focus {
     color: #0987ff;
     width: 100%;
     text-align: center;
-    font-size: 1.8rem;
+    font-size: 2.8rem;
   }
   .about-benefits__subtitle {
     display: block;
@@ -2206,7 +2303,7 @@ button:focus, input:focus, select:focus, video:focus {
   .how-it-works .advanteges__descr {
     font-size: 1.13rem;
   }
-  .pharmacist-recommended​ {
+  .pharmacist-recommended​__text {
     display: block;
     font-size: 1.5rem;
   }
@@ -2280,50 +2377,14 @@ button:focus, input:focus, select:focus, video:focus {
     display: block;
   }
   /*section with information on how to use*/
-  .about-usage h2 br {
-    display: block !important;
+  .about-usage .container {
+    display: none !important;
   }
-  .about-usage .container:nth-of-type(2) {
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    gap: 10px;
-  }
-  .about-usage .text-row span {
-    max-width: 130px;
-    text-align: left !important;
-  }
-  .about-usage__title {
-    font-family: 'Oswald',  sans-serif;
-    line-height: 1.3;
-  }
-  .about-usage__title span {
-    font-family: 'Oswald',  sans-serif;
-    color: #0064f9;
-    font-weight: bold;
-  }
-  .about-usage__title span br {
-    display: none;
-  }
-  .about-usage__text {
-    margin-top: 30px;
-    color: #000;
-    font-size: 1.5rem;
-    line-height: 1.4em;
-    font-family: 'Oswald',  sans-serif;
-    font-weight: 400;
-  }
-  .about-usage__text br {
-    display: none;
-  }
-  .about-usage img:nth-of-type(1) {
-    width: 100px;
-  }
-  .about-usage img:nth-of-type(3) {
-    width: 100px;
-  }
-  .about-usage img:nth-of-type(5) {
-    width: 136px;
+  .about-usage .bg-mob {
+    border-top: 2px solid #ff6600;
+    border-bottom: 2px solid #316ed4;
+    display: block;
+    width: 100% !important;
   }
   .feedback__content_image span {
     font-size: 1.10rem;

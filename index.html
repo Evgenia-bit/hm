@@ -43,17 +43,19 @@
                 height: 100vh;
             }
         }
+
         @media(max-width: 1024px) {
             .h-top {
                 background-image: url("img/bg/Hair Man Tablet PNG without form final.png");
                 background-position: 100% 100%;
                 height: 790px !important;
             }
+
             .first-screen-image {
                 display: none;
             }
-            
-           
+
+
         }
 
         @media (max-width: 1023px) {
@@ -147,8 +149,8 @@
                         <div class="col-lg-3 text-left">
                             <div class="main-form">
                                 <div class="main-form__header">
-                                        REQUEST YOUR RISK FREE BOTTLE
-                                    
+                                    REQUEST YOUR RISK FREE BOTTLE
+
                                 </div>
                                 <form action="packeges.html" class="main-form__inputs">
                                     <select class="form__country" name="country" tabindex="-98">
@@ -465,12 +467,12 @@
                     <div class="col-lg-12 text-center proof__text">
                         NOTE: All Before and After photos are from real Hair Rescue Rx users.
                         <br class="for-tablet">They are totally, 100%
-                        Real.<br>
-                        NOT PHOTOSHOPPED.
+                        Real.NOT PHOTOSHOPPED.
                     </div>
                     <div class="col-lg-12 text-center proof__video">
 
                         <video src="video/the-proff.m4v" controls width="945px" poster="video/prew/1.jpg"></video>
+                        <button class="video-play"></button>
                     </div>
                 </div>
             </div>
@@ -538,6 +540,7 @@
                     <div class="col-lg-6 text-right">
                         <video src="video/physicians-choice1.m4v" poster="video/prew/2.jpg" controls
                             width="505px"></video><br>
+                        <button class="video-play"></button>
                         <span class=" dr-name">
                             Dr. M. Mehra, MD
                         </span>
@@ -548,6 +551,7 @@
                     <div class="col-lg-6">
                         <video src="video/physicians-choice2.mp4" poster="video/prew/3.jpg" controls
                             width="505px"></video><br>
+                        <button class="video-play"></button>
                         <span class="dr-name">
                             Dr. A. Carmack, MD
                         </span>
@@ -567,9 +571,15 @@
                             PHARMACIST-RECOMMENDED
                         </h2>
                         <span class="pharmacist-recommended​__text">
-                            Watch T. Burman, Registered Pharmacist, NY, USA <br>Explains the Science Behind Hair Rescue Rx
+                            Watch T. Burman, Registered Pharmacist, NY, USA <br>Explains the Science Behind Hair Rescue
+                            Rx
                         </span>
-                        <video src="video/Pharmacists.mp4" poster="video/prew/4.jpg" controls width="80%"></video>
+                        <div class="pharmacist-recommended​__video-wrap">
+
+                            <video src="video/Pharmacists.mp4" poster="video/prew/4.jpg" controls width="80%"></video>
+                            <button class="video-play "></button>
+                        </div>
+
                         <div class="main-btn-wrap">
                             <button class="main-btn"><a href="#header">PUSH MY ORDER</a></button>
                         </div>
@@ -632,12 +642,12 @@
             </div>
         </section>
         <section class="q-and-a">
-            
+
             <div class="container">
                 <span class="q-and-a__content">
                     QUESTION: Will Hair Rescue Rx work for me and my hair?<br>
                     <span class="bottom-text-wrap">ANSWER: <span class="orange-text">ABSOLUTELY!</span></span>
-                    
+
                 </span>
                 <img src="img/Q&A/mark.jpg" alt="mark">
 
@@ -657,22 +667,23 @@
                 </p>
                 <ul class="what-to-expect__list">
                     <li>
-                       <span>Add Thickness</span> 
+                        <span>Add Thickness</span>
 
                     </li>
                     <li>
                         <span>Reduce Hair Loss</span>
-                        
+
 
 
                     </li>
                     <li>
                         <span>Increase Volume</span>
-                        
-                        ​</li>
+
+                        ​
+                    </li>
                     <li>
                         <span>Grow Their Hair Faster</span>
-                        
+
 
                     </li>
                 </ul>
@@ -766,6 +777,7 @@
                         <div class="video-wrap">
                             <video src="video/Alex-UPDATED.m4v" poster="video/prew/5.jpg" controls
                                 width="505px"></video>
+                            <button class="video-play"></button>
                             <span class="name">
                                 Alex L., Age 36
                             </span>
@@ -776,6 +788,7 @@
                         <div class="video-wrap">
                             <video src="video/Steve-UPDETED.m4v" poster="video/prew/6.jpg" controls
                                 width="505px"></video>
+                            <button class="video-play"></button>
                             <span class="name">
                                 Steve M., Age 57
                             </span>
@@ -786,6 +799,7 @@
                         <div class="video-wrap">
                             <video src="video/Matthew-UPDETED.m4v" poster="video/prew/7.jpg" controls
                                 width="505px"></video>
+                            <button class="video-play"></button>
                             <span class="name">
                                 Matthew K., Age 31
                             </span>
@@ -795,6 +809,7 @@
                     <div class="col-xl-6 col-lg-12  text-center">
                         <div class="video-wrap">
                             <video src="video/Gabriel.m4v" poster="video/prew/8.jpg" controls width="505px"></video>
+                            <button class="video-play"></button>
                             <span class="name">
                                 Gabriel R., Age 28
                             </span>
@@ -944,6 +959,7 @@
                 </div>
             </div>
         </div>
+        <img src="img/bg/MOBIL How to use 414 x 590.png" alt="How to use" class="bg-mob">
     </section>
     <section class="about-benefits">
         <div class="container">
@@ -990,6 +1006,26 @@
 
 
     </section>
+
+    <div class="modal-wrap">
+        <div class="close">X</div>
+        <div class="modal">
+
+        </div>
+    </div>
+    <div class="link-block container">
+
+        <ul class="footer-link-wrap">
+            <li class="footer-link">Terms and Conditions</li>
+            <span>|</span>
+            <li class="footer-link">Privacy Policy</li>
+            <span>|</span>
+            <li class="footer-link">Contact Us</li>
+            <span>|</span>
+            <li><a href="#">Affiliate Signup</a></li>
+        </ul>
+    </div>
+
     <footer class="footer">
         <div class="container">
             <div class="row">
@@ -998,15 +1034,7 @@
                     <p class="copyright">
                         Copyright ©2020 Biolab Rx®. All Rights Reserved.
                     </p>
-                    <ul>
-                        <li><a href="#">Terms and Conditions</a></li>
-                        <span>|</span> ""
-                        <li><a href="#">Privacy Policy</a></li>
-                        <span>|</span>
-                        <li><a href="#">Contact Us</a></li>
-                        <span>|</span>
-                        <li><a href="#">Affiliate Signup</a></li>
-                    </ul>
+
                     <p>
                         Representations regarding the efficacy and safety of Hair Rescue Rx® have not been evaluated
                         by
@@ -1026,60 +1054,70 @@
             </div>
         </div>
     </footer>
-    </div>
+
     <script>
-
-        const screenWidth = window.screen.width;
-        const screenHeight = window.screen.height;
-        const mediaQuery = window.matchMedia('(min-width: ' + screenWidth + 'px)')
-        const mediaQuery2 = window.matchMedia('(max-width: 1023px)')
-        const mediaQuery3 = window.matchMedia('(max-width: 1024px)')
-        if (mediaQuery.matches) {
-            document.querySelector('.wrapper').style.width = screenWidth + 'px';
-
-        } else {
-            document.querySelector('.wrapper').style.width = '100vw'
-        }
-        if (window.matchMedia('(min-width: 1600px)').matches) {
-            document.querySelector('.h-top').style.height = screenHeight + 'px';
-        } else {
-            document.querySelector('.h-top').style.height = 'auto';
-        }
-        if (mediaQuery2.matches) {
-            document.querySelector('.what-to-expect').style.height = 'auto !important';
-        } else {
-            document.querySelector('.what-to-expect').style.height = document.querySelector('.wrapper').offsetWidth / 2 + 'px';
-        }
-        if (mediaQuery3.matches) {
-            document.querySelector('.what-to-expect').style.height = '750px';
-        }
-
-        window.addEventListener('resize', () => {
-
+            const screenWidth = window.screen.width;
+            const screenHeight = window.screen.height;
+            const mediaQuery = window.matchMedia('(min-width: ' + screenWidth + 'px)')
+            const mediaQuery2 = window.matchMedia('(max-width: 1023px)')
+            const mediaQuery3 = window.matchMedia('(max-width: 1024px)')
             if (mediaQuery.matches) {
                 document.querySelector('.wrapper').style.width = screenWidth + 'px';
+
             } else {
-                document.querySelector('.wrapper').style.width = '100vw';
-            }
-            if (mediaQuery2.matches) {
-                document.querySelector('.what-to-expect').style.height = 'auto';
-            } else {
-                document.querySelector('.what-to-expect').style.height = document.querySelector('.wrapper').offsetWidth / 2 + 'px';
-            }
-            if (mediaQuery3.matches) {
-                document.querySelector('.what-to-expect').style.height = '750px';
+                document.querySelector('.wrapper').style.width = '100vw'
             }
             if (window.matchMedia('(min-width: 1600px)').matches) {
                 document.querySelector('.h-top').style.height = screenHeight + 'px';
             } else {
                 document.querySelector('.h-top').style.height = 'auto';
             }
-        })
+            if (mediaQuery2.matches) {
+                document.querySelector('.what-to-expect').style.height = 'auto !important';
+            } else {
+                document.querySelector('.what-to-expect').style.height = document.querySelector('.wrapper').offsetWidth / 2 + 'px';
+            }
+            if (mediaQuery3.matches) {
+                document.querySelector('.what-to-expect').style.height = '750px';
+            }
 
+            window.addEventListener('resize', () => {
 
+                if (mediaQuery.matches) {
+                    document.querySelector('.wrapper').style.width = screenWidth + 'px';
+                } else {
+                    document.querySelector('.wrapper').style.width = '100vw';
+                }
+                if (mediaQuery2.matches) {
+                    document.querySelector('.what-to-expect').style.height = 'auto';
+                } else {
+                    document.querySelector('.what-to-expect').style.height = document.querySelector('.wrapper').offsetWidth / 2 + 'px';
+                }
+                if (mediaQuery3.matches) {
+                    document.querySelector('.what-to-expect').style.height = '750px';
+                }
+                if (window.matchMedia('(min-width: 1600px)').matches) {
+                    document.querySelector('.h-top').style.height = screenHeight + 'px';
+                } else {
+                    document.querySelector('.h-top').style.height = 'auto';
+                }
+            })
+
+            /*кнопки запуска видео*/
+            const videoButtons = document.querySelectorAll(".video-play");
+            const videos = document.querySelectorAll("video");
+            videoButtons.forEach((item, i) => {
+                item.addEventListener("click", () => {
+
+                    item.style.display = 'none';
+                    videos[i].play();
+                })
+            })
+
+       
 
 
 
     </script>
-
+    <script src="js/script.js"></script>
 </html>
