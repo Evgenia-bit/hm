@@ -138,9 +138,23 @@ video {
 }
 
 .modal-wrap .close {
+  color: #000;
+  background-color: #fff;
+  border: 3px solid #999;
+  border-radius: 50px;
+  font-size: 18px;
+  line-height: 30px;
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  cursor: pointer;
   position: absolute;
-  top: 15%;
-  right: 5%;
+  top: 0;
+  right: 0;
+}
+
+.modal-wrap .tr {
+  display: none !important;
 }
 
 .modal-wrap .modal {
@@ -999,7 +1013,7 @@ video {
 .footer-link-wrap {
   z-index: 13;
   position: absolute;
-  bottom: -165px;
+  bottom: -150px;
   left: 15px;
   list-style: none;
   cursor: pointer;
@@ -1542,9 +1556,10 @@ video {
     width: 720px;
     margin: 0 auto;
   }
-  .how-it-works__bg-mob {
+  .how-it-works_bg-mob {
     width: 100%;
     margin: 0 auto 40px;
+    display: block;
   }
   .how-it-works__title {
     display: none;
@@ -2406,6 +2421,9 @@ video {
   .how-it-works .advanteges__item span {
     font-size: 16.5px;
   }
+  .real-stories {
+    padding-bottom: 30px;
+  }
   .real-stories__subtitle br {
     display: block;
   }
@@ -2418,6 +2436,9 @@ video {
     border-bottom: 2px solid #316ed4;
     display: block;
     width: 100% !important;
+  }
+  .feedback {
+    padding-top: 0;
   }
   .feedback__content_image span {
     font-size: 1.10rem;
@@ -2480,10 +2501,10 @@ video {
     display: none !important;
   }
   .footer-link-wrap {
-    bottom: -160px;
+    bottom: -150px;
   }
   .copyright {
-    margin-bottom: 60px !important;
+    margin-bottom: 60px;
   }
   .physicians-choice .video-play {
     -webkit-transform: translate(-50%, -230%);

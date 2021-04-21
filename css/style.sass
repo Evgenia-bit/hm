@@ -99,9 +99,21 @@ video
     top: 0
     z-index: 99
     .close
+        color: #000
+        background-color: #fff
+        border: 3px solid #999
+        border-radius: 50px
+        font-size: 18px
+        line-height: 30px
+        width: 30px
+        height: 30px
+        text-align: center
+        cursor: pointer
         position: absolute
-        top: 15%
-        right: 5%
+        top: 0
+        right: 0
+    .tr
+        display: none !important
     .modal
         position: absolute
         top: 50%
@@ -673,7 +685,7 @@ video
 .footer-link-wrap
     z-index: 13
     position: absolute
-    bottom: -165px
+    bottom: -150px
     left: 15px
     list-style: none
     cursor: pointer
@@ -1073,9 +1085,10 @@ video
         &__content
             width: 720px
             margin: 0 auto
-        &__bg-mob
+        &_bg-mob
             width: 100%
             margin: 0 auto 40px
+            display: block
         &__title
             display: none
             text-align: center
@@ -1765,6 +1778,7 @@ video
                 span
                     font-size: 16.5px
     .real-stories
+        padding-bottom: 30px
         &__subtitle
             br
                 display: block
@@ -1778,6 +1792,7 @@ video
             display: block
             width: 100% !important
     .feedback
+        padding-top: 0
         &__content
             &_image
                 span
@@ -1827,9 +1842,9 @@ video
         br
             display: none !important
     .footer-link-wrap
-        bottom: -160px
+        bottom: -150px
     .copyright
-        margin-bottom: 60px !important
+        margin-bottom: 60px
     .physicians-choice
         .video-play
                 transform: translate(-50%, -230%)
