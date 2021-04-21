@@ -284,6 +284,8 @@ video
         font-size: 1.2rem
         font-weight: 300
         font-family: 'Oswald', sans-serif
+    .video-play
+        transform: translate(-50%, -100%)
        
 /*section About Product*/  
 .about-product
@@ -363,6 +365,8 @@ video
         color: #333
         font-family: 'Oswald', sans-serif
         font-weight: 300
+        br
+            display: none
     &__video-wrap
         width: fit-content
         height: fit-content
@@ -426,6 +430,7 @@ video
 /*section Q&A*/        
 .q-and-a
     padding: 30px 0
+    margin-bottom: -30px
     background-color:  rgb(242, 249, 255)
     .container
         display: grid
@@ -450,6 +455,8 @@ video
     background-position: center center
     background-size: 100% 100%
     .container
+        display: none
+    &__bg-mob
         display: none
 
 /*section HAIR RESCUE RX*/
@@ -666,9 +673,10 @@ video
 .footer-link-wrap
     z-index: 13
     position: absolute
-    bottom: -150px
+    bottom: -165px
     left: 15px
     list-style: none
+    cursor: pointer
     li 
         display: inline-block
         font-size: 13px
@@ -677,6 +685,8 @@ video
         a
             font-size: 13px
             color: #fff  
+    li:hover
+        color: blue
     span
         font-size: 14px 
         color: rgb(57, 58, 87)
@@ -688,6 +698,7 @@ video
     background-color: rgb(66, 67, 98)
     color: #fff
     font-size: 14px
+    line-height: 1.4
     img
         width: 135px
         margin-bottom: 5px
@@ -1044,7 +1055,10 @@ video
                 display: none
             img
                 display: none
-    
+    .pharmacist-recommended​
+        &__text
+            br
+                display: block
     .q-and-a
         background-image: url('../img/bg/question mark.png')
         padding: 50px 0
@@ -1417,10 +1431,13 @@ video
         .main-btn-wrap
             display: none
     .physicians-choice
+        padding-bottom: 0
         &__subtitle
             font-size: 1.5rem
         video
             width: 720px
+        .dr
+            margin-bottom: 50px
     .how-it-works
         &__text
             font-size: 0.8rem
@@ -1479,6 +1496,9 @@ video
     .mobile-optin
         p
             font-size: 1.10rem 
+    .footer
+        p
+            max-width: 100%
 @media (max-width: 767px)
     .header-mob   
         display: block
@@ -1511,13 +1531,18 @@ video
         p
             font-size: 1.1rem
     .physicians-choice
+        padding-bottom: 0
         &__subtitle
             font-size: 1.55rem
         
         video
             width: 100%
+        .video-play
+                transform: translate(-50%, -250%)
         .dr, .dr-name
             font-size: 1.65rem
+        .dr
+            margin-bottom: 50px
     .what-to-expect
         &__subtitle
             font-size: 1.65rem 
@@ -1690,18 +1715,12 @@ video
             display: block
             font-size: 1.5rem
     .what-to-expect
-        &__subtitle
-            font-size: 1.70rem
-        p
-            font-size: 1.25rem
-            b
-                font-family: 'Arimo', sans-serif
-                font-size: 1.30rem
-        &__list
-            margin: 0 auto !important
-            li
-                    font-size: 1.25rem
-                    font-family: 'Roboto', sans-serif
+        &__bg-mob
+            display: block
+            width: 100%
+        .container
+           display: none
+        
     .q-and-a
         margin-bottom: -40px
         .container
@@ -1804,6 +1823,16 @@ video
     .proof__text
         br
             display: none !important
+    .footer-link-wrap
+        bottom: -160px
+    .copyright
+        margin-bottom: 60px !important
+    .physicians-choice
+        .video-play
+                transform: translate(-50%, -230%)
+@media ( max-width: 310px )
+    .footer-link-wrap
+        bottom: -170px
     
 @media  ( max-width: 345px )
     .feedback__content_image

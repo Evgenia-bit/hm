@@ -437,6 +437,11 @@ video {
   font-family: 'Oswald', sans-serif;
 }
 
+.proof .video-play {
+  -webkit-transform: translate(-50%, -100%);
+          transform: translate(-50%, -100%);
+}
+
 /*section About Product*/
 .about-product {
   background-color: #6dcff6;
@@ -549,6 +554,10 @@ video {
   font-weight: 300;
 }
 
+.pharmacist-recommended​__text br {
+  display: none;
+}
+
 .pharmacist-recommended​__video-wrap {
   width: -webkit-fit-content;
   width: -moz-fit-content;
@@ -642,6 +651,7 @@ video {
 /*section Q&A*/
 .q-and-a {
   padding: 30px 0;
+  margin-bottom: -30px;
   background-color: #f2f9ff;
 }
 
@@ -676,6 +686,10 @@ video {
 }
 
 .what-to-expect .container {
+  display: none;
+}
+
+.what-to-expect__bg-mob {
   display: none;
 }
 
@@ -985,9 +999,10 @@ video {
 .footer-link-wrap {
   z-index: 13;
   position: absolute;
-  bottom: -150px;
+  bottom: -165px;
   left: 15px;
   list-style: none;
+  cursor: pointer;
 }
 
 .footer-link-wrap li {
@@ -1000,6 +1015,10 @@ video {
 .footer-link-wrap li a {
   font-size: 13px;
   color: #fff;
+}
+
+.footer-link-wrap li:hover {
+  color: blue;
 }
 
 .footer-link-wrap span {
@@ -1015,6 +1034,7 @@ video {
   background-color: #424362;
   color: #fff;
   font-size: 14px;
+  line-height: 1.4;
 }
 
 .footer img {
@@ -1500,6 +1520,9 @@ video {
   .what-to-expect .container img {
     display: none;
   }
+  .pharmacist-recommended​__text br {
+    display: block;
+  }
   .q-and-a {
     background-image: url("../img/bg/question mark.png");
     padding: 50px 0;
@@ -1980,11 +2003,17 @@ video {
   .about-product .main-btn-wrap {
     display: none;
   }
+  .physicians-choice {
+    padding-bottom: 0;
+  }
   .physicians-choice__subtitle {
     font-size: 1.5rem;
   }
   .physicians-choice video {
     width: 720px;
+  }
+  .physicians-choice .dr {
+    margin-bottom: 50px;
   }
   .how-it-works__text {
     font-size: 0.8rem;
@@ -2048,6 +2077,9 @@ video {
   .mobile-optin p {
     font-size: 1.10rem;
   }
+  .footer p {
+    max-width: 100%;
+  }
 }
 
 @media (max-width: 767px) {
@@ -2089,14 +2121,24 @@ video {
   .about-product p {
     font-size: 1.1rem;
   }
+  .physicians-choice {
+    padding-bottom: 0;
+  }
   .physicians-choice__subtitle {
     font-size: 1.55rem;
   }
   .physicians-choice video {
     width: 100%;
   }
+  .physicians-choice .video-play {
+    -webkit-transform: translate(-50%, -250%);
+            transform: translate(-50%, -250%);
+  }
   .physicians-choice .dr, .physicians-choice .dr-name {
     font-size: 1.65rem;
+  }
+  .physicians-choice .dr {
+    margin-bottom: 50px;
   }
   .what-to-expect__subtitle {
     font-size: 1.65rem;
@@ -2304,22 +2346,12 @@ video {
     display: block;
     font-size: 1.5rem;
   }
-  .what-to-expect__subtitle {
-    font-size: 1.70rem;
+  .what-to-expect__bg-mob {
+    display: block;
+    width: 100%;
   }
-  .what-to-expect p {
-    font-size: 1.25rem;
-  }
-  .what-to-expect p b {
-    font-family: 'Arimo', sans-serif;
-    font-size: 1.30rem;
-  }
-  .what-to-expect__list {
-    margin: 0 auto !important;
-  }
-  .what-to-expect__list li {
-    font-size: 1.25rem;
-    font-family: 'Roboto', sans-serif;
+  .what-to-expect .container {
+    display: none;
   }
   .q-and-a {
     margin-bottom: -40px;
@@ -2442,6 +2474,22 @@ video {
 @media (max-width: 400px) {
   .proof__text br {
     display: none !important;
+  }
+  .footer-link-wrap {
+    bottom: -160px;
+  }
+  .copyright {
+    margin-bottom: 60px !important;
+  }
+  .physicians-choice .video-play {
+    -webkit-transform: translate(-50%, -230%);
+            transform: translate(-50%, -230%);
+  }
+}
+
+@media (max-width: 310px) {
+  .footer-link-wrap {
+    bottom: -170px;
   }
 }
 
