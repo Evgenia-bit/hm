@@ -2018,7 +2018,11 @@ video {
   .how-it-works__text {
     font-size: 0.8rem;
   }
+  .how-it-works .advanteges__item {
+    gap: 0 !important;
+  }
   .how-it-works .advanteges__descr {
+    margin-left: 25px;
     font-size: 0.83rem;
   }
   .how-it-works .advanteges__descr span {
