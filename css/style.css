@@ -173,6 +173,17 @@ video {
   border-radius: 8px;
   padding: 20px;
   overflow-y: scroll;
+  font-size: 14px !important;
+  line-height: 1.4em;
+}
+
+.modal-wrap .modal p {
+  margin: 0 auto;
+}
+
+.modal-wrap .modal h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
 }
 
 .modal-wrap.open {
