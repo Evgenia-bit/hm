@@ -20,7 +20,7 @@
              modal.innerHTML = "";
              modal.insertAdjacentHTML('beforeEnd', `
         
-                 
+             <div class="close">X</div>
              <p>This product website (the “Website”) is owned and operated by Biolab Rx and its affiliates (collectively “Company”). These Terms of Use and Conditions of Purchase, the Company’s, and any amendments or supplements to it, (the "Agreement") form a legally binding agreement between you and the Company. This Agreement governs your access to and use the Website, by placing any orders through this Website or by telephone, you agree with the terms and conditions set for the below. Please read the following terms and conditions of use carefully before placing your order and print a copy for future reference. It is important that you also read our Privacy Policy regarding personal information provided by you, which is incorporated herein by reference.</p>
          <p>&nbsp;</p>
          <p><strong>Health Disclaimer</strong></p>
@@ -92,7 +92,7 @@
          } else if (i == 1) {
              modal.innerHTML = "";
              modal.insertAdjacentHTML('beforeEnd', `
-        
+             <div class="close">X</div>
                  <p><strong>Privacy Policy</strong></p>
          <p>&nbsp;</p>
          <p>You linked to this Privacy Policy ("Privacy Policy") through a product website owned and operated by Biolab Rx ("Company", “us”, “our” or “we”). The Company's network includes numerous product marketing Websites (each a "Website" and collectively, the “Websites"). This privacy policy is in effect for all websites owned and operated by the Company. By using any of the websites you signify that you have read, understand and agree to be bound by this Privacy Policy. This privacy policy covers the collection, use and disclosure of personal information that may be collected by the Company anytime you interact with the Company, when you provide it through various forms and places on the Websites such as in connection with a request or purchase of a product, service, or information or if you register for a Website account.</p>
@@ -135,7 +135,7 @@
          } else {
              modal.innerHTML = "";
              modal.insertAdjacentHTML('beforeEnd', `
-        
+             <div class="close">X</div>
          <p>&nbsp;</p>
          <div class="pop-heding" style="text-align:center;">
              <h1>We Are Always Here To help!</h1>
