@@ -137,7 +137,7 @@
             </div>
             <div class="h-top">
                 <img class="first-screen-mob" src="img/first-screen/first-screen-mob.jpg" alt="hair-man" width="100%">
-                <img src="img/bg/Hair Man Tablet PNG without form final.png" alt="Hair Man" class="for-tablet">
+                <img src="img/bg/Hair Man Tablet PNG without form final.png" alt="" class="for-tablet">
                 <div class="container">
 
                     <div class="row">
@@ -459,7 +459,7 @@
             <div class="container">
                 <div class="row ">
                     <div class="col-lg-12 text-center proof__title">
-                        <img src="img/the-proof/10874161_1592843133655The_Proof.jpg" alt="the-proof">
+                        <img src="img/the-proof/10874161_1592843133655The_Proof.jpg" alt="">
                     </div>
                     <div class="col-lg-12 text-center proof__subtitle">
                         <h3>DOES HAIR RESCUE RX WORK? <br> SEE FOR YOURSELF...</h3>
@@ -595,7 +595,7 @@
                             <h2 class="how-it-works__title">
                                 HOW <span>HAIR RESCUE RX</span> WORKS?
                             </h2>
-                            <img src="img/bg/HAIR MAN TABLET PNG How it works.png" alt="how-it-works" class="how-it-works_bg-mob">
+                            <img src="img/bg/HAIR MAN TABLET PNG How it works.png" alt="" class="how-it-works_bg-mob">
                             <p class="how-it-works__text">
                                 We formulated Hair Rescue Rx with high-quality ingredients to provide you with a great
                                 product
@@ -661,7 +661,7 @@
                 <span class="what-to-expect__subtitle">
                     It's not a long way to go...
                 </span>
-                <img src="img/bg/bg2mb.jpg" alt="what-to-expect">
+                <img src="img/bg/bg2mb.jpg" alt="">
                 <p>
                     In a 90-day study, 96% of Hair Rescue Rx users said Hair Rescue Rx helped:
                 </p>
@@ -717,8 +717,8 @@
                             WHY <span class="blue-text"> HAIR RESCUE RX</span> <br>
                             IS SO EFFECTIVE?
                         </h2>
-                        <img class="about-efficiency__image" src="img/bg/bg3mb.jpg" alt="about-efficiency">
-                        <img src="img/bg/HAIR MAN TABLET PNG WHY ITS EFFECT-CURLY (1).png" alt="AIR MAN" class="for-tablet">
+                        <img class="about-efficiency__image" src="img/bg/bg3mb.jpg" alt="">
+                        <img src="img/bg/HAIR MAN TABLET PNG WHY ITS EFFECT-CURLY (1).png" alt="" class="for-tablet">
                         <p class="about-efficiency__descr">
                             Hair Rescue Rx contains the most powerful ingredients <br>
                             that have been clinically tested and proven to work.
@@ -835,7 +835,7 @@
                 </div>
                 <div class="row justify-content-center">
                     <div class="feedback-wrap">
-                        <div class="text-center">
+                        <div class="text-center content-wrap">
                             <div class="feedback__content-wrap">
                                 <div class="feedback__content_image">
                                     <img class="human" src="img/feedback/1.jpg" alt="David K.">
@@ -853,7 +853,7 @@
                             </div>
 
                         </div>
-                        <div class="text-center">
+                        <div class="text-center content-wrap">
                             <div class="feedback__content-wrap">
                                 <div class="feedback__content_image">
                                     <img class="human" src="img/feedback/2.jpg" alt="Sam P.">
@@ -874,7 +874,7 @@
                         </div>
 
 
-                        <div class="text-center">
+                        <div class="text-center content-wrap">
                             <div class="feedback__content-wrap">
                                 <div class="feedback__content_image">
                                     <img class="human" src="img/feedback/3.jpg" alt="Tom S.">
@@ -894,7 +894,7 @@
                             </div>
                         </div>
 
-                        <div class=" text-center">
+                        <div class=" text-center content-wrap">
                             <div class="feedback__content-wrap">
                                 <div class="feedback__content_image">
                                     <img class="human" src="img/feedback/4.jpg" alt="Ken L.">
@@ -999,7 +999,7 @@
                 </div>
             </div>
             <div class="about-benefits__image">
-                <img src="img/bg/bg4mb.jpg" alt="about-benefits">
+                <img src="img/bg/bg4mb.jpg" alt="">
             </div>
         </div>
 
@@ -1055,13 +1055,15 @@
         </div>
     </footer>
 
-    <script>
+    <script type="text/javascript">
             const screenWidth = window.screen.width;
             const screenHeight = window.screen.height;
             const mediaQuery = window.matchMedia('(min-width: ' + screenWidth + 'px)')
             const mediaQuery2 = window.matchMedia('(max-width: 1023px)')
             const mediaQuery3 = window.matchMedia('(max-width: 1024px)')
+            const whatToExpect = document.querySelector('.what-to-expect')
             if (mediaQuery.matches) {
+                
                 document.querySelector('.wrapper').style.width = screenWidth + 'px';
 
             } else {
@@ -1091,7 +1093,7 @@
                 if (mediaQuery2.matches) {
                     document.querySelector('.what-to-expect').style.height = 'auto';
                 } else {
-                    document.querySelector('.what-to-expect').style.height = document.querySelector('.wrapper').offsetWidth / 2 + 'px';
+                    whatToExpect.style.height = document.querySelector('.wrapper').offsetWidth / 2 + 'px';
                 }
                 if (mediaQuery3.matches) {
                     document.querySelector('.what-to-expect').style.height = '750px';
