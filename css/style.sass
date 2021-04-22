@@ -11,6 +11,7 @@
 body
     width: 100vw
     overflow-x: hidden
+    
 button:focus, input:focus, select:focus, video:focus
     outline: none
 
@@ -28,7 +29,6 @@ $brightBlue: #0064f9
     width: 280px
     height: 60px
     
-    
     border-radius: 2px
     animation: animated-btn 1s infinite
     &-wrap
@@ -41,6 +41,7 @@ $brightBlue: #0064f9
         font-family: "Oswald", sans-serif !important
         text-decoration: none
         color: #fff
+        display: block
 /*fixed button*/
 .fixed-btn
     display: none
@@ -1993,6 +1994,27 @@ video
         width: 100vw  !important
    
 @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) 
+    .package
+            &__content
+                display: flex !important
+                margin-right: 15px !important    
+                img
+                   width: 55% !important
+                   height: auto
+                p
+                    margin-left: 15px
+                    margin-bottom: 0.5rem
+                .price
+                    sub
+                        position: static !important
+                        display: inline !important
+    .guarantee-wrap
+        img
+            height: auto
+            width: auto
+    .h-top
+        .first-screen-image 
+            margin-top: 20px !important
     .main-form
         &__inputs
             display: flex

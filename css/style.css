@@ -57,6 +57,7 @@ button:focus, input:focus, select:focus, video:focus {
   font-family: "Oswald", sans-serif !important;
   text-decoration: none;
   color: #fff;
+  display: block;
 }
 
 /*fixed button*/
@@ -2694,6 +2695,31 @@ video {
 }
 
 @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+  .package__content {
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
+    margin-right: 15px !important;
+  }
+  .package__content img {
+    width: 55% !important;
+    height: auto;
+  }
+  .package__content p {
+    margin-left: 15px;
+    margin-bottom: 0.5rem;
+  }
+  .package__content .price sub {
+    position: static !important;
+    display: inline !important;
+  }
+  .guarantee-wrap img {
+    height: auto;
+    width: auto;
+  }
+  .h-top .first-screen-image {
+    margin-top: 20px !important;
+  }
   .main-form__inputs {
     display: -webkit-box;
     display: -ms-flexbox;
