@@ -38,12 +38,6 @@
             display: none;
         }
 
-        @media (min-width: 1600px) {
-            .h-top {
-                height: 100vh;
-            }
-        }
-
         @media(max-width: 1024px) {
             .h-top {
                 background-image: url("img/bg/Hair Man Tablet PNG without form final.png");
@@ -1069,11 +1063,7 @@
             } else {
                 document.querySelector('.wrapper').style.width = '100vw'
             }
-            if (window.matchMedia('(min-width: 1600px)').matches) {
-                document.querySelector('.h-top').style.height = screenHeight + 'px';
-            } else {
-                document.querySelector('.h-top').style.height = 'auto';
-            }
+          
             if (mediaQuery2.matches) {
                 document.querySelector('.what-to-expect').style.height = 'auto !important';
             } else {
@@ -1097,11 +1087,6 @@
                 }
                 if (mediaQuery3.matches) {
                     document.querySelector('.what-to-expect').style.height = '750px';
-                }
-                if (window.matchMedia('(min-width: 1600px)').matches) {
-                    document.querySelector('.h-top').style.height = screenHeight + 'px';
-                } else {
-                    document.querySelector('.h-top').style.height = 'auto';
                 }
             })
 
