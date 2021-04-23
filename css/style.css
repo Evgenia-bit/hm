@@ -1954,6 +1954,13 @@ video {
     color: #353535;
     padding: 10px;
   }
+  .what-to-expect__bg-mob {
+    display: block;
+    width: 100%;
+  }
+  .what-to-expect .container {
+    display: none;
+  }
   .feedback__content-wrap {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -2507,13 +2514,6 @@ video {
   .pharmacist-recommended​__text {
     display: block;
     font-size: 1.5rem;
-  }
-  .what-to-expect__bg-mob {
-    display: block;
-    width: 100%;
-  }
-  .what-to-expect .container {
-    display: none;
   }
   .q-and-a {
     margin-bottom: -40px;
