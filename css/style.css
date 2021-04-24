@@ -248,15 +248,16 @@ video {
 
 .header-mob_bottom img {
   width: 70%;
-  margin: 40px auto 0;
+  margin: 0 auto 40px;
   display: block;
 }
 
 .h-top {
   padding-top: 50px;
-  background-image: url("img/first-screen/14181069_1604043357394background-image.jpg");
+  background-image: url("../img/first-screen/14181069_1604043357394background-image.jpg");
   background-repeat: no-repeat;
   background-position: center top;
+  background-size: cover;
 }
 
 .h-top .first-screen-image {
@@ -1557,7 +1558,7 @@ video {
     width: 720px;
   }
   .about-product {
-    background-image: url("../img/bg/TABLET magazin part 1024 x 740 PNG no red button.png");
+    background-image: url("../img/bg/TabletMagazinPart.png");
     height: 800px;
     position: relative;
   }
@@ -1573,7 +1574,7 @@ video {
     margin-top: -100px;
   }
   .what-to-expect {
-    background-image: url("../img/bg/Tablet 1024 X 740 ..png");
+    background-image: url("../img/bg/WhatToExpect.png");
     background-size: cover;
     margin-bottom: -30px;
     position: relative;
@@ -1635,7 +1636,7 @@ video {
     display: block;
   }
   .q-and-a {
-    background-image: url("../img/bg/question mark.png");
+    background-image: url("../img/bg/questionMark.png");
     padding: 50px 0;
   }
   .q-and-a img {
@@ -1748,7 +1749,7 @@ video {
     display: none;
   }
   .about-benefits {
-    background-image: url("../img/bg/TABLET hair man bottom 1024 x 830-16-NO BKR (1).png");
+    background-image: url("../img/bg/TabletHairManBottom.png");
     background-size: cover;
     background-position: 120%;
     margin-bottom: -80px;

@@ -1,3 +1,4 @@
+
 const screenWidth = window.screen.width;
 const screenHeight = window.screen.height;
 const mediaQuery = window.matchMedia('(min-width: ' + screenWidth + 'px)')

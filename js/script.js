@@ -1,4 +1,19 @@
- /*модальное окно*/
+
+async function gerResponse() {
+    let response = await fetch('js/countries.json')
+    let content = await response.json()
+    const optionsWrap = document.querySelector('select');
+    for (var key in content) {
+        optionsWrap.insertAdjacentHTML('beforeEnd', `
+            <option value="${content[key][0]}">${content[key][1]}</option>
+        `);
+    }
+}
+gerResponse() 
+
+
+
+ /*modal window*/
  const modalWrap = document.querySelector(".modal-wrap");
  const modal = document.querySelector(".modal")
  const footerLinks = document.querySelectorAll(".footer-link");
@@ -160,7 +175,9 @@
      })
 
  })
-     
+   
+ 
+ /*timer*/ 
 let deadLine = '2021-08-30';
 
 
@@ -190,7 +207,6 @@ function setClock(id, endtime) {
     function updateClock() {
         let t = getTimeRemaining(endtime);
        
-        //t.minutes < 10 ? minutes.textContent = '0' + t.minutes :minutes.textContent = t.minutes;
         days.textContent  = (t.days < 10 ? '0' + t.days:  t.days);
         hours.textContent  = (t.hours < 10 ? '0' + t.hours :  t.hours);
         minutes.textContent = ( t.minutes < 10 ? '0' + t.minutes : t.minutes);
