@@ -298,17 +298,18 @@ video {
 
 .h-top .first-screen-main__title {
   font-family: 'Arial Italic';
-  font-size: 30px;
+  font-size: 26px;
   color: #242458;
   line-height: .8;
   letter-spacing: 0.05em;
   text-transform: uppercase;
+  margin-right: 60px;
 }
 
 .h-top .first-screen-main h1 {
   font-weight: 900;
   line-height: .8;
-  font-size: 80px;
+  font-size: 85px;
   letter-spacing: -0.01em;
   text-transform: uppercase;
   color: #FFF910;
@@ -316,16 +317,17 @@ video {
 }
 
 .h-top .first-screen-main h2 {
-  font-size: 75px;
+  font-size: 90px;
   font-weight: 900;
   line-height: .6;
-  text-align: center;
   letter-spacing: -0.01em;
   text-transform: uppercase;
   color: #0085FF;
 }
 
 .h-top .first-screen-main__subtitle {
+  text-align: center;
+  margin-left: 100px;
   font-family: 'Arial Italic';
   font-size: 26px;
   line-height: 1;
@@ -338,18 +340,19 @@ video {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-left: 60px;
+  margin-top: -120px;
+  margin-left: -60px;
 }
 
 .h-top .first-screen-main-center img {
-  height: 340px;
+  height: 400px;
   position: relative;
   z-index: 2;
 }
 
 .h-top .first-screen-main__list {
-  margin-left: -60px;
-  margin-top: 30px;
+  margin-left: -140px;
+  margin-top: 115px;
   position: relative;
   z-index: 1;
 }
@@ -370,7 +373,7 @@ video {
 }
 
 .h-top .first-screen-main__text {
-  width: 250px;
+  max-width: 250px;
   padding-top: 5px;
   padding-bottom: 12px;
 }
@@ -397,28 +400,28 @@ video {
   background-image: url("../img/first-screen/arrow.png");
   background-repeat: no-repeat;
   background-size: cover;
-  width: 530px;
-  margin-left: 100px;
+  max-width: 630px;
   text-transform: uppercase;
   color: #030370;
   text-align: left;
-  padding-left: 40px;
-  margin-top: -25px;
+  padding-left: 60px;
+  padding-top: 5px;
+  margin-top: -10px;
 }
 
 .h-top .first-screen-main-bottom .upper-text {
   font-family: 'Oswald', sans-serif;
-  font-size: 38px;
+  font-size: 40px;
   font-weight: 600;
   margin: 0;
 }
 
 .h-top .first-screen-main-bottom .lower-text {
   font-family: 'Oswald', sans-serif;
-  font-size: 28px;
+  font-size: 30px;
   font-weight: 400;
   line-height: 1;
-  padding-bottom: 10px;
+  padding-bottom: 15px;
 }
 
 /*header (bottom)*/
@@ -1632,7 +1635,7 @@ video {
   .main-form .for-form {
     width: 210px;
   }
-  .first-screen-image {
+  .first-screen-main {
     margin-left: -100px;
   }
   .about-product__content {
@@ -1692,8 +1695,9 @@ video {
     top: 0;
     position: absolute;
     z-index: 1;
+    width: 670px;
   }
-  .h-top .first-screen-image {
+  .h-top .first-screen-main {
     display: none;
   }
   .h-bottom {
