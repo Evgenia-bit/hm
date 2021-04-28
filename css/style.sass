@@ -86,7 +86,7 @@ $brightBlue: #0064f9
     font-family: "Roboto",sans-serif 
 .for-tablet
     display: none
-.no-form-tablet
+.no-for-tablet
     display: block
 video
     position: relative
@@ -196,7 +196,7 @@ video
                 display: block
 .h-top
     padding-top: 50px
-    background-image: url("../img/first-screen/14181069_1604043357394background-image.jpg")
+    background-image: url("../img/14181069_1604043357394background-image.jpg")
     background-repeat: no-repeat
     background-position:  center top
     background-size: cover
@@ -255,7 +255,7 @@ video
             position: relative
             z-index: 1
         .list-item
-            background-image: url('../img/first-screen/list-item-bg.png')  
+            background-image: url('../img/list-item-bg.png')  
             background-repeat: no-repeat
             background-position: 100% auto
             background-size: contain
@@ -286,10 +286,10 @@ video
                 font-weight: 500
                 margin: 0
         &-bottom
-            background-image: url('../img/first-screen/arrow.png')
+            background-image: url('../img/arrow.png')
             background-repeat: no-repeat
             background-size: cover
-            max-width: 630px
+            width: 630px
             text-transform: uppercase
             color: #030370
             text-align: left
@@ -404,9 +404,11 @@ video
         input[name="phone-number"] 
             background: url('../img/inputs-icons/phone.jpg') no-repeat  10px 10px
     .verified  
-        width: 100%
+        width: 100% !important
         margin: 0  auto   
         padding: 5px 
+        img, source
+            width: 100% !important
 /*section The Proof*/
 .proof
     padding-top: 30px
@@ -462,8 +464,11 @@ video
         &:last-child
            font-weight: 700 
     .magzine-men_fin
-        margin-top: 30px
-        margin-left: 70px
+        
+            margin-top: 30px
+            margin-left: 70px
+            img, source
+                width: 100%
     .main-btn-wrap
         margin-left: 70px
     
@@ -526,7 +531,7 @@ video
                 
 /*section  How It Works?*/
 .how-it-works
-    background: url('../img/bg/bg1.jpg') no-repeat center center
+    background: url('../img/bg1.jpg') no-repeat center center
     background-size: cover
     padding: 40px 0 10px
     &_bg-mob
@@ -594,17 +599,67 @@ video
    
 
 /*section What to expect*/
-.what-to-expect
-    margin-top: 25px
-    background-image: url('../img/bg/bg2.jpg')
-    background-repeat:  no-repeat
-    background-position: center center
-    background-size: 100% 100%
-    .container
-        display: none
-    &__bg-mob
-        display: none
 
+    
+.what-to-expect
+        position: relative
+        margin-bottom: 10%
+        &__bg-mob
+            display: none
+        &__main-bg
+            position: absolute
+            width: 100%
+            top: 0
+            left: 0
+            right: 0
+        &__subtitle
+            display: none
+        &__list
+            width: fit-content
+            margin: 10px auto
+            line-height: 1 !important
+            li
+                min-width: 200px
+                position: relative
+                list-style-image: url('../img/list-marker/check mark white no bkr.png')
+                span
+                    font-family: 'Arimo', sans-serif
+                    font-weight: 600
+                    font-size: .8rem
+                    line-height: 1.5rem
+                    color: #0e437e 
+                
+                    
+        .container
+            display: block
+            width: 40%
+            margin-right: 50px
+            position: absolute
+            right: 0
+            top: 40%
+            p
+                
+                font-size: 1rem
+                font-family: 'Arimo', sans-serif
+                color: #0e437e 
+                
+                display: block
+                br
+                    display: none
+                span
+                    font-weight: 700
+                    font-style: normal
+                b
+                    margin-left: 10%
+                    display: block
+                    font-size: 1rem
+                    font-weight: normal
+                    font-style: italic
+
+            h2
+                display: none
+            img
+                display: none
 /*section HAIR RESCUE RX*/
 .hair-rescue
     padding-bottom: 40px
@@ -612,6 +667,8 @@ video
     font-size: 31px
     font-family: 'Arimo', sans-serif
     font-weight: 400
+    position: relative
+    z-index: 1
     .orange-text
         font-weight: 600
         color: $orange
@@ -622,7 +679,7 @@ video
     padding: 70px 0
     color: #28598e
     font-family: 'Arimo', sans-serif
-    background-image: url('../img/bg/bg3.jpg') 
+    background-image: url('../img/bg3.jpg') 
     background-repeat: no-repeat
     background-position: center center
     background-size: cover
@@ -729,10 +786,10 @@ video
             
 /*section with information on how to use*/
 .about-usage
-    .container:nth-of-type(1)
+    &__header
         border-top: 2px solid $orange
         padding-top: 30px 
-    .container:nth-of-type(2)
+    &__content
         border-bottom: 2px solid #316ed4
         padding-bottom: 30px 
     &__title
@@ -764,7 +821,7 @@ video
 /*section with information about the benefits - the final section*/
 .about-benefits
     
-    background-image: url('../img/bg/bg4.png')
+    background-image: url('../img/bg4.png')
     background-repeat: no-repeat
     min-height: 700px 
     margin-bottom: -72px
@@ -1100,7 +1157,48 @@ video
 
 
 
-        
+@media (min-width: 1800px)
+    .what-to-expect
+        &__list
+            li
+                span
+                    font-size: 1.4rem
+                    line-height: 2rem
+                
+                    
+        .container
+            p
+                font-size: 1.6rem
+                b
+                    font-size: 1.6rem   
+@media (min-width: 1400px) and (max-width: 1799px)
+    .what-to-expect
+        &__list
+            li
+                span
+                    font-size: 1.3rem
+                    line-height: 1.8rem
+                
+                    
+        .container
+            p
+                font-size: 1.2rem
+                b
+                    font-size: 1.2rem   
+@media  (max-width: 1150px)
+    .what-to-expect
+        &__list
+            li
+                span
+                    font-size: .9rem
+                    line-height: 1.5
+                
+                    
+        .container
+            p
+                font-size: 1rem
+                b
+                    font-size: 1rem   
 
 @media (min-width: 1281px)
     html 
@@ -1162,13 +1260,9 @@ video
 @media ( max-width: 1024px  )
     .for-tablet
         display: block
-    .no-form-tablet
-        display: none
-    
-    
-       
+    .no-for-tablet
+        display: none       
     .main-form
-
         width: 282px  
         margin: 50px 0 0 -75px
         input, select
@@ -1178,100 +1272,108 @@ video
         .for-form
             width: 210px
     .h-top 
-        background-image: none !important
+        background-image: url('../img/tabbet.png')
         background-color: #ebf5ff 
         background-position: 100% 100%
-        .for-tablet
-            top: 0
-            position: absolute
-            z-index: 1
-            width: 670px
-        .first-screen-main 
-            display: none
+        .first-screen-main
+            .title 
+                background-image: url('../img/HAIRTABLETblue.png')
+                background-position: auto 100%
+                background-size: contain
+                background-repeat: no-repeat
+                font-size: 60px
+                font-weight: bold
+                font-family: 'Oswald', open-sans
+                color: #fff
+                width: 480px
+                height: 150px
+                text-align: center
+                margin-left: auto
+                margin-right: 50px
+            .first-title
+                font-family: 'Oswald', open-sans
+                color: #0e437e
+                font-size: 40px
+                margin-left: 50px
+                margin-bottom: -10px
+                text-align: center
+            .bottom-title
+                color:  #54a9f8   
+                font-family: 'Oswald', open-sans
+                font-size: 35px
+                margin-top: -70px
+                text-align: center
+                margin-left: 40px
+            .subtitle
+                color: #0e437e
+                font-weight: 800
+                text-align: left
+                margin-left: 180px
+                margin-top: 40px
+                margin-bottom: -30px
+                span
+                    color: $orange
+            &__list
+                margin-left: 160px
+            .list-item
+                background-image: none 
+                position: relative
+                color: #0e437e
+                
+                .ch
+                    position: absolute
+                    left: 60px
+                    img
+                        width: 30px
+                        height: 30px
+                h3
+                    font-style: normal
+                p
+                    font-style: normal
+            &-bottom
+                background-image: url('../img/arrow-for-tablet.png')
+                background-size: contain
+                width: 600px
+                margin-left: 160px
+                height: 100px
+                position: relative
+                .upper-text
+                    font-size: 30px
+                    margin-left: -30px
+                    font-weight: 900
+                .lower-text
+                    font-size: 24px
+                    margin-left: -30px
+                img 
+                    position: absolute
+                    height: 100px
+                    left: -80px
+                    top: 0
     .h-bottom
-        padding-top: 50px
-            
+
+        padding-top: 50px            
     .proof
         br
             display: none
         .for-tablet
             display: block !important
         &__text
-            text-align: center
-
-           
+            text-align: center          
         video
             width: 720px 
     .about-product
-        background-image: url('../img/bg/TabletMagazinPart.png') 
-
-        height: 800px
-        position: relative
-        .for-tablet
-            position: absolute
-            left: 57%
-            bottom: 70px
-        .container
-                display: none
+        button
+            display: none
         
     .hair-rescue
         margin-top: -100px
-    .what-to-expect
-        background-image: url('../img/bg/WhatToExpect.png')
-        background-size: cover
-        margin-bottom: -30px
-        position: relative
-
-        &__subtitle
-            display: none
-        &__list
-            width: fit-content
-            margin: 10px auto
-            line-height: 1 !important
-            li
-                min-width: 200px
-                position: relative
-                span
-                    font-family: 'Arimo', sans-serif
-                    font-weight: 600
-                    font-size: 22px
-                    color: #0e437e 
-                
-                    list-style-image: url('../img/list-marker/check mark white no bkr.png')
-        .container
-            display: block
-            width: 450px
-            position: absolute
-            right: 0
-            top: 170px
-            p
-                
-                font-size: 21.5px
-                font-family: 'Arimo', sans-serif
-                color: #0e437e 
-                width: 370px
-                display: block
-                span
-                    font-weight: 700
-                    font-style: normal
-                b
-                    width: 320px
-                    margin-left: auto
-                    display: block
-                    font-size: 26px
-                    font-weight: normal
-                    font-style: italic
-
-            h2
-                display: none
-            img
-                display: none
+    
     .pharmacist-recommended​
         &__text
             br
                 display: block
     .q-and-a
-        background-image: url('../img/bg/questionMark.png')
+        background-image: url('../img/questionMark.png')
         padding: 50px 0
         img
             display: none
@@ -1346,6 +1448,8 @@ video
                 span
                     font-size: 1.30rem
     .what-to-expect
+        .container
+            top: 25%
         img
             width: 100%
     .feedback-wrap
@@ -1365,25 +1469,34 @@ video
         .container
             display: none
     .about-benefits
-        background-image: url('../img/bg/TabletHairManBottom.png')
-        background-size: cover
-        background-position: 120% 
-        margin-bottom: -80px
-
+        background-image: url('../img/TabletHairManBottom.png')
+        background-position: 60% 80%
+        background-size: auto
+        &__content
+            margin-left: 70px
         &__title
-            display: none
-        h2
-            display: none
-        &__subtitle
-            display: none
+            font-family: "Oswald", sans-serif
+        .for-tablet
+            
+            color: #0e437e
+            font-weight: 900 !important
+            i
+                color: $orange
         &__text
-            display: none
+            color: #22d612
+            span
+                color: #0e437e
         &__list
-            display: none
-        .main-btn-wrap
-            margin-top: 620px
-            margin-bottom: 40px
-            margin-left: 100px
+            margin-top: 20px
+            margin-left: 30px
+            list-style-image: none
+            li
+                font-size: 30px
+                color: $brightBlue
+                line-height: 1
+                span
+                    font-size: 20px
+                    color: #0e437e  
     .guarantee
         margin-left: 80px
         &-wrap
@@ -1395,22 +1508,71 @@ video
         display: flex
     .for-tablet
         display: none
-    .no-form-tablet
+    .no-for-tablet
         display: block
     .main-form
         display: none
+    .first-screen-main
+            
+            &__list
+                 margin-left: -140px
+            
+            
     .h-top
-        background-image: url("img/first-screen/first-screen-mob.jpg")
-        background-position: center center
+        background-image: url("../img/14181069_1604043357394background-image.jpg")
+        background-position: 30% center
         padding: 0
-        height: auto !important
-        .row
-            display: none
+        &__list
+                 margin-left: -140px
         
-        .first-screen-mob
+        .first-screen-main 
             display: block
-            margin: 0 auto
-            width: 100%
+            width: fit-content
+            background-position: auto 100% 
+            margin: 0 auto 
+            padding-top: 50px
+            padding-bottom: 50px
+            &-center
+                display: flex
+                margin-top: -120px
+                margin-left: -60px
+                img
+                    height: 400px
+                    position: relative
+                    z-index: 2
+            &-bottom
+                background-image: url('../img/arrow-mb.png')
+                background-size: contain
+                width: fit-content
+                padding: 20px 55px 
+                margin: -30px auto 0
+                text-align: center
+                .upper-text
+                    position: relative
+                    z-index: 5
+                    margin-top: -15px
+                    font-weight: 700
+                    font-size: 30px
+                .lower-text
+                    font-size: 24px
+                    font-weight: 500
+                    padding-bottom: 50px
+            .list-item
+                background-image: url('../img/list-item-bg.png')  
+                background-repeat: no-repeat
+                background-position: 100% auto
+                background-size: contain
+                color: #21211F
+                text-align: left
+                padding-left: 100px
+                width: 450px
+                .mark
+                    height: 50px
+            &__list
+                margin-left: -140px
+                margin-top: 115px
+                position: relative
+                z-index: 1
     .h-bottom
         padding-top: 30px        
     .about-product
@@ -1438,7 +1600,7 @@ video
         .main-btn-wrap
             display: none
     .q-and-a
-        padding: 30px 0
+        padding: 45px 0
         background-color:  rgb(242, 249, 255)
         background-image: none
         .container
@@ -1482,16 +1644,20 @@ video
         height: auto !important
         padding: 40px 0
         position: static
+        margin-bottom: 0
+        
         .container
             display: block
             position: static !important
             width: 100% !important
+            margin: 0 auto
             h2
                 display: block !important
             img
                 display: block !important
-                width: 100%
+                width: 60%
                 margin: 0 auto
+                
         &__title    
             color: #fff    
             font-family: 'Oswald', sans-serif
@@ -1509,34 +1675,32 @@ video
             font-style: italic
  
         p
-            width: 100% !important
+            width: fit-content
+            margin: 0 auto 15px
             font-size: 0.8rem
             font-family: 'Arimo', sans-serif
             color: #0e437e
-            margin: 0
+            br
+                display: block !important
             b
                 font-family: 'Roboto', sans-serif
-                color: #4B6A71
                 font-size: 1rem
-                margin-left: 0 !important
-                br
-                    display: none
+                margin: 15px 0 0  !important
+                
         &__list
-            margin-left: 50px !important
-            
+            margin: 15px auto 0!important
             li
-                list-style-image: url('../img/list-marker/marker2.jpg') !important
                 font-size: 20px
                 font-family: 'Arimo', sans-serif
                 font-weight: 500  
                 color: #353535
-                padding: 10px
-    .what-to-expect
+                padding: 0
+                
+        &__main-bg
+            display: none
         &__bg-mob
             display: block
-            width: 100%
-        .container
-           display: none
+            max-width: 400px !important
     .feedback
         &__content
             &-wrap
@@ -1567,13 +1731,13 @@ video
             .col-lg-12
                 flex-direction: column
                 gap: 30px
-        img:nth-of-type(1)
+        picture:nth-of-type(1)
             width: 90px
-        img:nth-of-type(2), img:nth-of-type(4)
+        picture:nth-of-type(2), picture:nth-of-type(4)
             width: 51px
-        img:nth-of-type(3)
+        picture:nth-of-type(3)
             width: 152px
-        img:nth-of-type(5)
+        picture:nth-of-type(5)
             width: 161px
         .text-row
             align-items: center
@@ -1590,7 +1754,7 @@ video
     .about-benefits
         background: none
         &__content
-            
+            margin-left: 0
             width: auto
             padding-right: 0
             
@@ -1612,8 +1776,10 @@ video
             line-height: 1.4em
             text-align: center
         &__text
+            color: #0e437e
             display: block
             font-size: 0.95rem
+            color: 
             br:nth-of-type(1)
                 display: none
             br:nth-of-type(2)
@@ -1728,16 +1894,56 @@ video
 @media (max-width: 767px)
     .header-mob   
         display: block
+    .h-top
+        .first-screen-main
+            width: fit-content
+                
+            &__title
+                font-size: 1rem
+                line-height: .7
+                margin-right: 0
+            h1
+                font-size: 3.7rem
+                
+            h2
+                font-size: 4.5rem
+            &__subtitle
+                font-size: 1.4rem
+            &-center
+                display: flex
+                margin-top: 0px
+                margin-left: -60px
+                img
+                    height: 16rem
+                    position: relative
+                    z-index: 2
+            &__list
+                margin-left: -5rem
+                margin-top: 30px
+            .list-item
+                margin-bottom: .3rem
+                width: auto
+                .mark
+                    height: 50px
+            &__text
+                width: 95%
+                margin-left: -45px
+                h3
+                    font-size: 1rem
+                p
+                    font-size: .5rem
+            &-bottom
+                width: 23rem
+                .upper-text
+                    font-size: 1.1rem
+                .lower-text
+                    font-size: .8rem
+                    position: relative
+                    z-index: 5
         
     .orange-subtitle
         font-size: 1.55rem
-    .h-top
-        .container
-            width: 100% 
-            margin: 0
-            padding: 0 
-        .first-screen-mob
-            width: 100vw
+    
     .proof
         &__title 
             width: 100% !important
@@ -1827,11 +2033,11 @@ video
         &__text
             font-size: 1.20rem
    
-        img:nth-of-type(1)
+        picture:nth-of-type(1)
             width: 69px
-        img:nth-of-type(3)
+        picture:nth-of-type(3)
             width: 118px
-        img:nth-of-type(5)
+        picture:nth-of-type(5)
             width: 136px
         .text-row
             align-items: start
@@ -1940,6 +2146,16 @@ video
             width: 100% !important
             img
                 width: 100%
+    .what-to-expect
+        img
+            width: 100% !important
+        p
+            width: 70%
+            
+                
+        &__list
+            width: fit-content !important
+            margin: 0 auto !important
 @media (max-width: 480px)
     .header-mob   
         &_top
@@ -1952,6 +2168,7 @@ video
                 margin-top: -10px
                 margin-left: auto 
                 margin-right: auto 
+    
     .orange-subtitle
         font-size: 1.60rem
     .about-product
@@ -2032,10 +2249,9 @@ video
                 display: block
     /*section with information on how to use*/
     .about-usage
-        .container
+        &__content
             display: none !important
         .bg-mob
-            border-top: 2px solid $orange
             border-bottom: 2px solid #316ed4
             display: block
             width: 100% !important
@@ -2092,6 +2308,31 @@ video
         p
             font-size: 1.30rem
 @media  ( max-width: 400px )
+    .first-screen-main-bottom
+        width: 100% !important
+    .first-screen-main
+        width: 100%
+        &__title
+            font-size: .75rem !important
+        h1
+            width: 100%
+            font-size: 2.5rem !important
+        h2
+            font-size: 2rem !important
+        &__subtitle
+            font-size: 1rem !important
+        &-bottom
+            .upper-text
+                font-size: .9rem !important
+            .lower-text
+                font-size: .6rem !important
+    .what-to-expect
+        p
+            width: fit-content
+        &__list
+            width: fit-content
+            li
+                min-width: fit-content !important
     .proof__text
         br
             display: none !important
@@ -2107,6 +2348,27 @@ video
         bottom: -170px
     
 @media  ( max-width: 345px )
+    .h-top
+        .first-screen-main
+            &__text
+                width: auto
+                margin-left: -5rem
+                padding-bottom: 10px
+                h3
+                    font-size: .7rem
+                p
+                    font-size: .5rem
+        .list-item
+            background-image: url('../img/list-item-bg.png')  
+            background-repeat: no-repeat
+            background-position: auto 100%
+            background-size: 
+            &-bottom
+                width: 100%
+                .upper-text
+                    font-size: .9rem
+                .lower-text
+                    font-size: .6rem
     .feedback__content_image
             width: 100%
             .human
