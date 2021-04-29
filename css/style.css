@@ -328,12 +328,12 @@ video {
 .h-top .first-screen-main__subtitle {
   text-align: center;
   margin-left: 100px;
-  font-family: 'Arial Italic';
+  font-family: serif;
+  font-style: italic;
   font-size: 26px;
   line-height: 1;
-  color: #242458;
+  color: #0085FF;
   letter-spacing: 0.05em;
-  text-transform: uppercase;
 }
 
 .h-top .first-screen-main-center {
@@ -896,7 +896,11 @@ video {
 .what-to-expect__list li {
   min-width: 200px;
   position: relative;
-  list-style-image: url("../img/list-marker/check mark white no bkr.png");
+  list-style-image: url("../img/checkmarkWhite.png");
+}
+
+.what-to-expect__list li .marker {
+  display: none;
 }
 
 .what-to-expect__list li span {
@@ -937,7 +941,6 @@ video {
   display: block;
   font-size: 1rem;
   font-weight: normal;
-  font-style: italic;
 }
 
 .what-to-expect .container h2 {
@@ -2159,9 +2162,9 @@ video {
     width: -moz-fit-content;
     width: fit-content;
     padding: 20px 55px;
-    margin: -10px auto 0;
+    margin: -20px auto 0;
     text-align: center;
-    z-index: 0;
+    position: static;
   }
   .h-top .first-screen-main-bottom .upper-text {
     position: relative;
@@ -2184,6 +2187,12 @@ video {
     text-align: left;
     padding-left: 100px;
     width: 450px;
+  }
+  .h-top .first-screen-main .list-item h3 {
+    font-style: italic;
+  }
+  .h-top .first-screen-main .list-item p {
+    font-style: italic;
   }
   .h-top .first-screen-main .list-item .mark {
     height: 50px;
@@ -2302,7 +2311,7 @@ video {
   .what-to-expect__title {
     color: #fff;
     font-family: 'Oswald', sans-serif;
-    font-size: 2.33rem;
+    font-size: 10vw;
     line-height: 1.4em;
     font-weight: 600;
     text-align: center;
@@ -2321,27 +2330,47 @@ video {
     width: -moz-fit-content;
     width: fit-content;
     margin: 0 auto 15px;
-    font-size: 1.2rem;
+    font-size: 2.9vw !important;
     font-family: 'Arimo', sans-serif;
     color: #0e437e;
+    line-height: 1.1;
   }
   .what-to-expect p br {
     display: block !important;
   }
   .what-to-expect p b {
     font-family: 'Roboto', sans-serif;
-    font-size: 1rem;
-    margin: 15px 0 0  !important;
+    font-size: 3vw !important;
+    margin: 15px 0 0 -70px  !important;
   }
   .what-to-expect__list {
     margin: 15px auto 0 !important;
   }
   .what-to-expect__list li {
-    font-size: 1px;
     font-family: 'Arimo', sans-serif;
-    font-weight: 500;
+    font-weight: 600   !important;
     color: #353535;
     padding: 0;
+    position: relative;
+    list-style: none;
+  }
+  .what-to-expect__list li .marker {
+    display: block;
+    position: absolute;
+    left: -30px;
+    top: 1vw;
+    height: 5vw;
+    display: block;
+  }
+  .what-to-expect__list li .marker img {
+    height: 100%;
+    width: auto;
+  }
+  .what-to-expect__list li span {
+    margin-top: -10px;
+    font-size: 2.5vw !important;
+    font-weight: 700;
+    line-height: 2;
   }
   .what-to-expect__main-bg {
     display: none;
@@ -2538,15 +2567,6 @@ video {
   .how-it-works .advanteges__descr span {
     font-size: 0.95rem;
   }
-  .what-to-expect p {
-    font-size: 1rem;
-  }
-  .what-to-expect p b {
-    font-size: 1.1rem;
-  }
-  .what-to-expect__list li {
-    font-size: 1rem;
-  }
   .q-and-a__content {
     font-size: 1.5rem;
   }
@@ -2601,9 +2621,7 @@ video {
     display: block;
   }
   .h-top .first-screen-main {
-    width: -webkit-fit-content;
-    width: -moz-fit-content;
-    width: fit-content;
+    width: 100%;
   }
   .h-top .first-screen-main__title {
     font-size: 1rem;
@@ -2611,60 +2629,76 @@ video {
     margin-right: 0;
   }
   .h-top .first-screen-main h1 {
-    font-size: 3.7rem;
+    font-family: 'Oswald', sans-serif;
+    font-size: 4rem;
+    font-weight: 900;
   }
   .h-top .first-screen-main h2 {
+    font-family: 'Arimo', sans-serif;
     font-size: 4.5rem;
+    font-weight: 900;
+    margin-top: 20px;
   }
   .h-top .first-screen-main__subtitle {
     font-size: 1.4rem;
+    margin-left: -50px;
   }
   .h-top .first-screen-main-center {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    margin-top: 0px;
-    margin-left: -60px;
+    margin: -60px auto 0;
   }
   .h-top .first-screen-main-center img {
-    height: 16rem;
+    height: 13rem;
     position: relative;
     z-index: 2;
+    margin-top: 50px;
   }
   .h-top .first-screen-main__list {
     margin-left: -5rem;
     margin-top: 60px;
   }
   .h-top .first-screen-main .list-item {
-    margin-bottom: .3rem;
-    width: -webkit-fit-content;
-    width: -moz-fit-content;
-    width: fit-content;
+    width: auto;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    margin-top: .1rem;
   }
   .h-top .first-screen-main .list-item .mark {
     height: 50px;
   }
   .h-top .first-screen-main__text {
-    width: 95%;
-    margin-left: -45px;
+    max-width: 100%;
+    margin-left: -25px;
   }
   .h-top .first-screen-main__text h3 {
-    font-size: 1rem !important;
+    font-size: 1.2rem !important;
   }
   .h-top .first-screen-main__text p {
-    font-size: .5rem !important;
+    font-size: .6rem !important;
     width: auto !important;
   }
   .h-top .first-screen-main-bottom {
-    width: 23rem;
+    width: auto;
+    background-position: center;
+    height: 13vw;
+    z-index: 1;
+    margin: -20px auto 0;
   }
   .h-top .first-screen-main-bottom .upper-text {
-    font-size: 1.1rem;
+    text-align: center;
+    z-index: 5;
+    position: relative;
+    margin: -10px auto 0;
+    font-size: 3.3vw;
   }
   .h-top .first-screen-main-bottom .lower-text {
-    font-size: .8rem;
+    font-size: 2.8vw;
     position: relative;
     z-index: 5;
+    margin: 0 auto;
   }
   .orange-subtitle {
     font-size: 1.55rem;
@@ -2711,18 +2745,6 @@ video {
   }
   .physicians-choice .dr {
     margin-bottom: 50px;
-  }
-  .what-to-expect__subtitle {
-    font-size: 1.65rem;
-  }
-  .what-to-expect p {
-    font-size: 1.5rem;
-  }
-  .what-to-expect p b {
-    font-size: 1.20rem;
-  }
-  .what-to-expect__list li {
-    font-size: 1rem;
   }
   .pharmacist-recommended​__text {
     display: block;
@@ -2910,6 +2932,37 @@ video {
   }
 }
 
+@media (max-width: 575px) {
+  .h-top .first-screen-main-center img {
+    height: 14rem;
+  }
+  .h-top .first-screen-main__text {
+    max-width: 80%;
+    margin-left: -25px;
+  }
+  .h-top .first-screen-main__text h3 {
+    font-size: 1.2rem !important;
+    margin-bottom: 1px !important;
+  }
+  .h-top .first-screen-main__text p {
+    font-size: .6rem !important;
+  }
+}
+
+@media (max-width: 575px) {
+  .h-top .first-screen-main__text {
+    max-width: 100%;
+    margin-left: -40px;
+  }
+  .h-top .first-screen-main__text h3 {
+    font-size: 1.2rem !important;
+    margin-bottom: 0 !important;
+  }
+  .h-top .first-screen-main__text p {
+    font-size: .6rem !important;
+  }
+}
+
 @media (max-width: 500px) {
   .image-row-top {
     width: 100% !important;
@@ -2919,16 +2972,17 @@ video {
   }
   .what-to-expect img {
     width: 100% !important;
+    margin: 20px auto 30px !important;
   }
   .what-to-expect p {
     width: -webkit-fit-content;
     width: -moz-fit-content;
     width: fit-content;
-    font-size: 1.3rem !important;
+    font-size: 5vw !important;
   }
   .what-to-expect p b {
-    font-size: 1.3rem !important;
     margin-left: -70px !important;
+    font-size: 5.5vw !important;
   }
   .what-to-expect__list {
     width: -webkit-fit-content !important;
@@ -2936,8 +2990,16 @@ video {
     width: fit-content !important;
     margin: 0 auto !important;
   }
+  .what-to-expect__list li .marker {
+    height: 7vw;
+  }
+  .what-to-expect__list li .marker img {
+    width: auto !important;
+    margin: 0 !important;
+  }
   .what-to-expect__list li span {
-    font-size: 1rem !important;
+    font-size: 4.5vw !important;
+    line-height: 1.5;
   }
 }
 
@@ -3115,45 +3177,55 @@ video {
   }
 }
 
+@media (max-width: 445px) {
+  .h-top .first-screen-main-center img {
+    height: 45vw;
+  }
+  .h-top .first-screen-main__text {
+    max-width: 110%;
+    margin-left: -50px;
+  }
+  .h-top .first-screen-main__text h3 {
+    font-size: 3.5vw !important;
+    margin-bottom: 0 !important;
+  }
+  .h-top .first-screen-main__text p {
+    font-size: 2vw !important;
+  }
+  .h-top .first-screen-main__list {
+    margin-left: -16vw;
+  }
+}
+
 @media (max-width: 400px) {
   .first-screen-main-bottom {
     width: 100% !important;
   }
-  .first-screen-main {
-    width: 100%;
-    padding-bottom: 0 !important;
+  .h-top .first-screen-main__text {
+    max-width: 130% !important;
+    margin-left: -14vw;
   }
-  .first-screen-main__title {
-    font-size: .75rem !important;
+  .h-top .first-screen-main__text h3 {
+    margin-bottom: -3px !important;
   }
-  .first-screen-main h1 {
-    width: 100%;
-    font-size: 3.4rem !important;
+  .h-top .first-screen-main-bottom {
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    height: 12vw;
+    margin-top: -10px;
   }
-  .first-screen-main h2 {
-    font-size: 3rem !important;
+  .h-top .first-screen-main-bottom .upper-text {
+    font-size: 4vw;
+    margin-top: -20px;
   }
-  .first-screen-main__subtitle {
-    font-size: 1rem !important;
-  }
-  .first-screen-main-bottom {
-    width: 80% !important;
-    text-align: center;
-  }
-  .first-screen-main-bottom .upper-text {
-    font-size: .9rem !important;
-  }
-  .first-screen-main-bottom .lower-text {
-    font-size: .6rem !important;
+  .h-top .first-screen-main-bottom .lower-text {
+    font-size: 2.9vw;
   }
   .what-to-expect p {
     width: -webkit-fit-content;
     width: -moz-fit-content;
     width: fit-content;
-    font-size: 1.2rem !important;
-  }
-  .what-to-expect p b {
-    font-size: 1.2rem !important;
   }
   .what-to-expect__list {
     width: -webkit-fit-content;
@@ -3224,6 +3296,25 @@ video {
   .timer {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
+  }
+}
+
+@media (max-width: 329px) {
+  .h-top .first-screen-main__title {
+    font-size: 4vw;
+  }
+  .h-top .first-screen-main h1 {
+    font-size: 15vw;
+  }
+  .h-top .first-screen-main h2 {
+    font-size: 17vw;
+  }
+  .h-top .first-screen-main__text h3 {
+    font-size: 2.5vw !important;
+    margin-bottom: 1px !important;
+  }
+  .h-top .first-screen-main__text p {
+    font-size: 1.6vw !important;
   }
 }
 
