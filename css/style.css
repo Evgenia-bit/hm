@@ -4,28 +4,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600;1,700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
-@font-face {
-  font-family: 'Arial';
-  src: local("../fonts/Arial Regular"), local("../fonts/Arial-Regular"), url("../fonts/ArialMT.woff2") format("woff2"), url("../fonts/ArialMT.woff") format("woff"), url("../fonts/ArialMT.ttf") format("truetype");
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'Arial Italic';
-  src: local("../fonts/Arial Italic"), local("../fonts/Arial-Italic"), url("../fonts/Arial-ItalicMT.woff2") format("woff2"), url("../fonts/Arial-ItalicMT.woff") format("woff"), url("Arial-ItalicMT.ttf") format("truetype");
-  font-weight: normal;
-  font-style: italic;
-}
-
-@font-face {
-  font-family: 'Arial Black';
-  src: url("../fonts/Arial-Black.eot");
-  src: url("../fonts/Arial-Black.eot?#iefix") format("embedded-opentype"), url("../fonts/Arial-Black.woff") format("woff"), url("../fonts/Arial-Black.ttf") format("truetype");
-  font-weight: normal;
-  font-style: normal;
-}
-
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -92,14 +70,16 @@ button:focus, input:focus, select:focus, video:focus {
   margin: 0;
   z-index: 20;
   width: 100%;
+  font-size: 22px;
+  font-family: "Oswald", sans-serif;
 }
 
 .fixed-btn .main-btn {
-  font-family: 'Oswald', sans-serif;
-  font-size: 24px;
   font-weight: 700;
   width: 280px;
   height: 60px;
+  font-size: 24px;
+  font-family: "Oswald", sans-serif;
 }
 
 /*red button for form*/
@@ -115,7 +95,7 @@ button:focus, input:focus, select:focus, video:focus {
   display: none;
 }
 
-.no-for-tablet {
+.no-form-tablet {
   display: block;
 }
 
@@ -278,150 +258,20 @@ video {
 
 .h-top {
   padding-top: 50px;
-  background-image: url("../img/14181069_1604043357394background-image.jpg");
+  background-image: url("../img/first-screen/14181069_1604043357394background-image.jpg");
   background-repeat: no-repeat;
   background-position: center top;
   background-size: cover;
 }
 
-.h-top .first-screen-main {
+.h-top .first-screen-image {
   margin-top: -5px;
   margin-right: -5px;
   width: 630px;
 }
 
-.h-top .first-screen-main-top {
-  text-align: right;
-  margin-top: 20px;
-  margin-bottom: -40px;
-}
-
-.h-top .first-screen-main__title {
-  font-family: 'Arial Italic';
-  font-size: 26px;
-  color: #242458;
-  line-height: .8;
-  letter-spacing: 0.05em;
-  text-transform: uppercase;
-  margin-right: 60px;
-}
-
-.h-top .first-screen-main h1 {
-  font-weight: 900;
-  line-height: .8;
-  font-size: 85px;
-  letter-spacing: -0.01em;
-  text-transform: uppercase;
-  color: #FFF910;
-  text-shadow: 0px 0px 5px #0085FF;
-}
-
-.h-top .first-screen-main h2 {
-  font-size: 90px;
-  font-weight: 900;
-  line-height: .6;
-  letter-spacing: -0.01em;
-  text-transform: uppercase;
-  color: #0085FF;
-}
-
-.h-top .first-screen-main__subtitle {
-  text-align: center;
-  margin-left: 100px;
-  font-family: serif;
-  font-style: italic;
-  font-size: 26px;
-  line-height: 1;
-  color: #0085FF;
-  letter-spacing: 0.05em;
-}
-
-.h-top .first-screen-main-center {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin-top: -120px;
-  margin-left: -60px;
-}
-
-.h-top .first-screen-main-center img {
-  height: 400px;
-  position: relative;
-  z-index: 2;
-}
-
-.h-top .first-screen-main__list {
-  margin-left: -140px;
-  margin-top: 115px;
-  position: relative;
-  z-index: 1;
-}
-
-.h-top .first-screen-main .list-item {
-  background-image: url("../img/list-item-bg.png");
-  background-repeat: no-repeat;
-  background-position: 100% auto;
-  background-size: contain;
-  color: #21211F;
-  text-align: left;
-  padding-left: 100px;
-  width: 450px;
-}
-
-.h-top .first-screen-main .list-item .mark {
-  height: 50px;
-}
-
-.h-top .first-screen-main__text {
-  max-width: 250px;
-  padding-top: 5px;
-  padding-bottom: 12px;
-}
-
-.h-top .first-screen-main__text h3 {
-  letter-spacing: 0.02em;
-  text-transform: uppercase;
-  font-size: 30px;
-  font-weight: 500;
-  font-family: 'Bebas Neue', cursive;
-  font-style: italic;
-  margin: 0;
-}
-
-.h-top .first-screen-main__text p {
-  font-family: 'Oswald', sans-serif;
-  font-style: italic;
-  font-size: 12px;
-  font-weight: 500;
-  margin: 0;
-}
-
-.h-top .first-screen-main-bottom {
-  background-image: url("../img/arrow.png");
-  background-repeat: no-repeat;
-  background-size: cover;
-  width: 630px;
-  text-transform: uppercase;
-  color: #030370;
-  text-align: left;
-  padding-left: 60px;
-  padding-top: 5px;
-  margin-top: -10px;
-}
-
-.h-top .first-screen-main-bottom .upper-text {
-  font-family: 'Oswald', sans-serif;
-  font-size: 40px;
-  font-weight: 600;
-  margin: 0;
-}
-
-.h-top .first-screen-main-bottom .lower-text {
-  font-family: 'Oswald', sans-serif;
-  font-size: 30px;
-  font-weight: 400;
-  line-height: 1;
-  padding-bottom: 15px;
+.h-top .first-screen-mob {
+  display: none;
 }
 
 /*header (bottom)*/
@@ -580,13 +430,9 @@ video {
 }
 
 .main-form .verified {
-  width: 100% !important;
+  width: 100%;
   margin: 0  auto;
   padding: 5px;
-}
-
-.main-form .verified img, .main-form .verified source {
-  width: 100% !important;
 }
 
 /*section The Proof*/
@@ -673,10 +519,6 @@ video {
 .about-product .magzine-men_fin {
   margin-top: 30px;
   margin-left: 70px;
-}
-
-.about-product .magzine-men_fin img, .about-product .magzine-men_fin source {
-  width: 100%;
 }
 
 .about-product .main-btn-wrap {
@@ -769,7 +611,7 @@ video {
 
 /*section  How It Works?*/
 .how-it-works {
-  background: url("../img/bg1.jpg") no-repeat center center;
+  background: url("../img/bg/bg1.jpg") no-repeat center center;
   background-size: cover;
   padding: 40px 0 10px;
 }
@@ -865,89 +707,18 @@ video {
 
 /*section What to expect*/
 .what-to-expect {
-  position: relative;
-  margin-bottom: 10%;
-}
-
-.what-to-expect__bg-mob {
-  display: none;
-}
-
-.what-to-expect__main-bg {
-  position: absolute;
-  width: 100%;
-  top: 0;
-  left: 0;
-  right: 0;
-}
-
-.what-to-expect__subtitle {
-  display: none;
-}
-
-.what-to-expect__list {
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
-  margin: 10px auto;
-  line-height: 1 !important;
-}
-
-.what-to-expect__list li {
-  min-width: 200px;
-  position: relative;
-  list-style-image: url("../img/checkmarkWhite.png");
-}
-
-.what-to-expect__list li .marker {
-  display: none;
-}
-
-.what-to-expect__list li span {
-  font-family: 'Arimo', sans-serif;
-  font-weight: 600;
-  font-size: .8rem;
-  line-height: 1.5rem;
-  color: #0e437e;
+  margin-top: 25px;
+  background-image: url("../img/bg/bg2.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 100% 100%;
 }
 
 .what-to-expect .container {
-  display: block;
-  width: 40%;
-  margin-right: 50px;
-  position: absolute;
-  right: 0;
-  top: 40%;
-}
-
-.what-to-expect .container p {
-  font-size: 1rem;
-  font-family: 'Arimo', sans-serif;
-  color: #0e437e;
-  display: block;
-}
-
-.what-to-expect .container p br {
   display: none;
 }
 
-.what-to-expect .container p span {
-  font-weight: 700;
-  font-style: normal;
-}
-
-.what-to-expect .container p b {
-  margin-left: 10%;
-  display: block;
-  font-size: 1rem;
-  font-weight: normal;
-}
-
-.what-to-expect .container h2 {
-  display: none;
-}
-
-.what-to-expect .container img {
+.what-to-expect__bg-mob {
   display: none;
 }
 
@@ -958,8 +729,6 @@ video {
   font-size: 31px;
   font-family: 'Arimo', sans-serif;
   font-weight: 400;
-  position: relative;
-  z-index: 1;
 }
 
 .hair-rescue .orange-text {
@@ -976,7 +745,7 @@ video {
   padding: 70px 0;
   color: #28598e;
   font-family: 'Arimo', sans-serif;
-  background-image: url("../img/bg3.jpg");
+  background-image: url("../img/bg/bg3.jpg");
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -1127,12 +896,12 @@ video {
 }
 
 /*section with information on how to use*/
-.about-usage__header {
+.about-usage .container:nth-of-type(1) {
   border-top: 2px solid #ff6600;
   padding-top: 30px;
 }
 
-.about-usage__content {
+.about-usage .container:nth-of-type(2) {
   border-bottom: 2px solid #316ed4;
   padding-bottom: 30px;
 }
@@ -1177,7 +946,7 @@ video {
 
 /*section with information about the benefits - the final section*/
 .about-benefits {
-  background-image: url("../img/bg4.png");
+  background-image: url("../img/bg/bg4.png");
   background-repeat: no-repeat;
   min-height: 700px;
   margin-bottom: -72px;
@@ -1686,45 +1455,6 @@ video {
   }
 }
 
-@media (min-width: 1800px) {
-  .what-to-expect__list li span {
-    font-size: 1.4rem;
-    line-height: 2rem;
-  }
-  .what-to-expect .container p {
-    font-size: 1.6rem;
-  }
-  .what-to-expect .container p b {
-    font-size: 1.6rem;
-  }
-}
-
-@media (min-width: 1400px) and (max-width: 1799px) {
-  .what-to-expect__list li span {
-    font-size: 1.3rem;
-    line-height: 1.8rem;
-  }
-  .what-to-expect .container p {
-    font-size: 1.2rem;
-  }
-  .what-to-expect .container p b {
-    font-size: 1.2rem;
-  }
-}
-
-@media (max-width: 1150px) {
-  .what-to-expect__list li span {
-    font-size: .9rem;
-    line-height: 1.5;
-  }
-  .what-to-expect .container p {
-    font-size: 1rem;
-  }
-  .what-to-expect .container p b {
-    font-size: 1rem;
-  }
-}
-
 @media (min-width: 1281px) {
   html {
     font-size: 1.6rem;
@@ -1755,7 +1485,7 @@ video {
   .main-form .for-form {
     width: 210px;
   }
-  .first-screen-main {
+  .first-screen-image {
     margin-left: -100px;
   }
   .about-product__content {
@@ -1791,7 +1521,7 @@ video {
   .for-tablet {
     display: block;
   }
-  .no-for-tablet {
+  .no-form-tablet {
     display: none;
   }
   .main-form {
@@ -1807,113 +1537,17 @@ video {
     width: 210px;
   }
   .h-top {
-    background-image: url("../img/tabbet.png");
+    background-image: none !important;
     background-color: #ebf5ff;
     background-position: 100% 100%;
   }
-  .h-top .first-screen-main {
-    margin-top: -20px;
-  }
-  .h-top .first-screen-main .title {
-    background-image: url("../img/HAIRTABLETblue.png");
-    background-position: auto 100%;
-    background-size: contain;
-    background-repeat: no-repeat;
-    font-size: 56px;
-    font-weight: bold;
-    font-family: 'Oswald', open-sans;
-    color: #fff;
-    width: 430px;
-    height: 150px;
-    text-align: center;
-    margin-left: auto;
-    margin-right: 50px;
-    line-height: 1.3;
-  }
-  .h-top .first-screen-main .first-title {
-    font-family: 'Oswald', open-sans;
-    color: #0e437e;
-    font-size: 36px;
-    margin-left: 80px;
-    margin-bottom: -10px;
-    text-align: center;
-  }
-  .h-top .first-screen-main .bottom-title {
-    color: #2997fe;
-    font-family: 'Oswald', open-sans;
-    font-size: 28px;
-    margin-top: -85px;
-    text-align: center;
-    margin-left: 90px;
-  }
-  .h-top .first-screen-main .subtitle {
-    font-size: 30px;
-    color: #0e437e;
-    font-weight: 800;
-    text-align: left;
-    margin-left: 180px;
-    margin-top: 40px;
-    margin-bottom: -30px;
-    font-family: 'Open Sans', sans-serif;
-  }
-  .h-top .first-screen-main .subtitle span {
-    color: #ff6600;
-    display: block;
-    margin-top: -10px;
-    font-size: 33px;
-  }
-  .h-top .first-screen-main__list {
-    margin-left: 180px;
-  }
-  .h-top .first-screen-main .list-item {
-    background-image: none;
-    position: relative;
-    color: #0e437e;
-  }
-  .h-top .first-screen-main .list-item .ch {
-    position: absolute;
-    left: 60px;
-  }
-  .h-top .first-screen-main .list-item .ch img {
-    width: 30px;
-    height: 30px;
-  }
-  .h-top .first-screen-main .list-item h3 {
-    font-size: 32px;
-    font-style: normal;
-    margin-bottom: -5px;
-  }
-  .h-top .first-screen-main .list-item p {
-    font-family: sans-serif;
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 400;
-    width: 350px;
-  }
-  .h-top .first-screen-main-bottom {
-    background-image: url("../img/arrow-for-tablet.png");
-    background-size: contain;
-    width: 620px;
-    margin-top: 20px;
-    margin-left: 160px;
-    height: 105px;
-    position: relative;
-    z-index: 2;
-  }
-  .h-top .first-screen-main-bottom .upper-text {
-    font-size: 30px;
-    margin-left: -30px;
-    font-weight: 900;
-  }
-  .h-top .first-screen-main-bottom .lower-text {
-    font-size: 24px;
-    margin-left: -30px;
-  }
-  .h-top .first-screen-main-bottom img {
-    position: absolute;
-    height: 100px;
-    left: -80px;
+  .h-top .for-tablet {
     top: 0;
+    position: absolute;
+    z-index: 1;
+  }
+  .h-top .first-screen-image {
+    display: none;
   }
   .h-bottom {
     padding-top: 50px;
@@ -1930,20 +1564,86 @@ video {
   .proof video {
     width: 720px;
   }
-  .about-product button {
-    display: none;
+  .about-product {
+    background-image: url("../img/bg/TabletMagazinPart.png");
+    height: 800px;
+    position: relative;
   }
-  .about-product .magzine-men_fin-wrap button {
-    display: block;
+  .about-product .for-tablet {
+    position: absolute;
+    left: 57%;
+    bottom: 70px;
+  }
+  .about-product .container {
+    display: none;
   }
   .hair-rescue {
     margin-top: -100px;
+  }
+  .what-to-expect {
+    background-image: url("../img/bg/WhatToExpect.png");
+    background-size: cover;
+    margin-bottom: -30px;
+    position: relative;
+  }
+  .what-to-expect__subtitle {
+    display: none;
+  }
+  .what-to-expect__list {
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    margin: 10px auto;
+    line-height: 1 !important;
+  }
+  .what-to-expect__list li {
+    min-width: 200px;
+    position: relative;
+  }
+  .what-to-expect__list li span {
+    font-family: 'Arimo', sans-serif;
+    font-weight: 600;
+    font-size: 22px;
+    color: #0e437e;
+    list-style-image: url("../img/list-marker/check mark white no bkr.png");
+  }
+  .what-to-expect .container {
+    display: block;
+    width: 450px;
+    position: absolute;
+    right: 0;
+    top: 170px;
+  }
+  .what-to-expect .container p {
+    font-size: 21.5px;
+    font-family: 'Arimo', sans-serif;
+    color: #0e437e;
+    width: 370px;
+    display: block;
+  }
+  .what-to-expect .container p span {
+    font-weight: 700;
+    font-style: normal;
+  }
+  .what-to-expect .container p b {
+    width: 320px;
+    margin-left: auto;
+    display: block;
+    font-size: 26px;
+    font-weight: normal;
+    font-style: italic;
+  }
+  .what-to-expect .container h2 {
+    display: none;
+  }
+  .what-to-expect .container img {
+    display: none;
   }
   .pharmacist-recommended​__text br {
     display: block;
   }
   .q-and-a {
-    background-image: url("../img/questionMark.png");
+    background-image: url("../img/bg/questionMark.png");
     padding: 50px 0;
   }
   .q-and-a img {
@@ -2032,9 +1732,6 @@ video {
   .about-efficiency__content li span {
     font-size: 1.30rem;
   }
-  .what-to-expect .container {
-    top: 25%;
-  }
   .what-to-expect img {
     width: 100%;
   }
@@ -2059,42 +1756,30 @@ video {
     display: none;
   }
   .about-benefits {
-    background-image: url("../img/TabletHairManBottom.png");
-    background-position: 60% 80%;
-    background-size: auto;
-  }
-  .about-benefits__content {
-    margin-left: 70px;
+    background-image: url("../img/bg/TabletHairManBottom.png");
+    background-size: cover;
+    background-position: 120%;
+    margin-bottom: -80px;
   }
   .about-benefits__title {
-    font-family: "Oswald", sans-serif;
+    display: none;
   }
-  .about-benefits .for-tablet {
-    color: #0e437e;
-    font-weight: 900 !important;
+  .about-benefits h2 {
+    display: none;
   }
-  .about-benefits .for-tablet i {
-    color: #ff6600;
+  .about-benefits__subtitle {
+    display: none;
   }
   .about-benefits__text {
-    color: #22d612;
-  }
-  .about-benefits__text span {
-    color: #0e437e;
+    display: none;
   }
   .about-benefits__list {
-    margin-top: 20px;
-    margin-left: 30px;
-    list-style-image: none;
+    display: none;
   }
-  .about-benefits__list li {
-    font-size: 30px;
-    color: #0064f9;
-    line-height: 1;
-  }
-  .about-benefits__list li span {
-    font-size: 20px;
-    color: #0e437e;
+  .about-benefits .main-btn-wrap {
+    margin-top: 620px;
+    margin-bottom: 40px;
+    margin-left: 100px;
   }
   .guarantee {
     margin-left: 80px;
@@ -2116,92 +1801,25 @@ video {
   .for-tablet {
     display: none;
   }
-  .no-for-tablet {
+  .no-form-tablet {
     display: block;
   }
   .main-form {
     display: none;
   }
-  .first-screen-main__list {
-    margin-left: -140px;
-  }
   .h-top {
-    background-image: url("../img/14181069_1604043357394background-image.jpg");
-    background-position: 30% center;
+    background-image: url("img/first-screen/first-screen-mob.jpg");
+    background-position: center center;
     padding: 0;
+    height: auto !important;
   }
-  .h-top__list {
-    margin-left: -140px;
+  .h-top .row {
+    display: none;
   }
-  .h-top .first-screen-main {
+  .h-top .first-screen-mob {
     display: block;
-    width: -webkit-fit-content;
-    width: -moz-fit-content;
-    width: fit-content;
-    background-position: auto 100%;
     margin: 0 auto;
-    padding-top: 50px;
-    padding-bottom: 50px;
-  }
-  .h-top .first-screen-main-center {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    margin-top: -120px;
-    margin-left: -60px;
-  }
-  .h-top .first-screen-main-center img {
-    height: 400px;
-    position: relative;
-    z-index: 2;
-  }
-  .h-top .first-screen-main-bottom {
-    background-image: url("../img/arrow-mb.png");
-    background-size: contain;
-    width: -webkit-fit-content;
-    width: -moz-fit-content;
-    width: fit-content;
-    padding: 20px 55px;
-    margin: -20px auto 0;
-    text-align: center;
-    position: static;
-  }
-  .h-top .first-screen-main-bottom .upper-text {
-    position: relative;
-    z-index: 5;
-    margin-top: -15px;
-    font-weight: 700;
-    font-size: 30px;
-  }
-  .h-top .first-screen-main-bottom .lower-text {
-    font-size: 24px;
-    font-weight: 500;
-    padding-bottom: 50px;
-  }
-  .h-top .first-screen-main .list-item {
-    background-image: url("../img/list-item-bg.png");
-    background-repeat: no-repeat;
-    background-position: 100% auto;
-    background-size: contain;
-    color: #21211F;
-    text-align: left;
-    padding-left: 100px;
-    width: 450px;
-  }
-  .h-top .first-screen-main .list-item h3 {
-    font-style: italic;
-  }
-  .h-top .first-screen-main .list-item p {
-    font-style: italic;
-  }
-  .h-top .first-screen-main .list-item .mark {
-    height: 50px;
-  }
-  .h-top .first-screen-main__list {
-    margin-left: -140px;
-    margin-top: 115px;
-    position: relative;
-    z-index: 1;
+    width: 100%;
   }
   .h-bottom {
     padding-top: 30px;
@@ -2236,7 +1854,7 @@ video {
     display: none;
   }
   .q-and-a {
-    padding: 45px 0;
+    padding: 30px 0;
     background-color: #f2f9ff;
     background-image: none;
   }
@@ -2277,9 +1895,6 @@ video {
     width: 100%;
     margin: 15px auto;
   }
-  .about-efficiency__image img, .about-efficiency__image source {
-    width: 100%;
-  }
   .about-efficiency__title {
     display: block !important;
   }
@@ -2292,26 +1907,24 @@ video {
     height: auto !important;
     padding: 40px 0;
     position: static;
-    margin-bottom: 0;
   }
   .what-to-expect .container {
     display: block;
     position: static !important;
     width: 100% !important;
-    margin: 0 auto;
   }
   .what-to-expect .container h2 {
     display: block !important;
   }
   .what-to-expect .container img {
     display: block !important;
-    width: 60%;
+    width: 100%;
     margin: 0 auto;
   }
   .what-to-expect__title {
     color: #fff;
     font-family: 'Oswald', sans-serif;
-    font-size: 10vw;
+    font-size: 2.33rem;
     line-height: 1.4em;
     font-weight: 600;
     text-align: center;
@@ -2326,58 +1939,38 @@ video {
     font-style: italic;
   }
   .what-to-expect p {
-    width: -webkit-fit-content;
-    width: -moz-fit-content;
-    width: fit-content;
-    margin: 0 auto 15px;
-    font-size: 2.9vw !important;
+    width: 100% !important;
+    font-size: 0.8rem;
     font-family: 'Arimo', sans-serif;
     color: #0e437e;
-    line-height: 1.1;
-  }
-  .what-to-expect p br {
-    display: block !important;
+    margin: 0;
   }
   .what-to-expect p b {
     font-family: 'Roboto', sans-serif;
-    font-size: 3vw !important;
-    margin: 15px 0 0 -70px  !important;
+    color: #4B6A71;
+    font-size: 1rem;
+    margin-left: 0 !important;
+  }
+  .what-to-expect p b br {
+    display: none;
   }
   .what-to-expect__list {
-    margin: 15px auto 0 !important;
+    margin-left: 50px !important;
   }
   .what-to-expect__list li {
+    list-style-image: url("../img/list-marker/marker2.jpg") !important;
+    font-size: 20px;
     font-family: 'Arimo', sans-serif;
-    font-weight: 600   !important;
+    font-weight: 500;
     color: #353535;
-    padding: 0;
-    position: relative;
-    list-style: none;
-  }
-  .what-to-expect__list li .marker {
-    display: block;
-    position: absolute;
-    left: -30px;
-    top: 1vw;
-    height: 5vw;
-    display: block;
-  }
-  .what-to-expect__list li .marker img {
-    height: 100%;
-    width: auto;
-  }
-  .what-to-expect__list li span {
-    margin-top: -10px;
-    font-size: 2.5vw !important;
-    font-weight: 700;
-    line-height: 2;
-  }
-  .what-to-expect__main-bg {
-    display: none;
+    padding: 10px;
   }
   .what-to-expect__bg-mob {
     display: block;
-    max-width: 400px !important;
+    width: 100%;
+  }
+  .what-to-expect .container {
+    display: none;
   }
   .feedback__content-wrap {
     -webkit-box-orient: vertical;
@@ -2420,16 +2013,16 @@ video {
             flex-direction: column;
     gap: 30px;
   }
-  .about-usage picture:nth-of-type(1) {
+  .about-usage img:nth-of-type(1) {
     width: 90px;
   }
-  .about-usage picture:nth-of-type(2), .about-usage picture:nth-of-type(4) {
+  .about-usage img:nth-of-type(2), .about-usage img:nth-of-type(4) {
     width: 51px;
   }
-  .about-usage picture:nth-of-type(3) {
+  .about-usage img:nth-of-type(3) {
     width: 152px;
   }
-  .about-usage picture:nth-of-type(5) {
+  .about-usage img:nth-of-type(5) {
     width: 161px;
   }
   .about-usage .text-row {
@@ -2456,7 +2049,6 @@ video {
     background: none;
   }
   .about-benefits__content {
-    margin-left: 0;
     width: auto;
     padding-right: 0;
   }
@@ -2482,7 +2074,6 @@ video {
     text-align: center;
   }
   .about-benefits__text {
-    color: #0e437e;
     display: block;
     font-size: 0.95rem;
   }
@@ -2567,6 +2158,15 @@ video {
   .how-it-works .advanteges__descr span {
     font-size: 0.95rem;
   }
+  .what-to-expect p {
+    font-size: 0.77rem;
+  }
+  .what-to-expect p b {
+    font-size: 1.1rem;
+  }
+  .what-to-expect__list li {
+    font-size: 0.77rem;
+  }
   .q-and-a__content {
     font-size: 1.5rem;
   }
@@ -2620,88 +2220,16 @@ video {
   .header-mob {
     display: block;
   }
-  .h-top .first-screen-main {
-    width: 100%;
-  }
-  .h-top .first-screen-main__title {
-    font-size: 1rem;
-    line-height: .7;
-    margin-right: 0;
-  }
-  .h-top .first-screen-main h1 {
-    font-family: 'Oswald', sans-serif;
-    font-size: 4rem;
-    font-weight: 900;
-  }
-  .h-top .first-screen-main h2 {
-    font-family: 'Arimo', sans-serif;
-    font-size: 4.5rem;
-    font-weight: 900;
-    margin-top: 20px;
-  }
-  .h-top .first-screen-main__subtitle {
-    font-size: 1.4rem;
-    margin-left: -50px;
-  }
-  .h-top .first-screen-main-center {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    margin: -60px auto 0;
-  }
-  .h-top .first-screen-main-center img {
-    height: 13rem;
-    position: relative;
-    z-index: 2;
-    margin-top: 50px;
-  }
-  .h-top .first-screen-main__list {
-    margin-left: -5rem;
-    margin-top: 60px;
-  }
-  .h-top .first-screen-main .list-item {
-    width: auto;
-    height: -webkit-fit-content;
-    height: -moz-fit-content;
-    height: fit-content;
-    margin-top: .1rem;
-  }
-  .h-top .first-screen-main .list-item .mark {
-    height: 50px;
-  }
-  .h-top .first-screen-main__text {
-    max-width: 100%;
-    margin-left: -25px;
-  }
-  .h-top .first-screen-main__text h3 {
-    font-size: 1.2rem !important;
-  }
-  .h-top .first-screen-main__text p {
-    font-size: .6rem !important;
-    width: auto !important;
-  }
-  .h-top .first-screen-main-bottom {
-    width: auto;
-    background-position: center;
-    height: 13vw;
-    z-index: 1;
-    margin: -20px auto 0;
-  }
-  .h-top .first-screen-main-bottom .upper-text {
-    text-align: center;
-    z-index: 5;
-    position: relative;
-    margin: -10px auto 0;
-    font-size: 3.3vw;
-  }
-  .h-top .first-screen-main-bottom .lower-text {
-    font-size: 2.8vw;
-    position: relative;
-    z-index: 5;
-    margin: 0 auto;
-  }
   .orange-subtitle {
     font-size: 1.55rem;
+  }
+  .h-top .container {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  .h-top .first-screen-mob {
+    width: 100vw;
   }
   .proof__title {
     width: 100% !important;
@@ -2745,6 +2273,18 @@ video {
   }
   .physicians-choice .dr {
     margin-bottom: 50px;
+  }
+  .what-to-expect__subtitle {
+    font-size: 1.65rem;
+  }
+  .what-to-expect p {
+    font-size: 0.92rem;
+  }
+  .what-to-expect p b {
+    font-size: 1.20rem;
+  }
+  .what-to-expect__list li {
+    font-size: 0.92rem;
   }
   .pharmacist-recommended​__text {
     display: block;
@@ -2803,13 +2343,13 @@ video {
   .about-usage__text {
     font-size: 1.20rem;
   }
-  .about-usage picture:nth-of-type(1) {
+  .about-usage img:nth-of-type(1) {
     width: 69px;
   }
-  .about-usage picture:nth-of-type(3) {
+  .about-usage img:nth-of-type(3) {
     width: 118px;
   }
-  .about-usage picture:nth-of-type(5) {
+  .about-usage img:nth-of-type(5) {
     width: 136px;
   }
   .about-usage .text-row {
@@ -2932,74 +2472,12 @@ video {
   }
 }
 
-@media (max-width: 575px) {
-  .h-top .first-screen-main-center img {
-    height: 14rem;
-  }
-  .h-top .first-screen-main__text {
-    max-width: 80%;
-    margin-left: -25px;
-  }
-  .h-top .first-screen-main__text h3 {
-    font-size: 1.2rem !important;
-    margin-bottom: 1px !important;
-  }
-  .h-top .first-screen-main__text p {
-    font-size: .6rem !important;
-  }
-}
-
-@media (max-width: 575px) {
-  .h-top .first-screen-main__text {
-    max-width: 100%;
-    margin-left: -40px;
-  }
-  .h-top .first-screen-main__text h3 {
-    font-size: 1.2rem !important;
-    margin-bottom: 0 !important;
-  }
-  .h-top .first-screen-main__text p {
-    font-size: .6rem !important;
-  }
-}
-
 @media (max-width: 500px) {
   .image-row-top {
     width: 100% !important;
   }
   .image-row-top img {
     width: 100%;
-  }
-  .what-to-expect img {
-    width: 100% !important;
-    margin: 20px auto 30px !important;
-  }
-  .what-to-expect p {
-    width: -webkit-fit-content;
-    width: -moz-fit-content;
-    width: fit-content;
-    font-size: 5vw !important;
-  }
-  .what-to-expect p b {
-    margin-left: -70px !important;
-    font-size: 5.5vw !important;
-  }
-  .what-to-expect__list {
-    width: -webkit-fit-content !important;
-    width: -moz-fit-content !important;
-    width: fit-content !important;
-    margin: 0 auto !important;
-  }
-  .what-to-expect__list li .marker {
-    height: 7vw;
-  }
-  .what-to-expect__list li .marker img {
-    width: auto !important;
-    margin: 0 !important;
-  }
-  .what-to-expect__list li span {
-    font-size: 4.5vw !important;
-    line-height: 1.5;
   }
 }
 
@@ -3104,10 +2582,11 @@ video {
     display: block;
   }
   /*section with information on how to use*/
-  .about-usage__content {
+  .about-usage .container {
     display: none !important;
   }
   .about-usage .bg-mob {
+    border-top: 2px solid #ff6600;
     border-bottom: 2px solid #316ed4;
     display: block;
     width: 100% !important;
@@ -3177,66 +2656,7 @@ video {
   }
 }
 
-@media (max-width: 445px) {
-  .h-top .first-screen-main-center img {
-    height: 45vw;
-  }
-  .h-top .first-screen-main__text {
-    max-width: 110%;
-    margin-left: -50px;
-  }
-  .h-top .first-screen-main__text h3 {
-    font-size: 3.5vw !important;
-    margin-bottom: 0 !important;
-  }
-  .h-top .first-screen-main__text p {
-    font-size: 2vw !important;
-  }
-  .h-top .first-screen-main__list {
-    margin-left: -16vw;
-  }
-}
-
 @media (max-width: 400px) {
-  .first-screen-main-bottom {
-    width: 100% !important;
-  }
-  .h-top .first-screen-main__text {
-    max-width: 130% !important;
-    margin-left: -14vw;
-  }
-  .h-top .first-screen-main__text h3 {
-    margin-bottom: -3px !important;
-  }
-  .h-top .first-screen-main-bottom {
-    width: -webkit-fit-content;
-    width: -moz-fit-content;
-    width: fit-content;
-    height: 12vw;
-    margin-top: -10px;
-  }
-  .h-top .first-screen-main-bottom .upper-text {
-    font-size: 4vw;
-    margin-top: -20px;
-  }
-  .h-top .first-screen-main-bottom .lower-text {
-    font-size: 2.9vw;
-  }
-  .what-to-expect p {
-    width: -webkit-fit-content;
-    width: -moz-fit-content;
-    width: fit-content;
-  }
-  .what-to-expect__list {
-    width: -webkit-fit-content;
-    width: -moz-fit-content;
-    width: fit-content;
-  }
-  .what-to-expect__list li {
-    min-width: -webkit-fit-content !important;
-    min-width: -moz-fit-content !important;
-    min-width: fit-content !important;
-  }
   .proof__text br {
     display: none !important;
   }
@@ -3259,31 +2679,6 @@ video {
 }
 
 @media (max-width: 345px) {
-  .h-top .first-screen-main__text {
-    width: auto;
-    margin-left: -5rem;
-    padding-bottom: 10px;
-  }
-  .h-top .first-screen-main__text h3 {
-    font-size: .7rem;
-  }
-  .h-top .first-screen-main__text p {
-    font-size: .5rem;
-  }
-  .h-top .list-item {
-    background-image: url("../img/list-item-bg.png");
-    background-repeat: no-repeat;
-    background-position: auto 100%;
-  }
-  .h-top .list-item-bottom {
-    width: 100%;
-  }
-  .h-top .list-item-bottom .upper-text {
-    font-size: .9rem;
-  }
-  .h-top .list-item-bottom .lower-text {
-    font-size: .6rem;
-  }
   .feedback__content_image {
     width: 100%;
   }
@@ -3296,25 +2691,6 @@ video {
   .timer {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-  }
-}
-
-@media (max-width: 329px) {
-  .h-top .first-screen-main__title {
-    font-size: 4vw;
-  }
-  .h-top .first-screen-main h1 {
-    font-size: 15vw;
-  }
-  .h-top .first-screen-main h2 {
-    font-size: 17vw;
-  }
-  .h-top .first-screen-main__text h3 {
-    font-size: 2.5vw !important;
-    margin-bottom: 1px !important;
-  }
-  .h-top .first-screen-main__text p {
-    font-size: 1.6vw !important;
   }
 }
 
