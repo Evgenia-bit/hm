@@ -70,16 +70,14 @@ button:focus, input:focus, select:focus, video:focus {
   margin: 0;
   z-index: 20;
   width: 100%;
-  font-size: 22px;
-  font-family: "Oswald", sans-serif;
 }
 
 .fixed-btn .main-btn {
+  font-family: 'Oswald', sans-serif;
+  font-size: 24px;
   font-weight: 700;
   width: 280px;
   height: 60px;
-  font-size: 24px;
-  font-family: "Oswald", sans-serif;
 }
 
 /*red button for form*/
@@ -1582,9 +1580,10 @@ video {
   }
   .what-to-expect {
     background-image: url("../img/bg/WhatToExpect.png");
-    background-size: cover;
+    background-size: contain;
     margin-bottom: -30px;
     position: relative;
+    height: 75vw !important;
   }
   .what-to-expect__subtitle {
     display: none;
@@ -1593,32 +1592,39 @@ video {
     width: -webkit-fit-content;
     width: -moz-fit-content;
     width: fit-content;
-    margin: 10px auto;
-    line-height: 1 !important;
+    margin: 10px auto 10px 13vw;
+    line-height: 1.5;
   }
   .what-to-expect__list li {
-    min-width: 200px;
     position: relative;
+    list-style: none;
+  }
+  .what-to-expect__list li img {
+    position: absolute;
+    display: block !important;
+    height: 2vw;
+    left: -3.5vw;
+    top: .8vw;
+    width: auto;
   }
   .what-to-expect__list li span {
     font-family: 'Arimo', sans-serif;
     font-weight: 600;
-    font-size: 22px;
+    font-size: 2vw;
     color: #0e437e;
-    list-style-image: url("../img/list-marker/check mark white no bkr.png");
   }
   .what-to-expect .container {
     display: block;
-    width: 450px;
+    width: 45vw;
     position: absolute;
     right: 0;
-    top: 170px;
+    top: 25%;
   }
   .what-to-expect .container p {
-    font-size: 21.5px;
+    font-size: 2.05vw;
     font-family: 'Arimo', sans-serif;
     color: #0e437e;
-    width: 370px;
+    width: auto;
     display: block;
   }
   .what-to-expect .container p span {
@@ -1626,18 +1632,21 @@ video {
     font-style: normal;
   }
   .what-to-expect .container p b {
-    width: 320px;
-    margin-left: auto;
+    margin-left: 9.5vw;
     display: block;
-    font-size: 26px;
+    font-size: 2.2vw;
     font-weight: normal;
     font-style: italic;
+    line-height: 1.3;
   }
   .what-to-expect .container h2 {
     display: none;
   }
   .what-to-expect .container img {
     display: none;
+  }
+  .hair-rescue {
+    font-size: 2.8vw;
   }
   .pharmacist-recommended​__text br {
     display: block;
@@ -1898,80 +1907,6 @@ video {
   .about-efficiency__title {
     display: block !important;
   }
-  .hair-rescue {
-    display: none;
-  }
-  .what-to-expect {
-    background-image: none !important;
-    background-color: #6dcff6;
-    height: auto !important;
-    padding: 40px 0;
-    position: static;
-  }
-  .what-to-expect .container {
-    display: block;
-    position: static !important;
-    width: 100% !important;
-  }
-  .what-to-expect .container h2 {
-    display: block !important;
-  }
-  .what-to-expect .container img {
-    display: block !important;
-    width: 100%;
-    margin: 0 auto;
-  }
-  .what-to-expect__title {
-    color: #fff;
-    font-family: 'Oswald', sans-serif;
-    font-size: 2.33rem;
-    line-height: 1.4em;
-    font-weight: 600;
-    text-align: center;
-    display: block;
-  }
-  .what-to-expect__subtitle {
-    display: block !important;
-    text-align: center;
-    font-size: 1.6rem;
-    font-family: 'Arimo', sans-serif;
-    color: #0e437e;
-    font-style: italic;
-  }
-  .what-to-expect p {
-    width: 100% !important;
-    font-size: 0.8rem;
-    font-family: 'Arimo', sans-serif;
-    color: #0e437e;
-    margin: 0;
-  }
-  .what-to-expect p b {
-    font-family: 'Roboto', sans-serif;
-    color: #4B6A71;
-    font-size: 1rem;
-    margin-left: 0 !important;
-  }
-  .what-to-expect p b br {
-    display: none;
-  }
-  .what-to-expect__list {
-    margin-left: 50px !important;
-  }
-  .what-to-expect__list li {
-    list-style-image: url("../img/list-marker/marker2.jpg") !important;
-    font-size: 20px;
-    font-family: 'Arimo', sans-serif;
-    font-weight: 500;
-    color: #353535;
-    padding: 10px;
-  }
-  .what-to-expect__bg-mob {
-    display: block;
-    width: 100%;
-  }
-  .what-to-expect .container {
-    display: none;
-  }
   .feedback__content-wrap {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -2167,6 +2102,12 @@ video {
   .what-to-expect__list li {
     font-size: 0.77rem;
   }
+  .hair-rescue {
+    font-size: 2.5vw;
+  }
+  .hair-rescue .main-btn-wrap {
+    margin-left: 20px;
+  }
   .q-and-a__content {
     font-size: 1.5rem;
   }
@@ -2273,6 +2214,80 @@ video {
   }
   .physicians-choice .dr {
     margin-bottom: 50px;
+  }
+  .what-to-expect {
+    background-image: none !important;
+    background-color: #6dcff6;
+    height: auto !important;
+    padding: 40px 0;
+    position: static;
+  }
+  .what-to-expect .container {
+    display: block;
+    position: static !important;
+    width: 100% !important;
+  }
+  .what-to-expect .container h2 {
+    display: block !important;
+  }
+  .what-to-expect .container img {
+    display: block !important;
+    width: 100%;
+    margin: 0 auto;
+  }
+  .what-to-expect__title {
+    color: #fff;
+    font-family: 'Oswald', sans-serif;
+    font-size: 2.33rem;
+    line-height: 1.4em;
+    font-weight: 600;
+    text-align: center;
+    display: block;
+  }
+  .what-to-expect__subtitle {
+    display: block !important;
+    text-align: center;
+    font-size: 1.6rem;
+    font-family: 'Arimo', sans-serif;
+    color: #0e437e;
+    font-style: italic;
+  }
+  .what-to-expect p {
+    width: 100% !important;
+    font-size: 0.8rem;
+    font-family: 'Arimo', sans-serif;
+    color: #0e437e;
+    margin: 0;
+  }
+  .what-to-expect p b {
+    font-family: 'Roboto', sans-serif;
+    color: #4B6A71;
+    font-size: 1rem;
+    margin-left: 0 !important;
+  }
+  .what-to-expect p b br {
+    display: none;
+  }
+  .what-to-expect__list {
+    margin-left: 50px !important;
+  }
+  .what-to-expect__list li {
+    list-style-image: url("../img/list-marker/marker2.jpg") !important;
+    font-size: 20px;
+    font-family: 'Arimo', sans-serif;
+    font-weight: 500;
+    color: #353535;
+    padding: 10px;
+  }
+  .what-to-expect__bg-mob {
+    display: block;
+    width: 100%;
+  }
+  .what-to-expect .container {
+    display: none;
+  }
+  .hair-rescue {
+    display: none;
   }
   .what-to-expect__subtitle {
     font-size: 1.65rem;
