@@ -70,6 +70,8 @@ $brightBlue: #0064f9
     display: none
 .no-form-tablet
     display: block
+.for-tablet-image
+    display: none
 video
     position: relative
 .video-play
@@ -1044,7 +1046,9 @@ video
     .no-form-tablet
         display: none
     
-    
+    .for-tablet-image
+        width: 100%
+        display: block
        
     .main-form
 
@@ -1375,39 +1379,7 @@ video
                 margin: 0 auto
             &_text
                 font-size: 0.65rem
-    .about-usage
-        h2
-            br
-                display: none !important
-        .container:nth-of-type(1)
-            display: block
-            br
-                display: block
-        .container:nth-of-type(2)
-            padding-top: 20px
-            padding-bottom: 0
-            display: flex
-            justify-content: space-around
-            
-            .col-lg-12
-                flex-direction: column
-                gap: 30px
-        img:nth-of-type(1)
-            width: 90px
-        img:nth-of-type(2), img:nth-of-type(4)
-            width: 51px
-        img:nth-of-type(3)
-            width: 152px
-        img:nth-of-type(5)
-            width: 161px
-        .text-row
-            align-items: center
-            margin: auto
-            height: 650px
-            justify-content: space-between !important
-        span
-            text-align: center
-            margin: 0
+    
         br:nth-of-type(2)
             display: none
         br:nth-of-type(1)
@@ -1522,9 +1494,7 @@ video
             margin-bottom: 25px !important
             span
                 font-size: 0.95rem
-    .about-usage
-        &__text
-            font-size: 1.1rem
+   
     .feedback__content 
             &_image
                 span
@@ -1555,6 +1525,8 @@ video
         p
             max-width: 100%
 @media (max-width: 767px)
+    .for-tablet-image
+        display: none
     .header-mob   
         display: block
         
@@ -1713,15 +1685,27 @@ video
             span
                 font-size: 1.1rem
     .about-usage
+        h2
+            br
+                display: none !important
+        .container:nth-of-type(1)
+            display: block
+            br
+                display: block
         .container:nth-of-type(2)
+            padding-top: 20px
+            padding-bottom: 0
+            display: flex
             justify-content: start
             gap: 50px
             
-        &__text
-            font-size: 1.20rem
-   
+            .col-lg-12
+                flex-direction: column
+                gap: 30px
         img:nth-of-type(1)
             width: 69px
+        img:nth-of-type(2), img:nth-of-type(4)
+            width: 51px
         img:nth-of-type(3)
             width: 118px
         img:nth-of-type(5)
@@ -1731,6 +1715,12 @@ video
             margin: 0
             height: 560px
             justify-content: space-between !important
+        span
+            text-align: center
+            margin: 0
+        &__text
+            font-size: 1.20rem
+    
     .feedback
         &__content
             &-wrap
