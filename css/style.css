@@ -101,6 +101,10 @@ button:focus, input:focus, select:focus, video:focus {
   display: none;
 }
 
+.for-tablet-button {
+  display: none;
+}
+
 video {
   position: relative;
 }
@@ -292,6 +296,10 @@ video {
 
 .h-bottom .as-seen-on {
   margin-top: 30px;
+}
+
+.h-bottom .image-row-top img {
+  width: 120%;
 }
 
 .h-bottom .image-row-bottom img {
@@ -1531,23 +1539,98 @@ video {
     display: block;
   }
   .main-form {
-    width: 282px;
+    position: absolute !important;
+    top: 4.5vw;
+    right: 5vw;
+    width: 28vw;
     margin: 50px 0 0 -75px;
   }
+  .main-form__header {
+    font-size: 3.3vw;
+  }
+  .main-form .main-btn-wrap {
+    height: 7vw;
+  }
   .main-form input, .main-form select {
-    width: 232px;
+    width: 24vw;
+    height: 3.7vw;
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: .9vw;
+    font-size: 1.4vw;
+    padding: 0 1vw 0 3.5vw;
+  }
+  .main-form input::-webkit-input-placeholder, .main-form select::-webkit-input-placeholder {
+    font-size: 1.4vw !important;
+  }
+  .main-form input:-ms-input-placeholder, .main-form select:-ms-input-placeholder {
+    font-size: 1.4vw !important;
+  }
+  .main-form input::-ms-input-placeholder, .main-form select::-ms-input-placeholder {
+    font-size: 1.4vw !important;
+  }
+  .main-form input::placeholder, .main-form select::placeholder {
+    font-size: 1.4vw !important;
+  }
+  .main-form select, .main-form input[name="state"] {
+    background: url("../img/inputs-icons/flag.jpg") no-repeat 0.5vw 0.5vw;
   }
   .main-form .for-form {
-    width: 210px;
+    width: 90%;
+    font-size: 2.3vw;
+    height: 7vw;
+  }
+  .main-form .points {
+    color: rgba(0, 0, 0, 0.3);
+    font-size: 28px;
+    font-family: 'Oswald', sans-serif;
+    position: absolute;
+    right: 4;
+    top: -1.5vw;
+  }
+  .main-form .red-star {
+    color: #ff1a0d;
+    position: absolute;
+    font-size: 15px;
+    font-weight: 700;
+  }
+  .main-form .red-star:nth-of-type(2) {
+    top: 5vw;
+    right: 35px;
+  }
+  .main-form .red-star:nth-of-type(3) {
+    top: 14vw;
+    right: 35px;
+  }
+  .main-form input[name="first-name"], .main-form input[name="last-name"] {
+    background: url("../img/inputs-icons/user.jpg") no-repeat 0.5vw 0.5vw;
+  }
+  .main-form input[name="email"] {
+    background: url("../img/inputs-icons/letter.jpg") no-repeat 0.5vw 0.5vw;
+  }
+  .main-form input[name="address"] {
+    background: url("../img/inputs-icons/home.jpg") no-repeat 0.5vw 0.5vw;
+  }
+  .main-form input[name="city"] {
+    background: url("../img/inputs-icons/geo.jpg") no-repeat 0.5vw 0.5vw;
+  }
+  .main-form input[name="postal-code"] {
+    background: url("../img/inputs-icons/doc.jpg") no-repeat 0.5vw 0.5vw;
+  }
+  .main-form input[name="phone-number"] {
+    background: url("../img/inputs-icons/phone.jpg") no-repeat 0.5vw 0.5vw;
   }
   .h-top {
+    height: 72.5vw;
     background-image: none !important;
     background-color: #ebf5ff;
     background-position: 100% 100%;
   }
-  .h-top .for-tablet {
+  .h-top .col-lg-3 {
+    position: static;
+  }
+  .h-top .for-tablet-image {
+    width: 70vw;
     top: 0;
     position: absolute;
     z-index: 1;
@@ -1557,6 +1640,9 @@ video {
   }
   .h-bottom {
     padding-top: 50px;
+  }
+  .h-bottom .h-bottom__text {
+    font-size: 2.1vw;
   }
   .proof br {
     display: none;
@@ -1572,13 +1658,20 @@ video {
   }
   .about-product {
     background-image: url("../img/bg/TabletMagazinPart.png");
-    height: 800px;
+    background-size: contain;
+    background-position: auto 100%;
+    height: 80vw;
     position: relative;
   }
-  .about-product .for-tablet {
+  .about-product .for-tablet-button {
+    display: block;
     position: absolute;
     left: 57%;
-    bottom: 70px;
+    bottom: 6vw;
+  }
+  .about-product .for-tablet-button button {
+    width: 27vw;
+    width-font-size: 2.2vw;
   }
   .about-product .container {
     display: none;
@@ -1707,7 +1800,7 @@ video {
     background-image: none;
     background-color: #dcf3ff;
   }
-  .about-efficiency .for-tablet {
+  .about-efficiency .for-tablet-image {
     width: 100%;
     margin-bottom: 30px;
   }
@@ -1728,26 +1821,20 @@ video {
     color: #333333;
     font-family: arial;
     margin-left: 65px;
+    font-size: 1.1rem;
   }
   .about-efficiency__content {
     margin-left: 65px;
   }
   .about-efficiency__content li {
     line-height: 1.5;
-  }
-  .about-efficiency__content li span {
-    font-weight: bold;
-    font-family: arial;
-    color: #0987ff;
-  }
-  .about-efficiency__descr {
-    font-size: 1.1rem;
-  }
-  .about-efficiency__content li {
     font-size: 0.83rem;
   }
   .about-efficiency__content li span {
     font-size: 1.30rem;
+    font-weight: bold;
+    font-family: arial;
+    color: #0987ff;
   }
   .what-to-expect img {
     width: 100%;
@@ -1810,62 +1897,11 @@ video {
 }
 
 @media (max-width: 1023px) {
-  .fixed-btn {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-  }
   .for-tablet {
     display: none;
   }
   .no-form-tablet {
     display: block;
-  }
-  .main-form {
-    display: none;
-  }
-  .h-top {
-    background-image: url("img/first-screen/first-screen-mob.jpg");
-    background-position: center center;
-    padding: 0;
-    height: auto !important;
-  }
-  .h-top .row {
-    display: none;
-  }
-  .h-top .first-screen-mob {
-    display: block;
-    margin: 0 auto;
-    width: 100%;
-  }
-  .h-bottom {
-    padding-top: 30px;
-  }
-  .about-product {
-    height: auto;
-    background-image: none;
-    width: 940px;
-    margin: 0 auto;
-  }
-  .about-product__content {
-    width: 441px;
-  }
-  .about-product .magzine-men_fin {
-    margin-left: 150px;
-  }
-  .about-product .container {
-    display: grid;
-    display: -ms-grid;
-    gap: 10px;
-    grid-template-columns: 5fr 1fr !important;
-    -ms-grid-columns: 5fr 10px 1fr;
-  }
-  .about-product .container img {
-    height: auto;
-    width: 100% !important;
-  }
-  .about-product .main-btn-wrap {
-    display: none;
   }
   .pharmacist-recommended​ .main-btn-wrap {
     display: none;
@@ -1901,129 +1937,17 @@ video {
     width: 720px;
     margin: 0 auto 15px;
   }
-  .about-efficiency__descr {
-    margin-left: 0;
-  }
-  .about-efficiency__content {
-    margin-left: 0;
-  }
-  .about-efficiency__image {
-    display: block;
-    width: 100%;
-    margin: 15px auto;
-  }
-  .about-efficiency__title {
-    display: block !important;
-  }
-  .feedback__content-wrap {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    width: 720px;
-    height: auto;
-    margin: 0 auto;
-  }
-  .feedback__content_image {
-    width: 200px;
-    margin: 0 auto;
-  }
-  .feedback__content_text {
-    font-size: 0.65rem;
-  }
-  .feedback br:nth-of-type(2) {
-    display: none;
-  }
-  .feedback br:nth-of-type(1) {
-    display: none;
-  }
-  .about-benefits {
-    background: none;
-  }
-  .about-benefits__content {
-    width: auto;
-    padding-right: 0;
-  }
-  .about-benefits__image {
-    display: block;
-    width: 100%;
-    padding: 10px;
-  }
-  .about-benefits__image img {
-    padding-bottom: 80px;
-    width: 100%;
-  }
-  .about-benefits__title {
-    display: block !important;
-    color: #0987ff;
-    width: 100%;
-    text-align: center;
-    font-size: 2.8rem;
-  }
-  .about-benefits__subtitle {
-    display: block;
-    line-height: 1.4em;
-    text-align: center;
-  }
-  .about-benefits__text {
-    display: block;
-    font-size: 0.95rem;
-  }
-  .about-benefits__text br:nth-of-type(1) {
-    display: none;
-  }
-  .about-benefits__text br:nth-of-type(2) {
-    display: block;
-  }
-  .about-benefits__list {
-    display: block;
-  }
-  .about-benefits__list li {
-    font-size: 0.80rem;
-  }
-  .about-benefits .main-btn-wrap {
-    display: none;
-  }
 }
 
 @media (max-width: 991px) {
   .orange-subtitle {
     font-size: 1.5rem;
   }
-  .h-bottom__text {
-    display: none;
-  }
-  .h-bottom .image-row-top {
-    width: 478px;
-    margin: 0 auto;
-  }
-  .h-bottom .image-row-bottom {
-    display: none;
-  }
   .proof__subtitle {
     font-size: 1.5rem;
   }
   .proof__text {
     font-size: 1.3rem;
-  }
-  .about-product {
-    width: 720px;
-  }
-  .about-product__title {
-    font-size: 2.6rem;
-  }
-  .about-product__content {
-    width: 120% !important;
-  }
-  .about-product p {
-    font-size: 0.95rem;
-  }
-  .about-product .magzine-men_fin {
-    margin: 0 auto;
-    width: 100%;
-  }
-  .about-product .main-btn-wrap {
-    display: none;
   }
   .physicians-choice {
     padding-bottom: 0;
@@ -2078,12 +2002,6 @@ video {
   .real-stories .video-wrap span {
     font-size: 0.95rem;
   }
-  .feedback__content_image span {
-    font-size: 0.95rem;
-  }
-  .feedback__content_text {
-    font-size: 0.77rem;
-  }
   .packages .container {
     width: 720px;
   }
@@ -2109,6 +2027,25 @@ video {
   .footer p {
     max-width: 100%;
   }
+  .about-benefits .main-btn-wrap {
+    margin-top: 610px;
+    margin-bottom: 6vw;
+    margin-left: 2vw;
+  }
+  .about-benefits .main-btn-wrap button {
+    width: 28vw;
+    font-size: 2vw;
+  }
+}
+
+@media (max-width: 870px) {
+  .about-benefits {
+    background-image: url("../img/bg/TabletHairManBottom.png");
+    background-size: contain;
+    background-position: 100% 100%;
+    margin-top: -10vw;
+    margin-bottom: -100px;
+  }
 }
 
 @media (max-width: 767px) {
@@ -2118,8 +2055,23 @@ video {
   .header-mob {
     display: block;
   }
+  .fixed-btn {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
   .orange-subtitle {
     font-size: 1.55rem;
+  }
+  .main-form {
+    display: none;
+  }
+  .h-top {
+    padding: 0;
+    height: auto !important;
+  }
+  .h-top .row {
+    display: none;
   }
   .h-top .container {
     width: 100%;
@@ -2127,7 +2079,18 @@ video {
     padding: 0;
   }
   .h-top .first-screen-mob {
+    display: block;
     width: 100vw;
+  }
+  .h-bottom__text {
+    display: none;
+  }
+  .h-bottom .image-row-top {
+    width: 478px;
+    margin: 0 auto;
+  }
+  .h-bottom .image-row-bottom {
+    display: none;
   }
   .proof__title {
     width: 100% !important;
@@ -2145,7 +2108,40 @@ video {
     width: 100%;
   }
   .about-product {
-    width: 95%;
+    height: auto;
+    background-image: none;
+    width: 100%;
+    margin: 0 auto;
+  }
+  .about-product__title {
+    font-size: 2.6rem;
+  }
+  .about-product__content {
+    width: 120% !important;
+  }
+  .about-product p {
+    font-size: 0.95rem;
+  }
+  .about-product .magzine-men_fin {
+    margin: 0 auto;
+    width: 100%;
+  }
+  .about-product .container {
+    display: grid;
+    display: -ms-grid;
+    gap: 10px;
+    grid-template-columns: 5fr 1fr !important;
+    -ms-grid-columns: 5fr 10px 1fr;
+  }
+  .about-product .container img {
+    height: auto;
+    width: 100% !important;
+  }
+  .about-product .main-btn-wrap {
+    display: none;
+  }
+  .about-product .for-tablet-button {
+    display: none;
   }
   .about-product__title br {
     display: none;
@@ -2288,13 +2284,25 @@ video {
     font-size: 1.15rem;
   }
   .about-efficiency__descr {
+    margin-left: 0;
     font-size: 1.2rem;
+  }
+  .about-efficiency__content {
+    margin-left: 0;
   }
   .about-efficiency__content li {
     font-size: 0.98rem;
   }
   .about-efficiency__content li span {
     font-size: 1.4rem;
+  }
+  .about-efficiency__image {
+    display: block;
+    width: 100%;
+    margin: 15px auto;
+  }
+  .about-efficiency__title {
+    display: block !important;
   }
   .real-stories .video-wrap {
     margin: 0 auto 25px;
@@ -2363,7 +2371,17 @@ video {
     font-size: 1.20rem;
   }
   .feedback__content-wrap {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     width: 90%;
+    height: auto;
+    margin: 0 auto;
+  }
+  .feedback__content_image {
+    width: 200px;
+    margin: 0 auto;
   }
   .feedback__content_image span {
     font-size: 1.10rem;
@@ -2371,20 +2389,60 @@ video {
   .feedback__content_text {
     font-size: 0.92rem;
   }
+  .feedback br:nth-of-type(2) {
+    display: none;
+  }
+  .feedback br:nth-of-type(1) {
+    display: none;
+  }
+  .about-benefits {
+    margin-top: 0;
+    margin-bottom: -50px;
+    background: none;
+  }
   .about-benefits__content {
     width: 100% !important;
+    padding-right: 0;
+  }
+  .about-benefits__image {
+    display: block;
+    width: 100%;
+    padding: 10px;
+  }
+  .about-benefits__image img {
+    padding-bottom: 80px;
+    width: 100%;
   }
   .about-benefits__title {
+    display: block !important;
     color: #0987ff;
+    width: 100%;
+    text-align: center;
+    font-size: 2.8rem;
   }
   .about-benefits__subtitle {
+    display: block;
+    line-height: 1.4em;
     text-align: center;
   }
   .about-benefits__text {
+    display: block;
     font-size: 1.1rem;
+  }
+  .about-benefits__text br:nth-of-type(1) {
+    display: none;
+  }
+  .about-benefits__text br:nth-of-type(2) {
+    display: block;
+  }
+  .about-benefits__list {
+    display: block;
   }
   .about-benefits__list li {
     font-size: 0.95rem;
+  }
+  .about-benefits .main-btn-wrap {
+    display: none;
   }
   .packages .container {
     width: 95%;

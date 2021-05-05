@@ -72,6 +72,8 @@ $brightBlue: #0064f9
     display: block
 .for-tablet-image
     display: none
+.for-tablet-button
+    display: none
 video
     position: relative
 .video-play
@@ -203,6 +205,8 @@ video
     .as-seen-on
         margin-top: 30px
     .image-row-top 
+        img
+            width: 120%
     .image-row-bottom img
         margin-top: 20px
         width: 81%
@@ -1051,20 +1055,74 @@ video
         display: block
        
     .main-form
-
-        width: 282px  
+        position: absolute !important
+        top: 4.5vw
+        right: 5vw
+        width: 28vw 
         margin: 50px 0 0 -75px
+        &__header
+            font-size: 3.3vw
+        .main-btn-wrap
+            height: 7vw
         input, select
-            width: 232px
+            width: 24vw
+            height: 3.7vw
             margin-left: auto
             margin-right: auto
+            margin-bottom: .9vw
+            font-size: 1.4vw
+            padding: 0 1vw 0 3.5vw
+            &::placeholder 
+                font-size: 1.4vw !important
+        select, input[name="state"] 
+            background: url('../img/inputs-icons/flag.jpg') no-repeat .5vw .5vw
+        
         .for-form
-            width: 210px
+            width: 90%
+            font-size: 2.3vw
+            height: 7vw
+        .points
+            color: rgba(0,0,0,0.3)
+            font-size: 28px
+            font-family: 'Oswald', sans-serif
+            position: absolute
+            right: 4
+            top: -1.5vw
+        .red-star
+            color: rgb(255, 26, 13)
+            position: absolute
+            font-size: 15px
+            font-weight: 700
+            &:nth-of-type(2)
+                top: 5vw
+                right: 35px
+            &:nth-of-type(3)
+                top: 14vw
+                right: 35px
+                    
+        input[name="first-name"], input[name="last-name"]
+                background: url('../img/inputs-icons/user.jpg') no-repeat .5vw .5vw
+                
+        input[name="email"] 
+                background: url('../img/inputs-icons/letter.jpg') no-repeat .5vw .5vw
+        input[name="address"] 
+                background: url('../img/inputs-icons/home.jpg') no-repeat  .5vw .5vw
+        input[name="city"] 
+                background: url('../img/inputs-icons/geo.jpg') no-repeat .5vw .5vw
+        input[name="postal-code"] 
+                background: url('../img/inputs-icons/doc.jpg') no-repeat   .5vw .5vw 
+        input[name="phone-number"] 
+                background: url('../img/inputs-icons/phone.jpg') no-repeat .5vw .5vw
+    
     .h-top 
+        height: 72.5vw
         background-image: none !important
         background-color: #ebf5ff 
         background-position: 100% 100%
-        .for-tablet
+        .col-lg-3
+            position: static
+        .for-tablet-image
+            width: 70vw
             top: 0
             position: absolute
             z-index: 1
@@ -1072,7 +1130,9 @@ video
             display: none
     .h-bottom
         padding-top: 50px
-            
+
+        .h-bottom__text
+            font-size: 2.1vw   
     .proof
         br
             display: none
@@ -1086,13 +1146,20 @@ video
             width: 720px 
     .about-product
         background-image: url('../img/bg/TabletMagazinPart.png') 
-
-        height: 800px
+        background-size: contain
+        background-position: auto 100%
+        height: 80vw
         position: relative
-        .for-tablet
+        .for-tablet-button
+            display: block
             position: absolute
             left: 57%
-            bottom: 70px
+            bottom: 6vw
+            button
+                width: 27vw
+            
+                    
+                    font-size: 2.2vw
         .container
                 display: none
         
@@ -1201,7 +1268,7 @@ video
         padding: 50px 0
         background-image: none
         background-color:   rgb(220, 243, 255)
-        .for-tablet
+        .for-tablet-image
             width: 100%
             margin-bottom: 30px
         &__title
@@ -1220,22 +1287,18 @@ video
                 color: rgb(51, 51, 51)
                 font-family: arial
                 margin-left: 65px 
+                font-size: 1.1rem
         &__content
             margin-left: 65px 
             li
                 line-height: 1.5
-                span
-                    font-weight: bold
-                    font-family: arial
-                    color: rgb(9, 135, 255)
-    .about-efficiency
-        &__descr
-            font-size: 1.1rem
-        &__content
-            li
                 font-size:  0.83rem
                 span
                     font-size: 1.30rem
+                    font-weight: bold
+                    font-family: arial
+                    color: rgb(9, 135, 255)
+ 
     .what-to-expect
         img
             width: 100%
@@ -1282,49 +1345,13 @@ video
             img
                 width: 60px
 @media ( max-width: 1023px )
-    .fixed-btn
-        display: flex
+    
     .for-tablet
         display: none
     .no-form-tablet
         display: block
-    .main-form
-        display: none
-    .h-top
-        background-image: url("img/first-screen/first-screen-mob.jpg")
-        background-position: center center
-        padding: 0
-        height: auto !important
-        .row
-            display: none
-        
-        .first-screen-mob
-            display: block
-            margin: 0 auto
-            width: 100%
-    .h-bottom
-        padding-top: 30px        
-    .about-product
-        height: auto
-        background-image: none 
-        width: 940px
-        margin: 0 auto
-        &__content
-            width: 441px
-        .magzine-men_fin
-            margin-left: 150px
+          
     
-        .container
-            display: grid
-            display: -ms-grid
-            gap: 10px
-            grid-template-columns: 5fr 1fr !important
-            -ms-grid-columns:  5fr 10px 1fr
-            img
-                height: auto
-                width: 100% !important
-        .main-btn-wrap
-            display: none
     .pharmacist-recommended​
         .main-btn-wrap
             display: none
@@ -1354,102 +1381,20 @@ video
             display: block
             width: 720px
             margin: 0 auto 15px
-    .about-efficiency
-        &__descr
-            margin-left: 0
-        &__content
-            margin-left: 0
-        &__image
-            display: block
-            width: 100%
-            margin: 15px auto
-        &__title
-            display: block !important
     
-    .feedback
-        &__content
-            &-wrap
-                flex-direction: column
-                width: 720px
-                height: auto
-                margin: 0 auto 
-            &_image
-                
-                width: 200px
-                margin: 0 auto
-            &_text
-                font-size: 0.65rem
     
-        br:nth-of-type(2)
-            display: none
-        br:nth-of-type(1)
-            display: none
-    .about-benefits
-        background: none
-        &__content
-            
-            width: auto
-            padding-right: 0
-            
-        &__image
-            display: block
-            width: 100%
-            padding: 10px
-            img
-                padding-bottom: 80px
-                width: 100%
-        &__title
-            display: block !important
-            color: rgb(9, 135, 255)
-            width: 100%
-            text-align: center
-            font-size: 2.8rem
-        &__subtitle
-            display: block
-            line-height: 1.4em
-            text-align: center
-        &__text
-            display: block
-            font-size: 0.95rem
-            br:nth-of-type(1)
-                display: none
-            br:nth-of-type(2)
-                display: block
-        &__list
-            display: block
-            li
-                font-size: 0.80rem
-        .main-btn-wrap
-            display: none
+    
+    
 @media (max-width: 991px)
     .orange-subtitle
         font-size: 1.5rem
-    .h-bottom
-        &__text
-            display: none
-        .image-row-top
-             width: 478px
-             margin: 0 auto
-        .image-row-bottom
-            display: none
+    
     .proof
         &__subtitle
             font-size: 1.5rem
         &__text
             font-size: 1.3rem
-    .about-product
-        width: 720px
-        &__title
-            font-size: 2.6rem
-        &__content
-          width: 120% !important
-        p
-            font-size: 0.95rem
-        .magzine-men_fin
-            margin: 0 auto
-            width: 100%
-        .main-btn-wrap
-            display: none
+    
     .physicians-choice
         padding-bottom: 0
         &__subtitle
@@ -1494,13 +1439,8 @@ video
             margin-bottom: 25px !important
             span
                 font-size: 0.95rem
-   
-    .feedback__content 
-            &_image
-                span
-                    font-size: 0.95rem
-            &_text
-                font-size: 0.77rem
+    
+    
     .packages
         .container
             width: 720px
@@ -1524,21 +1464,53 @@ video
     .footer
         p
             max-width: 100%
+    .about-benefits
+        .main-btn-wrap
+            margin-top: 610px
+            margin-bottom: 6vw
+            margin-left: 2vw
+            button
+                width: 28vw
+                font-size: 2vw
+@media (max-width: 870px) 
+    .about-benefits
+        background-image: url('../img/bg/TabletHairManBottom.png')
+        background-size: contain
+        background-position: 100% 100%
+        margin-top: -10vw
+        margin-bottom: -100px
 @media (max-width: 767px)
     .for-tablet-image
         display: none
     .header-mob   
         display: block
-        
+    .fixed-btn
+        display: flex    
     .orange-subtitle
         font-size: 1.55rem
+    .main-form
+        display: none
+    
     .h-top
+        padding: 0
+        height: auto !important
+        .row
+            display: none
         .container
             width: 100% 
             margin: 0
             padding: 0 
         .first-screen-mob
+            display: block
             width: 100vw
+    .h-bottom
+        &__text
+            display: none
+        .image-row-top
+             width: 478px
+             margin: 0 auto
+        .image-row-bottom
+            display: none
     .proof
         &__title 
             width: 100% !important
@@ -1551,7 +1523,33 @@ video
         video
             width: 100%
     .about-product
-        width: 95%
+        height: auto
+        background-image: none 
+        width: 100%
+        margin: 0 auto
+        &__title
+            font-size: 2.6rem
+        &__content
+            width: 120% !important
+        p
+            font-size: 0.95rem
+        .magzine-men_fin
+            margin: 0 auto
+            width: 100%
+    
+        .container
+            display: grid
+            display: -ms-grid
+            gap: 10px
+            grid-template-columns: 5fr 1fr !important
+            -ms-grid-columns:  5fr 10px 1fr
+            img
+                height: auto
+                width: 100% !important
+        .main-btn-wrap
+            display: none
+        .for-tablet-button
+            display: none
         &__title
             br
                 display: none
@@ -1670,12 +1668,22 @@ video
                     font-size: 1.15rem
     .about-efficiency
         &__descr
+            margin-left: 0
             font-size: 1.2rem
         &__content
+            margin-left: 0
             li
                 font-size:  0.98rem
                 span
                     font-size: 1.4rem
+        &__image
+            display: block
+            width: 100%
+            margin: 15px auto
+        &__title
+            display: block !important
+   
+            
     .real-stories
         .video-wrap
             margin: 0 auto 25px
@@ -1720,29 +1728,68 @@ video
             margin: 0
         &__text
             font-size: 1.20rem
-    
+   
     .feedback
         &__content
             &-wrap
+                flex-direction: column
                 width: 90%
+                height: auto
+                margin: 0 auto 
             &_image
+                
+                width: 200px
+                margin: 0 auto
                 span
                     font-size: 1.10rem
             &_text
                 font-size: 0.92rem
+    
+        br:nth-of-type(2)
+            display: none
+        br:nth-of-type(1)
+            display: none
+   
     .about-benefits
-        &__content 
+        margin-top: 0
+        margin-bottom: -50px
+        background: none
+        &__content
+            
             width: 100% !important
-
+            padding-right: 0
+            
+        &__image
+            display: block
+            width: 100%
+            padding: 10px
+            img
+                padding-bottom: 80px
+                width: 100%
         &__title
+            display: block !important
             color: rgb(9, 135, 255)
+            width: 100%
+            text-align: center
+            font-size: 2.8rem
         &__subtitle
+            display: block
+            line-height: 1.4em
             text-align: center
         &__text
+            display: block
             font-size: 1.1rem
+            br:nth-of-type(1)
+                display: none
+            br:nth-of-type(2)
+                display: block
         &__list
+            display: block
             li
-                font-size: 0.95rem
+                 font-size: 0.95rem
+        .main-btn-wrap
+            display: none
+    
     .packages
         .container
             width: 95%
