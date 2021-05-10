@@ -1,4 +1,4 @@
-
+/*
 async function gerResponse() {
     let response = await fetch('js/countries.json')
     let content = await response.json()
@@ -11,7 +11,7 @@ async function gerResponse() {
 }
 gerResponse() 
 
-
+*/
 
  /*modal window*/
  const modalWrap = document.querySelector(".modal-wrap");
